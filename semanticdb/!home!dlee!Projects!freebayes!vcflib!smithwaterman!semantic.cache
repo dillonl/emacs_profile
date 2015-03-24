@@ -1,0 +1,232 @@
+;; Object smithwaterman/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "smithwaterman/"
+  :tables (list 
+   (semanticdb-table "BandedSmithWaterman.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BandedSmithWaterman.h" include nil nil [1 33])
+            ("CBandedSmithWaterman::FLOAT_NEGATIVE_INFINITY" variable
+               (:constant-flag t
+                :type "float")
+                nil [66 140])
+            ("CBandedSmithWaterman::Directions_STOP" variable
+               (:constant-flag t
+                :type ("DirectionType" type (:type "class") nil nil))
+                nil [142 208])
+            ("CBandedSmithWaterman::Directions_LEFT" variable
+               (:constant-flag t
+                :type ("DirectionType" type (:type "class") nil nil))
+                nil [209 275])
+            ("CBandedSmithWaterman::Directions_DIAGONAL" variable
+               (:constant-flag t
+                :type ("DirectionType" type (:type "class") nil nil))
+                nil [276 342])
+            ("CBandedSmithWaterman::Directions_UP" variable
+               (:constant-flag t
+                :type ("DirectionType" type (:type "class") nil nil))
+                nil [343 409])
+            ("CBandedSmithWaterman::Position_REF_AND_QUERY_ZERO" variable
+               (:constant-flag t
+                :type ("PositionType" type (:type "class") nil nil))
+                nil [411 487])
+            ("CBandedSmithWaterman::Position_REF_ZERO" variable
+               (:constant-flag t
+                :type ("PositionType" type (:type "class") nil nil))
+                nil [488 564])
+            ("CBandedSmithWaterman::Position_QUERY_ZERO" variable
+               (:constant-flag t
+                :type ("PositionType" type (:type "class") nil nil))
+                nil [565 641])
+            ("CBandedSmithWaterman::Position_REF_AND_QUERO_NONZERO" variable
+               (:constant-flag t
+                :type ("PositionType" type (:type "class") nil nil))
+                nil [642 718])
+            ("CBandedSmithWaterman" function
+               (:constructor-flag t
+                :parent "CBandedSmithWaterman"
+                :arguments 
+                  ( ("matchScore" variable (:type "float") (reparse-symbol arg-sub-list) [778 795])
+                    ("mismatchScore" variable (:type "float") (reparse-symbol arg-sub-list) [796 816])
+                    ("gapOpenPenalty" variable (:type "float") (reparse-symbol arg-sub-list) [817 838])
+                    ("gapExtendPenalty" variable (:type "float") (reparse-symbol arg-sub-list) [839 862])
+                    ("bandWidth" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [863 886]))                  
+                :type ("CBandedSmithWaterman" type (:type "class") nil nil))
+                nil [735 1629])
+            ("CBandedSmithWaterman" function
+               (:destructor-flag t
+                :parent "CBandedSmithWaterman"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1689 1694]))                  
+                :type "void")
+                nil [1645 1963])
+            ("Align" function
+               (:parent "CBandedSmithWaterman"
+                :arguments 
+                  ( ("referenceAl" variable
+                       (:reference 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [2082 2108])
+                    ("cigarAl" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2109 2125])
+                    ("s1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2126 2143])
+                    ("s2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2144 2161])
+                    ("hr" variable
+                       (:reference 1
+                        :type ("pair" type
+                             (:template-specifier 
+                                ( ("pair" type nil nil nil)
+                                  ("pair" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2162 2241]))                  
+                :type "void")
+                nil [2049 7616])
+            ("CalculateScore" function
+               (:parent "CBandedSmithWaterman"
+                :arguments 
+                  ( ("s1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7714 7731])
+                    ("s2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7732 7749])
+                    ("rowNum" variable
+                       (:constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [7750 7776])
+                    ("columnNum" variable
+                       (:constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [7777 7806])
+                    ("currentQueryGapScore" variable
+                       (:reference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [7807 7835])
+                    ("rowOffset" variable
+                       (:constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [7836 7865])
+                    ("columnOffset" variable
+                       (:constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [7866 7898]))                  
+                :type "float")
+                nil [7671 10699])
+            ("CorrectHomopolymerGapOrder" function
+               (:parent "CBandedSmithWaterman"
+                :arguments 
+                  ( ("numBases" variable
+                       (:constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [10816 10844])
+                    ("numMismatches" variable
+                       (:constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [10845 10878]))                  
+                :type "void")
+                nil [10762 12923])
+            ("CreateScoringMatrix" function
+               (:parent "CBandedSmithWaterman"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13057 13062]))                  
+                :type "void")
+                nil [13010 16857])
+            ("EnableHomoPolymerGapPenalty" function
+               (:parent "CBandedSmithWaterman"
+                :arguments 
+                  ( ("hpGapOpenPenalty" variable (:type "float") (reparse-symbol arg-sub-list) [16946 16969]))                  
+                :type "void")
+                nil [16891 17063])
+            ("ReinitializeMatrices" function
+               (:parent "CBandedSmithWaterman"
+                :arguments 
+                  ( ("positionType" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PositionType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17143 17176])
+                    ("s1Length" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [17177 17206])
+                    ("s2Length" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [17207 17236])
+                    ("hr" variable
+                       (:constant-flag t
+                        :type ("pair" type
+                             (:template-specifier 
+                                ( ("pair" type nil nil nil)
+                                  ("pair" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17237 17321]))                  
+                :type "void")
+                nil [17095 19568])
+            ("Traceback" function
+               (:parent "CBandedSmithWaterman"
+                :arguments 
+                  ( ("referenceAl" variable
+                       (:reference 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [19643 19669])
+                    ("cigarAl" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19670 19686])
+                    ("s1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19687 19704])
+                    ("s2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19705 19722])
+                    ("bestRow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [19723 19744])
+                    ("bestColumn" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [19745 19769])
+                    ("rowOffset" variable
+                       (:constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [19770 19799])
+                    ("columnOffset" variable
+                       (:constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [19800 19832]))                  
+                :type "void")
+                nil [19606 23803]))          
+    :file "BandedSmithWaterman.cpp"
+    :pointmax 23804
+    :fsize 23803
+    :lastmodtime '(21565 38097 228700 105000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "BandedSmithWaterman.h"
+    :file "BandedSmithWaterman.h"
+    :fsize 4545
+    :lastmodtime '(21565 38097 228700 105000)
+    )
+   )
+  :file "!home!dlee!Projects!freebayes!vcflib!smithwaterman!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,824 @@
+;; Object graph_msa/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "graph_msa/"
+  :tables (list 
+   (semanticdb-table "graph_align_tcoffee_msa.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SEQAN_HEADER_GRAPH_ALIGN_TCOFFEE_MSA_H" variable (:constant-flag t) nil [1968 2006])
+            ("SEQAN_NAMESPACE_MAIN" type
+               (:members 
+                  ( ("MsaOptions" type
+                       (:template 
+                          ( ("TAlphabet" type (:type "class") nil nil)
+                            ("TScore" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2108 2115])
+                            ("rescore" variable (:type "bool") (reparse-symbol classsubparts) [2162 2175])
+                            ("outputFormat" variable (:type "unsigned int") (reparse-symbol classsubparts) [2220 2246])
+                            ("sc" variable (:type ("TScore" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2268 2278])
+                            ("build" variable (:type "unsigned int") (reparse-symbol classsubparts) [2470 2489])
+                            ("method" variable (:type ("String" type
+                                 (:template-specifier 
+                                    ( ("unsigned int" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2643 2671])
+                            ("alnfiles" variable (:type ("String" type
+                                 (:template-specifier 
+                                    ( ("std::string" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2714 2743])
+                            ("libfiles" variable (:type ("String" type
+                                 (:template-specifier 
+                                    ( ("std::string" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2774 2803])
+                            ("blastfiles" variable (:type ("String" type
+                                 (:template-specifier 
+                                    ( ("std::string" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2832 2863])
+                            ("mummerfiles" variable (:type ("String" type
+                                 (:template-specifier 
+                                    ( ("std::string" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2887 2919])
+                            ("outfile" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2937 2957])
+                            ("seqfile" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2982 3002])
+                            ("infile" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3029 3048])
+                            ("treefile" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3097 3118])
+                            ("MsaOptions" function
+                               (:constructor-flag t
+                                :type ("MsaOptions" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [3163 3221]))                          )
+                        (reparse-symbol namespacesubparts) [2042 3224])
+                    ("evaluateAlignment" function
+                       (:template 
+                          ( ("TAlphabet" type (:type "class") nil nil)
+                            ("TScore" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("msaOpt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MsaOptions" type
+                                     (:template-specifier 
+                                        ( ("TAlphabet" type nil nil nil)
+                                          ("TScore" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3386 3430]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [3310 6765])
+                    ("_appendSegmentMatches" function
+                       (:template 
+                          ( ("TStrSpec" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TList" type (:type "class") nil nil)
+                            ("TScore" type (:type "class") nil nil)
+                            ("TSegmentMatches" type (:type "class") nil nil)
+                            ("TScores" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("String" type nil nil nil)
+                                          ("Dependent" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7004 7073])
+                            ("pList" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7082 7101])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TScore" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7110 7124])
+                            ("matches" variable
+                               (:reference 1
+                                :type ("TSegmentMatches" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7133 7158])
+                            ("scores" variable
+                               (:reference 1
+                                :type ("TScores" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7167 7183]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [6848 7307])
+                    ("_appendSegmentMatches" function
+                       (:template 
+                          ( ("TValue" type (:type "class") nil nil)
+                            ("TStrSpec" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TList" type (:type "class") nil nil)
+                            ("TScore" type (:type "class") nil nil)
+                            ("TSegmentMatches" type (:type "class") nil nil)
+                            ("TScores" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("String" type nil nil nil)
+                                          ("Dependent" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7562 7628])
+                            ("pList" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7637 7656])
+                            ("score_type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TScore" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7665 7690])
+                            ("matches" variable
+                               (:reference 1
+                                :type ("TSegmentMatches" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7699 7724])
+                            ("scores" variable
+                               (:reference 1
+                                :type ("TScores" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7733 7749]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [7389 7842])
+                    ("globalMsaAlignment" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TStringSet1" type (:type "class") nil nil)
+                            ("TNames" type (:type "class") nil nil)
+                            ("TAlphabet" type (:type "class") nil nil)
+                            ("TScore" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("gAlign" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8987 9040])
+                            ("sequenceSet" variable
+                               (:reference 1
+                                :type ("TStringSet1" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9049 9074])
+                            ("sequenceNames" variable
+                               (:reference 1
+                                :type ("TNames" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9082 9104])
+                            ("msaOpt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MsaOptions" type
+                                     (:template-specifier 
+                                        ( ("TAlphabet" type nil nil nil)
+                                          ("TScore" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9112 9156]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [8817 14622])
+                    ("globalMsaAlignment" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TScore" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("gAlign" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [14817 14870])
+                            ("scoreObject" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TScore" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14878 14904]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [14706 15398])
+                    ("globalMsaAlignment" function
+                       (:template 
+                          ( ("TSource" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TScore" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("align" variable
+                               (:reference 1
+                                :type ("Align" type
+                                     (:template-specifier 
+                                        ( ("TSource" type nil nil nil)
+                                          ("TSpec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [15572 15601])
+                            ("scoreObject" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TScore" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15609 15635]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [15481 15886])
+                    ("_debugMatches" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TMatches" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("TStringSet" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16226 16242])
+                            ("matches" variable
+                               (:reference 1
+                                :type ("TMatches" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16249 16267]))                          )
+                        (reparse-symbol namespacesubparts) [16158 17886])
+                    ("_debugRefinedMatches" function
+                       (:template 
+                          ( ("TGraph" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :type ("TGraph" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18020 18030]))                          )
+                        (reparse-symbol namespacesubparts) [17968 19451]))                  
+                :type "namespace")
+                nil [2008 19454]))          
+    :file "graph_align_tcoffee_msa.h"
+    :pointmax 19524
+    :fsize 19523
+    :lastmodtime '(21564 11039 160788 473000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SEQAN_HEADER_GRAPH_ALIGN_TCOFFEE_MSA_H")
+          )
+
+    )
+   (semanticdb-table "graph_align_tcoffee_base.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SEQAN_HEADER_GRAPH_ALIGN_TCOFFEE_BASE_H" variable (:constant-flag t) nil [1969 2008])
+            ("SEQAN_NAMESPACE_MAIN" type
+               (:members 
+                  ( ("SEQAN_DISTANCE_UNITY" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2272 2314])
+                    ("FractionalScore_" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [3710 3734])
+                    ("FractionalScore" type
+                       (:typedef ("Tag" type
+                             (:template-specifier 
+                                ( ("FractionalScore_" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Tag"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [3735 3787])
+                    ("FrequencyCounting_" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [3938 3964])
+                    ("FrequencyCounting" type
+                       (:typedef ("Tag" type
+                             (:template-specifier 
+                                ( ("FrequencyCounting_" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Tag"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [3965 4021])
+                    ("ReScore_" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [4160 4176])
+                    ("ReScore" type
+                       (:typedef ("Tag" type
+                             (:template-specifier 
+                                ( ("ReScore_" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Tag"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [4177 4213])
+                    ("buildAlignmentGraph" function
+                       (:template 
+                          ( ("TFragment" type (:type "class") nil nil)
+                            ("TSpec1" type (:type "class") nil nil)
+                            ("TScoreValue" type (:type "class") nil nil)
+                            ("TSpec2" type (:type "class") nil nil)
+                            ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("matches" variable
+                               (:reference 1
+                                :type ("String" type
+                                     (:template-specifier 
+                                        ( ("TFragment" type nil nil nil)
+                                          ("TSpec1" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6390 6425])
+                            ("scores" variable
+                               (:reference 1
+                                :type ("String" type
+                                     (:template-specifier 
+                                        ( ("TScoreValue" type nil nil nil)
+                                          ("TSpec2" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6431 6467])
+                            ("outGraph" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6473 6528])
+                            ("" variable (:type ("FractionalScore" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6534 6550]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [6218 8250])
+                    ("buildAlignmentGraph" function
+                       (:template 
+                          ( ("TFragment" type (:type "class") nil nil)
+                            ("TSpec1" type (:type "class") nil nil)
+                            ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("matches" variable
+                               (:reference 1
+                                :type ("String" type
+                                     (:template-specifier 
+                                        ( ("TFragment" type nil nil nil)
+                                          ("TSpec1" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8466 8501])
+                            ("outGraph" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8507 8562])
+                            ("" variable (:type ("FrequencyCounting" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8568 8586]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [8333 8928])
+                    ("buildAlignmentGraph" function
+                       (:template 
+                          ( ("TFragment" type (:type "class") nil nil)
+                            ("TSpec1" type (:type "class") nil nil)
+                            ("TScoreValue" type (:type "class") nil nil)
+                            ("TSpec2" type (:type "class") nil nil)
+                            ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("matches" variable
+                               (:reference 1
+                                :type ("String" type
+                                     (:template-specifier 
+                                        ( ("TFragment" type nil nil nil)
+                                          ("TSpec1" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9182 9217])
+                            ("" variable
+                               (:reference 1
+                                :type ("String" type
+                                     (:template-specifier 
+                                        ( ("TScoreValue" type nil nil nil)
+                                          ("TSpec2" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9223 9252])
+                            ("outGraph" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9258 9313])
+                            ("" variable (:type ("FrequencyCounting" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9319 9337]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [9010 9404])
+                    ("_scoreMatches" function
+                       (:template 
+                          ( ("TString" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TScoreType" type (:type "class") nil nil)
+                            ("TSize" type (:type "class") nil nil)
+                            ("TSpec2" type (:type "class") nil nil)
+                            ("TScoreString" type (:type "class") nil nil)
+                            ("TScoreValue" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("seqSet" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TString" type nil nil nil)
+                                          ("TSpec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9655 9696])
+                            ("scType" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TScoreType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9702 9728])
+                            ("matches" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type
+                                     (:template-specifier 
+                                        ( ("Fragment" type nil nil nil)
+                                          ("TSpec2" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9734 9800])
+                            ("scores" variable
+                               (:reference 1
+                                :type ("TScoreString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9806 9828])
+                            ("offset" variable (:type ("TScoreValue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9834 9853]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [9486 11042])
+                    ("_scoreMatches" function
+                       (:template 
+                          ( ("TString" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TScoreType" type (:type "class") nil nil)
+                            ("TFragment" type (:type "class") nil nil)
+                            ("TSpec2" type (:type "class") nil nil)
+                            ("TScoreString" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("seqSet" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TString" type nil nil nil)
+                                          ("TSpec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11275 11315])
+                            ("scType" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TScoreType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11321 11346])
+                            ("matches" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type
+                                     (:template-specifier 
+                                        ( ("TFragment" type nil nil nil)
+                                          ("TSpec2" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11352 11393])
+                            ("scores" variable
+                               (:reference 1
+                                :type ("TScoreString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11399 11420]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [11124 11532])
+                    ("buildAlignmentGraph" function
+                       (:template 
+                          ( ("TFragment" type (:type "class") nil nil)
+                            ("TSpec1" type (:type "class") nil nil)
+                            ("TScoreValue" type (:type "class") nil nil)
+                            ("TSpec2" type (:type "class") nil nil)
+                            ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TScore" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("matches" variable
+                               (:reference 1
+                                :type ("String" type
+                                     (:template-specifier 
+                                        ( ("TFragment" type nil nil nil)
+                                          ("TSpec1" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11804 11839])
+                            ("scores" variable
+                               (:reference 1
+                                :type ("String" type
+                                     (:template-specifier 
+                                        ( ("TScoreValue" type nil nil nil)
+                                          ("TSpec2" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11845 11881])
+                            ("outGraph" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11887 11942])
+                            ("scType" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TScore" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11948 11969])
+                            ("" variable (:type ("ReScore" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11975 11983]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [11615 12156])
+                    ("MsaEdgeCargo_" type
+                       (:template 
+                          ( ("TVertexDescriptor" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [12592 12599])
+                            ("v1" variable (:type ("TVertexDescriptor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12602 12623])
+                            ("v2" variable (:type ("TVertexDescriptor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12626 12647])
+                            ("c" variable (:type ("TCargo" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12650 12659])
+                            ("MsaEdgeCargo_" function
+                               (:constructor-flag t
+                                :type ("MsaEdgeCargo_" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [12663 12681])
+                            ("MsaEdgeCargo_" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("vert1" variable (:type ("TVertexDescriptor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12701 12725])
+                                    ("vert2" variable (:type ("TVertexDescriptor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12726 12750])
+                                    ("carg" variable (:type ("TCargo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12751 12763]))                                  
+                                :type ("MsaEdgeCargo_" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [12687 12800]))                          )
+                        (reparse-symbol namespacesubparts) [12514 12803])
+                    ("public" label nil (reparse-symbol namespacesubparts) [12967 12975])
+                    ("std::binary_function" variable (:type "int") (reparse-symbol namespacesubparts) [12976 13246])
+                    ("tripletLibraryExtension" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [14689 14737]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [14589 17014])
+                    ("_subTreeSearch" function
+                       (:template 
+                          ( ("TGuideTree" type (:type "class") nil nil)
+                            ("TSeqGroups" type (:type "class") nil nil)
+                            ("TGroupRoot" type (:type "class") nil nil)
+                            ("TSize" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("guideTree" variable
+                               (:reference 1
+                                :type ("TGuideTree" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17212 17234])
+                            ("seqGroups" variable
+                               (:reference 1
+                                :type ("TSeqGroups" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17242 17264])
+                            ("groupRoot" variable
+                               (:reference 1
+                                :type ("TGroupRoot" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17271 17293])
+                            ("minMembers" variable (:type ("TSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17300 17317]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [17096 21840])
+                    ("tripletLibraryExtension" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TGuideTree" type (:type "class") nil nil)
+                            ("TSize" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [22059 22107])
+                            ("guideTree" variable
+                               (:reference 1
+                                :type ("TGuideTree" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22114 22136])
+                            ("minMembers" variable (:type ("TSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22143 22160]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [21922 25825])
+                    ("graphBasedTripletLibraryExtension" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [26017 26065]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [25907 29153])
+                    ("sumOfPairsScore" function
+                       (:arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [32707 32761])
+                            ("score_type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TScore" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32766 32791]))                          
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [32686 34114])
+                    ("sumOfPairsScoreInd" function
+                       (:arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [34407 34461])
+                            ("score_type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TScore" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [34469 34494]))                          
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [34383 35457])
+                    ("alignmentEvaluation" function
+                       (:arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [37135 37189])
+                            ("score_type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TScore" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [37195 37220])
+                            ("gapExCount" variable
+                               (:reference 1
+                                :type ("TSize" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [37226 37244])
+                            ("gapCount" variable
+                               (:reference 1
+                                :type ("TSize" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [37250 37266])
+                            ("pairCount" variable
+                               (:reference 1
+                                :type ("TSize" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [37272 37289])
+                            ("numPairs" variable
+                               (:reference 1
+                                :type ("String" type
+                                     (:template-specifier 
+                                        ( ("TSize" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [37295 37319])
+                            ("len" variable
+                               (:reference 1
+                                :type ("TSize" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [37325 37336]))                          
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [37110 39053])
+                    ("convertAlignment" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TSource" type (:type "class") nil nil)
+                            ("TSpec2" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("gAlign" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [39263 39322])
+                            ("align" variable
+                               (:reference 1
+                                :type ("Align" type
+                                     (:template-specifier 
+                                        ( ("TSource" type nil nil nil)
+                                          ("TSpec2" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [39328 39358]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [39135 40703])
+                    ("convertAlignment" function
+                       (:template 
+                          ( ("TSource" type (:type "class") nil nil)
+                            ("TSpec2" type (:type "class") nil nil)
+                            ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("align" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Align" type
+                                     (:template-specifier 
+                                        ( ("TSource" type nil nil nil)
+                                          ("TSpec2" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [40914 40950])
+                            ("gAlign" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [40956 41009]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [40786 42679]))                  
+                :type "namespace")
+                nil [2010 42682]))          
+    :file "graph_align_tcoffee_base.h"
+    :pointmax 42751
+    :fsize 42750
+    :lastmodtime '(21564 11039 158788 569000)
+    :unmatched-syntax '((punctuation 37109 . 37110) (punctuation 37108 . 37109) (punctuation 37107 . 37108) (symbol 37101 . 37107) (punctuation 37100 . 37101) (symbol 37095 . 37100) (TYPENAME 37086 . 37094) (INLINE 37079 . 37085) (punctuation 37076 . 37077) (symbol 37071 . 37076) (TYPENAME 37062 . 37070) (punctuation 37060 . 37061) (symbol 37054 . 37060) (TYPENAME 37045 . 37053) (punctuation 37043 . 37044) (symbol 37038 . 37043) (TYPENAME 37029 . 37037) (punctuation 37027 . 37028) (symbol 37021 . 37027) (TYPENAME 37012 . 37020) (punctuation 37010 . 37011) (symbol 37000 . 37010) (TYPENAME 36991 . 36999) (punctuation 36990 . 36991) (TEMPLATE 36982 . 36990) (punctuation 34382 . 34383) (punctuation 34381 . 34382) (punctuation 34380 . 34381) (symbol 34374 . 34380) (punctuation 34373 . 34374) (symbol 34368 . 34373) (TYPENAME 34359 . 34367) (INLINE 34352 . 34358) (punctuation 34349 . 34350) (symbol 34343 . 34349) (TYPENAME 34334 . 34342) (punctuation 34332 . 34333) (symbol 34327 . 34332) (TYPENAME 34318 . 34326) (punctuation 34316 . 34317) (symbol 34310 . 34316) (TYPENAME 34301 . 34309) (punctuation 34299 . 34300) (symbol 34289 . 34299) (TYPENAME 34280 . 34288) (punctuation 34279 . 34280) (TEMPLATE 34271 . 34279) (punctuation 32685 . 32686) (punctuation 32684 . 32685) (punctuation 32683 . 32684) (symbol 32677 . 32683) (punctuation 32676 . 32677) (symbol 32671 . 32676) (TYPENAME 32662 . 32670) (INLINE 32655 . 32661) (punctuation 32652 . 32653) (symbol 32646 . 32652) (TYPENAME 32637 . 32645) (punctuation 32635 . 32636) (symbol 32630 . 32635) (TYPENAME 32621 . 32629) (punctuation 32619 . 32620) (symbol 32613 . 32619) (TYPENAME 32604 . 32612) (punctuation 32602 . 32603) (symbol 32592 . 32602) (TYPENAME 32583 . 32591) (punctuation 32582 . 32583) (TEMPLATE 32574 . 32582) (punctuation 12975 . 12976) (punctuation 12964 . 12965) (symbol 12946 . 12963) (STRUCT 12939 . 12945) (punctuation 12937 . 12938) (symbol 12931 . 12937) (TYPENAME 12922 . 12930) (punctuation 12920 . 12921) (symbol 12903 . 12920) (TYPENAME 12894 . 12902) (punctuation 12893 . 12894) (TEMPLATE 12885 . 12893))
+    :lexical-table 
+        '(("SEQAN_HEADER_GRAPH_ALIGN_TCOFFEE_BASE_H")
+          )
+
+    )
+   )
+  :file "!home!dlee!Projects!wham!src!seqan!core!include!seqan!graph_msa!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

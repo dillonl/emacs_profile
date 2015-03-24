@@ -1,0 +1,336 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("AlleleCountManager.h" include nil nil [1 32])
+            ("string" include (:system-flag t) nil [34 51])
+            ("algorithm" include (:system-flag t) nil [52 72])
+            ("time.h" include (:system-flag t) nil [73 90])
+            ("iostream" include (:system-flag t) nil [91 110])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [121 130])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [131 143]))                  
+                :type "int")
+                nil [112 844]))          
+    :file "main.cpp"
+    :pointmax 845
+    :fsize 844
+    :lastmodtime '(21569 9624 786538 503000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "AlleleCountManager.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ALLELE_COUNT_MANAGER_H" variable (:constant-flag t) nil [40 62])
+            ("AlleleCountFile.h" include nil nil [64 92])
+            ("vector" include (:system-flag t) nil [94 111])
+            ("AlleleCount" type
+               (:members 
+                  ( ("AlleleCountManager" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [306 313])
+                            ("Instance" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("static")
+                                :type ("AlleleCountManager" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [316 354])
+                            ("addAlleleCountFile" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("file_name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [382 411]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [358 412])
+                            ("run" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [415 426])
+                            ("private" label nil (reparse-symbol classsubparts) [429 437])
+                            ("AlleleCountManager" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("AlleleCountManager" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [440 461])
+                            ("AlleleCountManager" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [464 486])
+                            ("m_allele_files" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("AlleleCountFile" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [625 670])
+                            ("s_instance" variable
+                               (:pointer 1
+                                :typemodifiers ("static")
+                                :type ("AlleleCountManager" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [674 712]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [277 716]))                  
+                :type "namespace")
+                nil [113 718]))          
+    :file "AlleleCountManager.h"
+    :pointmax 795
+    :fsize 794
+    :lastmodtime '(21569 7114 575447 756000)
+    :unmatched-syntax '((punctuation 620 . 621) (DELETE 614 . 620) (punctuation 612 . 613) (semantic-list 580 . 611) (punctuation 579 . 580) (OPERATOR 571 . 579) (punctuation 569 . 570) (symbol 551 . 569) (punctuation 547 . 548) (DELETE 541 . 547) (punctuation 539 . 540) (semantic-list 507 . 538) (symbol 489 . 507))
+    :lexical-table 
+        '(("ALLELE_COUNT_MANAGER_H")
+          )
+
+    )
+   (semanticdb-table "AlleleCountManager.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("AlleleCountManager.h" include nil nil [1 32])
+            ("AlleleCountFile.h" include nil nil [33 61])
+            ("iostream" include (:system-flag t) nil [63 82])
+            ("stdio.h" include (:system-flag t) nil [83 101])
+            ("string.h" include (:system-flag t) nil [102 121])
+            ("algorithm" include (:system-flag t) nil [122 142])
+            ("iterator" include (:system-flag t) nil [143 162])
+            ("AlleleCount" type
+               (:members 
+                  ( ("AlleleCountManager::s_instance" variable
+                       (:pointer 1
+                        :type ("AlleleCountManager" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [189 247])
+                    ("Instance" function
+                       (:pointer 1
+                        :parent "AlleleCountManager"
+                        :type ("AlleleCountManager" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [250 423])
+                    ("AlleleCountManager" function
+                       (:constructor-flag t
+                        :parent "AlleleCountManager"
+                        :type ("AlleleCountManager" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [426 472])
+                    ("AlleleCountManager" function
+                       (:destructor-flag t
+                        :parent "AlleleCountManager"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [475 677])
+                    ("addAlleleCountFile" function
+                       (:parent "AlleleCountManager"
+                        :arguments 
+                          ( ("file_name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [724 753]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [680 912])
+                    ("run" function
+                       (:parent "AlleleCountManager"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [915 2613]))                  
+                :type "namespace")
+                nil [164 2616]))          
+    :file "AlleleCountManager.cpp"
+    :pointmax 2646
+    :fsize 2645
+    :lastmodtime '(21569 7152 660628 481000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "AlleleCountFile.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ALLELE_COUNT_FILE_H" variable (:constant-flag t) nil [37 56])
+            ("string" include (:system-flag t) nil [58 75])
+            ("AlleleCount" type
+               (:members 
+                  ( ("AlleleCountFile" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [133 140])
+                            ("AlleleCountFile" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("file_name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [161 190]))                                  
+                                :type ("AlleleCountFile" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [145 191])
+                            ("AlleleCountFile" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [196 215])
+                            ("init" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [288 300])
+                            ("advanceLine" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [305 324])
+                            ("getKMer" function
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [330 378])
+                            ("getKMerSize" function (:type "unsigned int") (reparse-symbol classsubparts) [383 437])
+                            ("advanceKMerPointer" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [443 469])
+                            ("getKMerCount" function
+                               (:prototype-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [474 502])
+                            ("printRemainingFile" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [507 533])
+                            ("compare" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("f1" variable
+                                       (:pointer 1
+                                        :type ("AlleleCountFile" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [559 579])
+                                    ("f2" variable
+                                       (:pointer 1
+                                        :type ("AlleleCountFile" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [580 600]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [539 601])
+                            ("private" label nil (reparse-symbol classsubparts) [605 613])
+                            ("freeAndReallocateMMap" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [953 982])
+                            ("setKMerSize" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [987 1006])
+                            ("m_fd" variable (:type "int") (reparse-symbol classsubparts) [1012 1021])
+                            ("m_kmer_size" variable (:type "unsigned int") (reparse-symbol classsubparts) [1026 1051])
+                            ("m_count_start_pos" variable (:type "unsigned int") (reparse-symbol classsubparts) [1056 1087])
+                            ("m_max_line_size_allowed" variable (:type "unsigned int") (reparse-symbol classsubparts) [1135 1172])
+                            ("m_map_file_pos" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [1265 1286])
+                            ("m_map_ptr" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [1342 1358])
+                            ("m_total_file_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1520 1545])
+                            ("m_total_file_read" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1550 1575])
+                            ("m_file_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1581 1605]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [104 1611]))                  
+                :type "namespace")
+                nil [77 1614]))          
+    :file "AlleleCountFile.h"
+    :pointmax 1686
+    :fsize 1685
+    :lastmodtime '(21573 19713 409369 72000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("ALLELE_COUNT_FILE_H")
+          )
+
+    )
+   (semanticdb-table "AlleleCountFile.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("AlleleCountFile.h" include nil nil [1 29])
+            ("stdio.h" include (:system-flag t) nil [31 49])
+            ("string.h" include (:system-flag t) nil [50 69])
+            ("iostream" include (:system-flag t) nil [70 89])
+            ("fstream" include (:system-flag t) nil [90 108])
+            ("unistd.h" include (:system-flag t) nil [109 128])
+            ("fcntl.h" include (:system-flag t) nil [129 147])
+            ("sys/stat.h" include (:system-flag t) nil [148 169])
+            ("unistd.h" include (:system-flag t) nil [170 189])
+            ("sys/types.h" include (:system-flag t) nil [190 212])
+            ("sys/mman.h" include (:system-flag t) nil [213 234])
+            ("AlleleCount" type
+               (:members 
+                  ( ("FILE_CHUNK" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [261 301])
+                    ("AlleleCountFile" function
+                       (:constructor-flag t
+                        :parent "AlleleCountFile"
+                        :arguments 
+                          ( ("file_name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [337 366]))                          
+                        :type ("AlleleCountFile" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [304 502])
+                    ("AlleleCountFile" function
+                       (:destructor-flag t
+                        :parent "AlleleCountFile"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [505 606])
+                    ("init" function
+                       (:parent "AlleleCountFile"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [609 1448])
+                    ("setKMerSize" function
+                       (:parent "AlleleCountFile"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1451 1675])
+                    ("advanceKMerPointer" function
+                       (:parent "AlleleCountFile"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1678 2215])
+                    ("getKMerCount" function
+                       (:parent "AlleleCountFile"
+                        :type "unsigned int")
+                        (reparse-symbol namespacesubparts) [2218 2451])
+                    ("freeAndReallocateMMap" function
+                       (:parent "AlleleCountFile"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2454 2960])
+                    ("printRemainingFile" function
+                       (:parent "AlleleCountFile"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2963 3445])
+                    ("compare" function
+                       (:parent "AlleleCountFile"
+                        :arguments 
+                          ( ("f1" variable
+                               (:pointer 1
+                                :type ("AlleleCountFile" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3480 3500])
+                            ("f2" variable
+                               (:pointer 1
+                                :type ("AlleleCountFile" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3501 3521]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [3450 3597]))                  
+                :type "namespace")
+                nil [236 3601]))          
+    :file "AlleleCountFile.cpp"
+    :pointmax 3631
+    :fsize 3630
+    :lastmodtime '(21573 21194 968597 72000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!dlee!Projects!AlleleCountMerger!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,187 @@
+;; Object fastahack/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "fastahack/"
+  :tables (list 
+   (semanticdb-table "Fasta.h"
+    :file "Fasta.h"
+    :fsize 2788
+    :lastmodtime '(21573 23160 422710 94000)
+    )
+   (semanticdb-table "Fasta.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("Fasta.h" include nil nil [418 436])
+            ("FastaIndexEntry" function
+               (:constructor-flag t
+                :parent "FastaIndexEntry"
+                :arguments 
+                  ( ("name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [471 483])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [484 495])
+                    ("offset" variable (:type "long long") (reparse-symbol arg-sub-list) [496 513])
+                    ("line_blen" variable (:type "int") (reparse-symbol arg-sub-list) [514 528])
+                    ("line_len" variable (:type "int") (reparse-symbol arg-sub-list) [529 542]))                  
+                :type ("FastaIndexEntry" type (:type "class") nil nil))
+                nil [438 656])
+            ("FastaIndexEntry" function
+               (:constructor-flag t
+                :parent "FastaIndexEntry"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [691 696]))                  
+                :type ("FastaIndexEntry" type (:type "class") nil nil))
+                nil [658 730])
+            ("FastaIndexEntry" function
+               (:destructor-flag t
+                :parent "FastaIndexEntry"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [766 771]))                  
+                :type "void")
+                nil [732 774])
+            ("clear" function
+               (:parent "FastaIndexEntry"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [804 809]))                  
+                :type "void")
+                nil [776 1029])
+            ("<<" function
+               (:operator-flag t
+                :arguments 
+                  ( ("output" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1051 1067])
+                    ("e" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("FastaIndexEntry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1068 1093]))                  
+                :type ("ostream" type (:type "class") nil nil))
+                nil [1031 1363])
+            ("FastaIndex" function
+               (:constructor-flag t
+                :parent "FastaIndex"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1388 1393]))                  
+                :type ("FastaIndex" type (:type "class") nil nil))
+                nil [1365 1397])
+            ("readIndexFile" function
+               (:parent "FastaIndex"
+                :arguments 
+                  ( ("fname" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1430 1443]))                  
+                :type "void")
+                nil [1399 2916])
+            ("fastaIndexEntryCompare" function
+               (:arguments 
+                  ( ("a" variable (:type ("FastaIndexEntry" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2997 3015])
+                    ("b" variable (:type ("FastaIndexEntry" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3016 3034]))                  
+                :type "bool")
+                nil [2967 3066])
+            ("<<" function
+               (:operator-flag t
+                :arguments 
+                  ( ("output" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3088 3104])
+                    ("fastaIndex" variable
+                       (:reference 1
+                        :type ("FastaIndex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3105 3128]))                  
+                :type ("ostream" type (:type "class") nil nil))
+                nil [3068 3572])
+            ("indexReference" function
+               (:parent "FastaIndex"
+                :arguments 
+                  ( ("refname" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3606 3621]))                  
+                :type "void")
+                nil [3574 8059])
+            ("flushEntryToIndex" function
+               (:parent "FastaIndex"
+                :arguments 
+                  ( ("entry" variable
+                       (:reference 1
+                        :type ("FastaIndexEntry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8096 8119]))                  
+                :type "void")
+                nil [8061 8413])
+            ("writeIndexFile" function
+               (:parent "FastaIndex"
+                :arguments 
+                  ( ("fname" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8447 8460]))                  
+                :type "void")
+                nil [8415 8742])
+            ("FastaIndex" function
+               (:destructor-flag t
+                :parent "FastaIndex"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8768 8773]))                  
+                :type "void")
+                nil [8744 8800])
+            ("entry" function
+               (:parent "FastaIndex"
+                :arguments 
+                  ( ("name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8836 8848]))                  
+                :type ("FastaIndexEntry" type (:type "class") nil nil))
+                nil [8802 9070])
+            ("indexFileExtension" function
+               (:parent "FastaIndex"
+                :type ("string" type (:type "class") nil nil))
+                nil [9072 9130])
+            ("open" function
+               (:parent "FastaReference"
+                :arguments 
+                  ( ("reffilename" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9220 9239]))                  
+                :type "void")
+                nil [9194 9937])
+            ("FastaReference" function
+               (:destructor-flag t
+                :parent "FastaReference"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9971 9976]))                  
+                :type "void")
+                nil [9939 10016])
+            ("getSequence" function
+               (:parent "FastaReference"
+                :arguments 
+                  ( ("seqname" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10053 10068]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [10018 10652])
+            ("sequenceNameStartingWith" function
+               (:parent "FastaReference"
+                :arguments 
+                  ( ("seqnameStart" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10744 10764]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [10696 10963])
+            ("getTargetSubSequence" function
+               (:parent "FastaReference"
+                :arguments 
+                  ( ("target" variable
+                       (:reference 1
+                        :type ("FastaRegion" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11009 11029]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [10965 11216])
+            ("getSubSequence" function
+               (:parent "FastaReference"
+                :arguments 
+                  ( ("seqname" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11256 11271])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [11272 11282])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [11283 11294]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [11218 12410])
+            ("sequenceLength" function
+               (:parent "FastaReference"
+                :arguments 
+                  ( ("seqname" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12461 12476]))                  
+                :type "unsigned int")
+                nil [12417 12556]))          
+    :file "Fasta.cpp"
+    :pointmax 12558
+    :fsize 12557
+    :lastmodtime '(21573 23160 422710 94000)
+    :unmatched-syntax '((LONG 12412 . 12416))
+    )
+   )
+  :file "!home!dlee!Projects!glia!fastahack!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

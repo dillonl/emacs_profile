@@ -1,0 +1,221 @@
+;; Object htslib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "htslib/"
+  :tables (list 
+   (semanticdb-table "kseq.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("AC_KSEQ_H" variable (:constant-flag t) nil [1232 1241])
+            ("ctype.h" include (:system-flag t) nil [1243 1261])
+            ("string.h" include (:system-flag t) nil [1262 1281])
+            ("stdlib.h" include (:system-flag t) nil [1282 1301])
+            ("KS_SEP_SPACE" variable (:constant-flag t) nil [1311 1323])
+            ("KS_SEP_TAB" variable (:constant-flag t) nil [1367 1377])
+            ("KS_SEP_LINE" variable (:constant-flag t) nil [1411 1422])
+            ("KS_SEP_MAX" variable (:constant-flag t) nil [1485 1495])
+            ("__KS_TYPE" variable (:constant-flag t) nil [1509 1518])
+            ("ks_eof" variable (:constant-flag t) nil [1701 1707])
+            ("ks_rewind" variable (:constant-flag t) nil [1763 1772])
+            ("__KS_BASIC" variable (:constant-flag t) nil [1831 1841])
+            ("__KS_INLINED" variable (:constant-flag t) nil [2195 2207])
+            ("KSTRING_T" variable (:constant-flag t) nil [2755 2764])
+            ("kstring_t" type
+               (:typedef ("__kstring_t" type (:type "struct") nil nil)
+                :superclasses "__kstring_t"
+                :type "typedef")
+                nil [2775 2840])
+            ("__kstring_t" type
+               (:members 
+                  ( ("m" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2805 2817])
+                    ("l" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2805 2817])
+                    ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2819 2827]))                  
+                :type "struct")
+                nil [2775 2840])
+            ("kroundup32" variable (:constant-flag t) nil [2876 2886])
+            ("__KS_GETUNTIL" variable (:constant-flag t) nil [2987 3000])
+            ("KSTREAM_INIT2" variable (:constant-flag t) nil [4855 4868])
+            ("KSTREAM_INIT" variable (:constant-flag t) nil [5029 5041])
+            ("KSTREAM_DECLARE" variable (:constant-flag t) nil [5127 5142])
+            ("kseq_rewind" variable (:constant-flag t) nil [5454 5465])
+            ("__KSEQ_BASIC" variable (:constant-flag t) nil [5551 5563])
+            ("__KSEQ_READ" variable (:constant-flag t) nil [6161 6172])
+            ("__KSEQ_TYPE" variable (:constant-flag t) nil [8353 8364])
+            ("KSEQ_INIT2" variable (:constant-flag t) nil [8516 8526])
+            ("KSEQ_INIT" variable (:constant-flag t) nil [8687 8696])
+            ("KSEQ_DECLARE" variable (:constant-flag t) nil [8757 8769]))          
+    :file "kseq.h"
+    :pointmax 8935
+    :fsize 8934
+    :lastmodtime '(21557 36257 56102 783000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("KSTREAM_INIT2" (spp-arg-list ("SCOPE" "type_t" "__read" "__bufsize") 4868 . 4902) . 
+              ((symbol "__KS_TYPE" 4906 . 4915) (semantic-list "(type_t)" 4915 . 4923) (symbol "__KS_BASIC" 4927 . 4937) (semantic-list "(SCOPE, type_t, __bufsize)" 4937 . 4963) (symbol "__KS_GETUNTIL" 4967 . 4980) (semantic-list "(SCOPE, __read)" 4980 . 4995) (symbol "__KS_INLINED" 4999 . 5011) (semantic-list "(__read)" 5011 . 5019)))
+          ("KSTREAM_DECLARE" (spp-arg-list ("type_t" "__read") 5142 . 5158) . 
+              ((symbol "__KS_TYPE" 5162 . 5171) (semantic-list "(type_t)" 5171 . 5179) (EXTERN "extern" 5183 . 5189) (INT "int" 5190 . 5193) (symbol "ks_getuntil2" 5194 . 5206) (semantic-list "(kstream_t *ks, int delimiter, kstring_t *str, int *dret, int append)" 5206 . 5275) (punctuation ";" 5275 . 5276) (EXTERN "extern" 5280 . 5286) (symbol "kstream_t" 5287 . 5296) (punctuation "*" 5297 . 5298) (symbol "ks_init" 5298 . 5305) (semantic-list "(type_t f)" 5305 . 5315) (punctuation ";" 5315 . 5316) (EXTERN "extern" 5320 . 5326) (VOID "void" 5327 . 5331) (symbol "ks_destroy" 5332 . 5342) (semantic-list "(kstream_t *ks)" 5342 . 5357) (punctuation ";" 5357 . 5358) (symbol "__KS_INLINED" 5362 . 5374) (semantic-list "(__read)" 5374 . 5382)))
+          ("kseq_rewind" (spp-arg-list ("ks") 5465 . 5469) . ((semantic-list "((ks)->last_char = (ks)->f->is_eof = (ks)->f->begin = (ks)->f->end = 0)" 5470 . 5541)))
+          ("ks_rewind" (spp-arg-list ("ks") 1772 . 1776) . ((semantic-list "((ks)->is_eof = (ks)->begin = (ks)->end = 0)" 1777 . 1821)))
+          ("KS_SEP_MAX" . ((number "2" 1498 . 1499)))
+          ("kroundup32" (spp-arg-list ("x") 2886 . 2889) . ((semantic-list "(--(x), (x)|=(x)>>1, (x)|=(x)>>2, (x)|=(x)>>4, (x)|=(x)>>8, (x)|=(x)>>16, ++(x))" 2890 . 2970)))
+          ("__KS_BASIC" (spp-arg-list ("SCOPE" "type_t" "__bufsize") 1841 . 1867) . 
+              ((symbol "SCOPE" 1871 . 1876) (symbol "kstream_t" 1877 . 1886) (punctuation "*" 1887 . 1888) (symbol "ks_init" 1888 . 1895) (semantic-list "(type_t f)" 1895 . 1905) (semantic-list "{ \\
+		kstream_t *ks = (kstream_t*)calloc(1, sizeof(kstream_t)); \\
+		ks->f = f; ks->bufsize = __bufsize; \\
+		ks->buf = (unsigned char*)malloc(__bufsize); \\
+		return ks; \\
+	}" 1909 . 2081) (symbol "SCOPE" 2085 . 2090) (VOID "void" 2091 . 2095) (symbol "ks_destroy" 2096 . 2106) (semantic-list "(kstream_t *ks)" 2106 . 2121) (semantic-list "{ \\
+		if (!ks) return; \\
+		free(ks->buf); \\
+		free(ks); \\
+	}" 2125 . 2185)))
+          ("KS_SEP_TAB" . ((number "1" 1380 . 1381)))
+          ("ks_eof" (spp-arg-list ("ks") 1707 . 1711) . ((semantic-list "((ks)->is_eof && (ks)->begin >= (ks)->end)" 1712 . 1754)))
+          ("KSEQ_INIT" (spp-arg-list ("type_t" "__read") 8696 . 8712) . ((symbol "KSEQ_INIT2" 8713 . 8723) (semantic-list "(static, type_t, __read)" 8723 . 8747)))
+          ("KSTREAM_INIT" (spp-arg-list ("type_t" "__read" "__bufsize") 5041 . 5068) . ((symbol "KSTREAM_INIT2" 5069 . 5082) (semantic-list "(static, type_t, __read, __bufsize)" 5082 . 5117)))
+          ("__KSEQ_TYPE" (spp-arg-list ("type_t") 8364 . 8372) . 
+              ((TYPEDEF "typedef" 8381 . 8388) (STRUCT "struct" 8389 . 8395) (semantic-list "{							\\
+		kstring_t name, comment, seq, qual;		\\
+		int last_char;							\\
+		kstream_t *f;							\\
+	}" 8396 . 8498) (symbol "kseq_t" 8499 . 8505) (punctuation ";" 8505 . 8506)))
+          ("__KSEQ_BASIC" (spp-arg-list ("SCOPE" "type_t") 5563 . 5578) . 
+              ((symbol "SCOPE" 5591 . 5596) (symbol "kseq_t" 5597 . 5603) (punctuation "*" 5604 . 5605) (symbol "kseq_init" 5605 . 5614) (semantic-list "(type_t fd)" 5614 . 5625) (semantic-list "{																	\\
+		kseq_t *s = (kseq_t*)calloc(1, sizeof(kseq_t));					\\
+		s->f = ks_init(fd);												\\
+		return s;														\\
+	}" 5637 . 5777) (symbol "SCOPE" 5797 . 5802) (VOID "void" 5803 . 5807) (symbol "kseq_destroy" 5808 . 5820) (semantic-list "(kseq_t *ks)" 5820 . 5832) (semantic-list "{																	\\
+		if (!ks) return;												\\
+		free(ks->name.s); free(ks->comment.s); free(ks->seq.s);	free(ks->qual.s); \\
+		ks_destroy(ks->f);												\\
+		free(ks);														\\
+	}" 5844 . 6037)))
+          ("AC_KSEQ_H")
+          ("__KS_TYPE" (spp-arg-list ("type_t") 1518 . 1526) . 
+              ((TYPEDEF "typedef" 1530 . 1537) (STRUCT "struct" 1538 . 1544) (symbol "__kstream_t" 1545 . 1556) (semantic-list "{ \\
+		int begin, end; \\
+		int is_eof:2, bufsize:30; \\
+        uint64_t seek_pos; \\
+		type_t f; \\
+		unsigned char *buf; \\
+	}" 1557 . 1680) (symbol "kstream_t" 1681 . 1690) (punctuation ";" 1690 . 1691)))
+          ("KSTRING_T" . ((symbol "kstring_t" 2765 . 2774)))
+          ("KS_SEP_SPACE" . ((number "0" 1324 . 1325)))
+          ("__KS_INLINED" (spp-arg-list ("__read") 2207 . 2215) . 
+              ((STATIC "static" 2219 . 2225) (INLINE "inline" 2226 . 2232) (INT "int" 2233 . 2236) (symbol "ks_getc" 2237 . 2244) (semantic-list "(kstream_t *ks)" 2244 . 2259) (semantic-list "{ \\
+		if (ks->is_eof && ks->begin >= ks->end) return -1; \\
+		if (ks->begin >= ks->end) { \\
+			ks->begin = 0; \\
+			ks->end = __read(ks->f, ks->buf, ks->bufsize); \\
+			if (ks->end < ks->bufsize) ks->is_eof = 1; \\
+			if (ks->end == 0) return -1; \\
+		} \\
+        ks->seek_pos++; \\
+		return (int)ks->buf[ks->begin++]; \\
+	}" 2263 . 2580) (STATIC "static" 2584 . 2590) (INLINE "inline" 2591 . 2597) (INT "int" 2598 . 2601) (symbol "ks_getuntil" 2602 . 2613) (semantic-list "(kstream_t *ks, int delimiter, kstring_t *str, int *dret)" 2613 . 2670) (semantic-list "{ return ks_getuntil2(ks, delimiter, str, dret, 0); }" 2674 . 2727)))
+          ("KSEQ_INIT2" (spp-arg-list ("SCOPE" "type_t" "__read") 8526 . 8549) . 
+              ((symbol "KSTREAM_INIT" 8554 . 8566) (semantic-list "(type_t, __read, 16384)" 8566 . 8589) (symbol "__KSEQ_TYPE" 8595 . 8606) (semantic-list "(type_t)" 8606 . 8614) (symbol "__KSEQ_BASIC" 8624 . 8636) (semantic-list "(SCOPE, type_t)" 8636 . 8651) (symbol "__KSEQ_READ" 8659 . 8670) (semantic-list "(SCOPE)" 8670 . 8677)))
+          ("__KS_GETUNTIL" (spp-arg-list ("SCOPE" "__read") 3000 . 3015) . 
+              ((symbol "SCOPE" 3019 . 3024) (INT "int" 3025 . 3028) (symbol "ks_getuntil2" 3029 . 3041) (semantic-list "(kstream_t *ks, int delimiter, kstring_t *str, int *dret, int append)" 3041 . 3110) (semantic-list "{ \\
+		if (dret) *dret = 0; \\
+		str->l = append? str->l : 0; \\
+        uint64_t seek_pos = str->l; \\
+		if (ks->begin >= ks->end && ks->is_eof) return -1; \\
+		for (;;) { \\
+			int i; \\
+			if (ks->begin >= ks->end) { \\
+				if (!ks->is_eof) { \\
+					ks->begin = 0; \\
+					ks->end = __read(ks->f, ks->buf, ks->bufsize); \\
+					if (ks->end < ks->bufsize) ks->is_eof = 1; \\
+					if (ks->end == 0) break; \\
+				} else break; \\
+			} \\
+			if (delimiter == KS_SEP_LINE) {  \\
+				for (i = ks->begin; i < ks->end; ++i)  \\
+					if (ks->buf[i] == '\\n') break; \\
+			} else if (delimiter > KS_SEP_MAX) { \\
+				for (i = ks->begin; i < ks->end; ++i) \\
+					if (ks->buf[i] == delimiter) break; \\
+			} else if (delimiter == KS_SEP_SPACE) { \\
+				for (i = ks->begin; i < ks->end; ++i) \\
+					if (isspace(ks->buf[i])) break; \\
+			} else if (delimiter == KS_SEP_TAB) { \\
+				for (i = ks->begin; i < ks->end; ++i) \\
+					if (isspace(ks->buf[i]) && ks->buf[i] != ' ') break;  \\
+			} else i = 0; /* never come to here! */ \\
+			if (str->m - str->l < (size_t)(i - ks->begin + 1)) { \\
+				str->m = str->l + (i - ks->begin) + 1; \\
+				kroundup32(str->m); \\
+				str->s = (char*)realloc(str->s, str->m); \\
+			} \\
+            seek_pos += i - ks->begin; if ( i < ks->end ) seek_pos++; \\
+			memcpy(str->s + str->l, ks->buf + ks->begin, i - ks->begin);  \\
+			str->l = str->l + (i - ks->begin); \\
+			ks->begin = i + 1; \\
+			if (i < ks->end) { \\
+				if (dret) *dret = ks->buf[i]; \\
+				break; \\
+			} \\
+		} \\
+        ks->seek_pos += seek_pos; \\
+		if (str->s == 0) { \\
+			str->m = 1; \\
+			str->s = (char*)calloc(1, 1); \\
+		} else if (delimiter == KS_SEP_LINE && str->l > 1 && str->s[str->l-1] == '\\r') --str->l; \\
+		str->s[str->l] = '\\0';											\\
+		return str->l; \\
+	}" 3115 . 4845)))
+          ("KS_SEP_LINE" . ((number "2" 1424 . 1425)))
+          ("__KSEQ_READ" (spp-arg-list ("SCOPE") 6172 . 6179) . 
+              ((symbol "SCOPE" 6183 . 6188) (INT "int" 6189 . 6192) (symbol "kseq_read" 6193 . 6202) (semantic-list "(kseq_t *seq)" 6202 . 6215) (semantic-list "{ \\
+		int c; \\
+		kstream_t *ks = seq->f; \\
+		if (seq->last_char == 0) { /* then jump to the next header line */ \\
+			while ((c = ks_getc(ks)) != -1 && c != '>' && c != '@'); \\
+			if (c == -1) return -1; /* end of file */ \\
+			seq->last_char = c; \\
+		} /* else: the first header char has been read in the previous call */ \\
+		seq->comment.l = seq->seq.l = seq->qual.l = 0; /* reset all members */ \\
+		if (ks_getuntil(ks, 0, &seq->name, &c) < 0) return -1; /* normal exit: EOF */ \\
+		if (c != '\\n') ks_getuntil(ks, KS_SEP_LINE, &seq->comment, 0); /* read FASTA/Q comment */ \\
+		if (seq->seq.s == 0) { /* we can do this in the loop below, but that is slower */ \\
+			seq->seq.m = 256; \\
+			seq->seq.s = (char*)malloc(seq->seq.m); \\
+		} \\
+		while ((c = ks_getc(ks)) != -1 && c != '>' && c != '+' && c != '@') { \\
+			if (c == '\\n') continue; /* skip empty lines */ \\
+			seq->seq.s[seq->seq.l++] = c; /* this is safe: we always have enough space for 1 char */ \\
+			ks_getuntil2(ks, KS_SEP_LINE, &seq->seq, 0, 1); /* read the rest of the line */ \\
+		} \\
+		if (c == '>' || c == '@') seq->last_char = c; /* the first header char has been read */	\\
+		if (seq->seq.l + 1 >= seq->seq.m) { /* seq->seq.s[seq->seq.l] below may be out of boundary */ \\
+			seq->seq.m = seq->seq.l + 2; \\
+			kroundup32(seq->seq.m); /* rounded to the next closest 2^k */ \\
+			seq->seq.s = (char*)realloc(seq->seq.s, seq->seq.m); \\
+		} \\
+		seq->seq.s[seq->seq.l] = 0;	/* null terminated string */ \\
+		if (c != '+') return seq->seq.l; /* FASTA */ \\
+		if (seq->qual.m < seq->seq.m) {	/* allocate memory for qual in case insufficient */ \\
+			seq->qual.m = seq->seq.m; \\
+			seq->qual.s = (char*)realloc(seq->qual.s, seq->qual.m); \\
+		} \\
+		while ((c = ks_getc(ks)) != -1 && c != '\\n'); /* skip the rest of '+' line */ \\
+		if (c == -1) return -2; /* error: no quality string */ \\
+		while (ks_getuntil2(ks, KS_SEP_LINE, &seq->qual, 0, 1) >= 0 && seq->qual.l < seq->seq.l); \\
+		seq->last_char = 0;	/* we have not come to the next header line */ \\
+		if (seq->seq.l != seq->qual.l) return -2; /* error: qual string is of a different length */ \\
+		return seq->seq.l; \\
+	}" 6219 . 8343)))
+          ("KSEQ_DECLARE" (spp-arg-list ("type_t") 8769 . 8777) . 
+              ((symbol "__KS_TYPE" 8781 . 8790) (semantic-list "(type_t)" 8790 . 8798) (symbol "__KSEQ_TYPE" 8802 . 8813) (semantic-list "(type_t)" 8813 . 8821) (EXTERN "extern" 8825 . 8831) (symbol "kseq_t" 8832 . 8838) (punctuation "*" 8839 . 8840) (symbol "kseq_init" 8840 . 8849) (semantic-list "(type_t fd)" 8849 . 8860) (punctuation ";" 8860 . 8861) (VOID "void" 8865 . 8869) (symbol "kseq_destroy" 8870 . 8882) (semantic-list "(kseq_t *ks)" 8882 . 8894) (punctuation ";" 8894 . 8895) (INT "int" 8899 . 8902) (symbol "kseq_read" 8903 . 8912) (semantic-list "(kseq_t *seq)" 8912 . 8925) (punctuation ";" 8925 . 8926)))
+          )
+
+    )
+   )
+  :file "!home!dlee!Projects!htslib!htslib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

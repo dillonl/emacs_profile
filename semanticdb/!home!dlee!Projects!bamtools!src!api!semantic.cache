@@ -1,0 +1,1335 @@
+;; Object api/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "api/"
+  :tables (list 
+   (semanticdb-table "BamAlignment.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("api/BamAlignment.h" include nil nil [496 525])
+            ("api/BamConstants.h" include nil nil [526 555])
+            ("BamTools" using (:type ("BamTools" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [556 581])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [582 602])
+            ("BamAlignment" function
+               (:constructor-flag t
+                :parent "BamAlignment"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2885 2890]))                  
+                :type ("BamAlignment" type (:type "class") nil nil))
+                nil [2858 3064])
+            ("BamAlignment" function
+               (:constructor-flag t
+                :parent "BamAlignment"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("BamAlignment" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3186 3212]))                  
+                :type ("BamAlignment" type (:type "class") nil nil))
+                nil [3159 3763])
+            ("BamAlignment" function
+               (:destructor-flag t
+                :parent "BamAlignment"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3860 3865]))                  
+                :type "void")
+                nil [3832 3869])
+            ("BuildCharData" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4521 4526]))                  
+                :type "bool")
+                nil [4488 13687])
+            ("FindTag" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("tag" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14424 14447])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14475 14481])
+                    ("" variable (:type ("pTagData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14482 14491])
+                    ("tagDataLength" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [14519 14553])
+                    ("numBytesParsed" variable
+                       (:reference 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [14581 14610]))                  
+                :type "bool")
+                nil [14397 15268])
+            ("GetArrayTagType" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("tag" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15762 15785])
+                    ("type" variable
+                       (:reference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15786 15797]))                  
+                :type "bool")
+                nil [15727 17244])
+            ("GetEndPosition" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("usePadded" variable (:type "bool") (reparse-symbol arg-sub-list) [18128 18143])
+                    ("closedInterval" variable (:type "bool") (reparse-symbol arg-sub-list) [18144 18164]))                  
+                :type "int")
+                nil [18095 19435])
+            ("GetErrorString" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [19806 19811]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [19765 19845])
+            ("GetSoftClips" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("clipSizes" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20885 20908])
+                    ("readPositions" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20941 20968])
+                    ("genomePositions" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21001 21030])
+                    ("usePadded" variable (:type "bool") (reparse-symbol arg-sub-list) [21063 21078]))                  
+                :type "bool")
+                nil [20853 23946])
+            ("GetTagNames" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [24448 24453]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("std::string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [24397 25237])
+            ("GetTagType" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("tag" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25645 25668])
+                    ("type" variable
+                       (:reference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25669 25680]))                  
+                :type "bool")
+                nil [25615 27167])
+            ("HasTag" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("tag" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27426 27449]))                  
+                :type "bool")
+                nil [27400 27854])
+            ("IsDuplicate" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [27993 27998]))                  
+                :type "bool")
+                nil [27962 28082])
+            ("IsFailedQC" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [28223 28228]))                  
+                :type "bool")
+                nil [28193 28312])
+            ("IsFirstMate" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [28465 28470]))                  
+                :type "bool")
+                nil [28434 28551])
+            ("IsMapped" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [28675 28680]))                  
+                :type "bool")
+                nil [28647 28763])
+            ("IsMateMapped" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [28902 28907]))                  
+                :type "bool")
+                nil [28870 28995])
+            ("IsMateReverseStrand" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [29163 29168]))                  
+                :type "bool")
+                nil [29124 29262])
+            ("IsPaired" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [29400 29405]))                  
+                :type "bool")
+                nil [29372 29486])
+            ("IsPrimaryAlignment" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [29649 29654]))                  
+                :type "bool")
+                nil [29611 29739])
+            ("IsProperPair" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [29914 29919]))                  
+                :type "bool")
+                nil [29882 30005])
+            ("IsReverseStrand" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [30158 30163]))                  
+                :type "bool")
+                nil [30123 30252])
+            ("IsSecondMate" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [30397 30402]))                  
+                :type "bool")
+                nil [30365 30483])
+            ("IsValidSize" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("tag" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30818 30841])
+                    ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30842 30866]))                  
+                :type "bool")
+                nil [30787 30991])
+            ("RemoveTag" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("tag" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31182 31205]))                  
+                :type "void")
+                nil [31153 32813])
+            ("SetErrorString" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("where" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33118 33143])
+                    ("what" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33144 33168]))                  
+                :type "void")
+                nil [33084 33264])
+            ("SetIsDuplicate" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("ok" variable (:type "bool") (reparse-symbol arg-sub-list) [33410 33418]))                  
+                :type "void")
+                nil [33376 33554])
+            ("SetIsFailedQC" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("ok" variable (:type "bool") (reparse-symbol arg-sub-list) [33698 33706]))                  
+                :type "void")
+                nil [33665 33842])
+            ("SetIsFirstMate" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("ok" variable (:type "bool") (reparse-symbol arg-sub-list) [33989 33997]))                  
+                :type "void")
+                nil [33955 34127])
+            ("SetIsMapped" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("ok" variable (:type "bool") (reparse-symbol arg-sub-list) [34264 34272]))                  
+                :type "void")
+                nil [34233 34406])
+            ("SetIsMateMapped" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("ok" variable (:type "bool") (reparse-symbol arg-sub-list) [34558 34566]))                  
+                :type "void")
+                nil [34523 34710])
+            ("SetIsMateReverseStrand" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("ok" variable (:type "bool") (reparse-symbol arg-sub-list) [34891 34899]))                  
+                :type "void")
+                nil [34849 35055])
+            ("SetIsPaired" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("ok" variable (:type "bool") (reparse-symbol arg-sub-list) [35206 35214]))                  
+                :type "void")
+                nil [35175 35344])
+            ("SetIsPrimaryAlignment" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("ok" variable (:type "bool") (reparse-symbol arg-sub-list) [35511 35519]))                  
+                :type "void")
+                nil [35470 35655])
+            ("SetIsProperPair" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("ok" variable (:type "bool") (reparse-symbol arg-sub-list) [35843 35851]))                  
+                :type "void")
+                nil [35808 35991])
+            ("SetIsReverseStrand" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("ok" variable (:type "bool") (reparse-symbol arg-sub-list) [36157 36165]))                  
+                :type "void")
+                nil [36119 36311])
+            ("SetIsSecondMate" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("ok" variable (:type "bool") (reparse-symbol arg-sub-list) [36469 36477]))                  
+                :type "void")
+                nil [36434 36607])
+            ("SkipToNextTag" function
+               (:parent "BamAlignment"
+                :arguments 
+                  ( ("storageType" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [37334 37357])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [37391 37397])
+                    ("" variable (:type ("pTagData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37398 37407])
+                    ("numBytesParsed" variable
+                       (:reference 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [37441 37470]))                  
+                :type "bool")
+                nil [37301 40409]))          
+    :file "BamAlignment.cpp"
+    :pointmax 40410
+    :fsize 40409
+    :lastmodtime '(21557 38355 175878 552000)
+    :unmatched-syntax '((punctuation 37396 . 37397) (punctuation 14480 . 14481))
+    )
+   (semanticdb-table "BamAlignment.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BAMALIGNMENT_H" variable (:constant-flag t) nil [522 536])
+            ("api/api_global.h" include nil nil [538 565])
+            ("api/BamAux.h" include nil nil [566 589])
+            ("api/BamConstants.h" include nil nil [590 619])
+            ("cstdlib" include (:system-flag t) nil [620 638])
+            ("cstring" include (:system-flag t) nil [639 657])
+            ("string" include (:system-flag t) nil [658 675])
+            ("vector" include (:system-flag t) nil [676 693])
+            ("BamTools" type
+               (:members 
+                  ( ("Internal" type
+                       (:members 
+                          ( ("BamReaderPrivate" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [803 826])
+                            ("BamWriterPrivate" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [831 854]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [778 856])
+                    ("BamAlignment" variable (:type ("API_EXPORT" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol namespacesubparts) [924 8363])
+                    ("AddTag" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("tag" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9003 9026])
+                            ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9027 9051])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9052 9067]))                          
+                        :typemodifiers ("inline")
+                        :parent "BamAlignment")
+                        (reparse-symbol namespacesubparts) [8949 10683])
+                    ("AddTag" function
+                       (:type "bool"
+                        :arguments 
+                          ( ("tag" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10742 10765])
+                            ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10812 10836])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10883 10908]))                          
+                        :typemodifiers ("inline")
+                        :parent "BamAlignment"
+                        :template-specifier 
+                          ( ("std::string" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [10685 12390])
+                    ("AddTag" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("tag" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12934 12957])
+                            ("values" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12958 12987]))                          
+                        :typemodifiers ("inline")
+                        :parent "BamAlignment")
+                        (reparse-symbol namespacesubparts) [12880 15043])
+                    ("EditTag" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("tag" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15628 15651])
+                            ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15652 15676])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15677 15692]))                          
+                        :typemodifiers ("inline")
+                        :parent "BamAlignment")
+                        (reparse-symbol namespacesubparts) [15573 15961])
+                    ("EditTag" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("tag" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16471 16494])
+                            ("values" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [16495 16524]))                          
+                        :typemodifiers ("inline")
+                        :parent "BamAlignment")
+                        (reparse-symbol namespacesubparts) [16416 16789])
+                    ("GetTag" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("tag" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17117 17140])
+                            ("destination" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17141 17156]))                          
+                        :typemodifiers ("inline")
+                        :parent "BamAlignment")
+                        (reparse-symbol namespacesubparts) [17063 19404])
+                    ("GetTag" function
+                       (:type "bool"
+                        :arguments 
+                          ( ("tag" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19463 19486])
+                            ("destination" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19533 19558]))                          
+                        :typemodifiers ("inline")
+                        :parent "BamAlignment"
+                        :template-specifier 
+                          ( ("std::string" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [19406 20430])
+                    ("GetTag" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("tag" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20779 20802])
+                            ("destination" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [20803 20831]))                          
+                        :typemodifiers ("inline")
+                        :parent "BamAlignment")
+                        (reparse-symbol namespacesubparts) [20725 23651])
+                    ("BamAlignmentVector" type
+                       (:typedef ("std::vector" type
+                             (:template-specifier 
+                                ( ("BamAlignment" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::vector"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [23653 23706]))                  
+                :type "namespace")
+                nil [695 23709]))          
+    :file "BamAlignment.h"
+    :pointmax 23758
+    :fsize 23757
+    :lastmodtime '(21557 38355 176878 505000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BAMALIGNMENT_H")
+          )
+
+    )
+   (semanticdb-table "BamConstants.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BAM_CONSTANTS_H" variable (:constant-flag t) nil [534 549])
+            ("api/api_global.h" include nil nil [551 578])
+            ("cassert" include (:system-flag t) nil [579 597])
+            ("string" include (:system-flag t) nil [598 615])
+            ("BamTools" type
+               (:members 
+                  ( ("Constants" type
+                       (:members 
+                          ( ("BAM_SIZEOF_INT" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [760 793])
+                            ("BAM_HEADER_MAGIC" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [818 863])
+                            ("BAM_HEADER_MAGIC_LENGTH" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [864 906])
+                            ("BAM_CORE_SIZE" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [935 975])
+                            ("BAM_CORE_BUFFER_SIZE" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [976 1015])
+                            ("BAM_ALIGNMENT_PAIRED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1040 1093])
+                            ("BAM_ALIGNMENT_PROPER_PAIR" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1094 1147])
+                            ("BAM_ALIGNMENT_UNMAPPED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1148 1201])
+                            ("BAM_ALIGNMENT_MATE_UNMAPPED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1202 1255])
+                            ("BAM_ALIGNMENT_REVERSE_STRAND" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1256 1309])
+                            ("BAM_ALIGNMENT_MATE_REVERSE_STRAND" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1310 1363])
+                            ("BAM_ALIGNMENT_READ_1" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1364 1417])
+                            ("BAM_ALIGNMENT_READ_2" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1418 1471])
+                            ("BAM_ALIGNMENT_SECONDARY" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1472 1525])
+                            ("BAM_ALIGNMENT_QC_FAILED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1526 1579])
+                            ("BAM_ALIGNMENT_DUPLICATE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1580 1633])
+                            ("BAM_CIGAR_LOOKUP" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [1654 1703])
+                            ("BAM_CIGAR_MATCH" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1704 1741])
+                            ("BAM_CIGAR_INS" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1742 1779])
+                            ("BAM_CIGAR_DEL" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1780 1817])
+                            ("BAM_CIGAR_REFSKIP" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1818 1855])
+                            ("BAM_CIGAR_SOFTCLIP" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1856 1893])
+                            ("BAM_CIGAR_HARDCLIP" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1894 1931])
+                            ("BAM_CIGAR_PAD" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1932 1969])
+                            ("BAM_CIGAR_SEQMATCH" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1970 2007])
+                            ("BAM_CIGAR_MISMATCH" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2008 2045])
+                            ("BAM_CIGAR_MATCH_CHAR" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2047 2088])
+                            ("BAM_CIGAR_INS_CHAR" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2089 2130])
+                            ("BAM_CIGAR_DEL_CHAR" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2131 2172])
+                            ("BAM_CIGAR_REFSKIP_CHAR" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2173 2214])
+                            ("BAM_CIGAR_SOFTCLIP_CHAR" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2215 2256])
+                            ("BAM_CIGAR_HARDCLIP_CHAR" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2257 2298])
+                            ("BAM_CIGAR_PAD_CHAR" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2299 2340])
+                            ("BAM_CIGAR_SEQMATCH_CHAR" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2341 2382])
+                            ("BAM_CIGAR_MISMATCH_CHAR" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2383 2424])
+                            ("BAM_CIGAR_SHIFT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [2426 2456])
+                            ("BAM_CIGAR_MASK" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [2457 2514])
+                            ("BAM_TAG_TYPE_ASCII" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2541 2578])
+                            ("BAM_TAG_TYPE_INT8" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2579 2616])
+                            ("BAM_TAG_TYPE_UINT8" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2617 2654])
+                            ("BAM_TAG_TYPE_INT16" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2655 2692])
+                            ("BAM_TAG_TYPE_UINT16" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2693 2730])
+                            ("BAM_TAG_TYPE_INT32" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2731 2768])
+                            ("BAM_TAG_TYPE_UINT32" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2769 2806])
+                            ("BAM_TAG_TYPE_FLOAT" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2807 2844])
+                            ("BAM_TAG_TYPE_STRING" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2845 2882])
+                            ("BAM_TAG_TYPE_HEX" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2883 2920])
+                            ("BAM_TAG_TYPE_ARRAY" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2921 2958])
+                            ("BAM_TAG_TAGSIZE" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2960 3001])
+                            ("BAM_TAG_TYPESIZE" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3002 3043])
+                            ("BAM_TAG_ARRAYBASE_SIZE" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3044 3085])
+                            ("BAM_DNA_LOOKUP" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [3100 3154])
+                            ("BAM_BASECODE_EQUAL" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3155 3192])
+                            ("BAM_BASECODE_A" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3193 3230])
+                            ("BAM_BASECODE_C" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3231 3268])
+                            ("BAM_BASECODE_M" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3269 3306])
+                            ("BAM_BASECODE_G" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3307 3344])
+                            ("BAM_BASECODE_R" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3345 3382])
+                            ("BAM_BASECODE_S" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3383 3420])
+                            ("BAM_BASECODE_V" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3421 3458])
+                            ("BAM_BASECODE_T" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3459 3496])
+                            ("BAM_BASECODE_W" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3497 3534])
+                            ("BAM_BASECODE_Y" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3535 3573])
+                            ("BAM_BASECODE_H" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3574 3612])
+                            ("BAM_BASECODE_K" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3613 3651])
+                            ("BAM_BASECODE_D" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3652 3690])
+                            ("BAM_BASECODE_B" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3691 3729])
+                            ("BAM_BASECODE_N" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3730 3768])
+                            ("BAM_DNA_EQUAL" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [3770 3801])
+                            ("BAM_DNA_A" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [3802 3833])
+                            ("BAM_DNA_C" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [3834 3865])
+                            ("BAM_DNA_M" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [3866 3897])
+                            ("BAM_DNA_G" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [3898 3929])
+                            ("BAM_DNA_R" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [3930 3961])
+                            ("BAM_DNA_S" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [3962 3993])
+                            ("BAM_DNA_V" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [3994 4025])
+                            ("BAM_DNA_T" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [4026 4057])
+                            ("BAM_DNA_W" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [4058 4089])
+                            ("BAM_DNA_Y" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [4090 4121])
+                            ("BAM_DNA_H" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [4122 4153])
+                            ("BAM_DNA_K" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [4154 4185])
+                            ("BAM_DNA_D" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [4186 4217])
+                            ("BAM_DNA_B" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [4218 4249])
+                            ("BAM_DNA_N" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [4250 4281])
+                            ("BAM_DNA_DEL" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [4282 4313])
+                            ("BAM_DNA_PAD" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [4314 4345])
+                            ("GZIP_ID1" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [4372 4399])
+                            ("GZIP_ID2" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [4400 4428])
+                            ("CM_DEFLATE" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [4429 4455])
+                            ("FLG_FEXTRA" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [4456 4482])
+                            ("OS_UNKNOWN" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [4483 4511])
+                            ("BGZF_XLEN" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [4512 4538])
+                            ("BGZF_ID1" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [4539 4566])
+                            ("BGZF_ID2" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [4567 4594])
+                            ("BGZF_LEN" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [4595 4621])
+                            ("GZIP_WINDOW_BITS" variable
+                               (:constant-flag t
+                                :type ("int8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4623 4670])
+                            ("Z_DEFAULT_MEM_LEVEL" variable
+                               (:constant-flag t
+                                :type ("int8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4671 4716])
+                            ("BGZF_BLOCK_HEADER_LENGTH" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4717 4763])
+                            ("BGZF_BLOCK_FOOTER_LENGTH" variable
+                               (:constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4764 4809])
+                            ("BGZF_MAX_BLOCK_SIZE" variable
+                               (:constant-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4810 4859])
+                            ("BGZF_DEFAULT_BLOCK_SIZE" variable
+                               (:constant-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4860 4909]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [737 4912])
+                    ("TagTypeHelper" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("CanConvertFrom" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("" variable
+                                       (:constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [5149 5160]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5122 5193])
+                            ("CanConvertTo" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("" variable
+                                       (:constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [5223 5234]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5198 5267])
+                            ("TypeCode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5293 5298]))                                  
+                                :type "char")
+                                (reparse-symbol classsubparts) [5272 5327]))                          )
+                        (reparse-symbol namespacesubparts) [5074 5330])
+                    ("TagTypeHelper" type
+                       (:type "struct"
+                        :members 
+                          ( ("CanConvertFrom" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("c" variable
+                                       (:constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [5406 5419]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5379 5537])
+                            ("CanConvertTo" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("c" variable
+                                       (:constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [5567 5580]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5542 5812])
+                            ("TypeCode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5839 5844]))                                  
+                                :type "char")
+                                (reparse-symbol classsubparts) [5818 5886]))                          
+                        :template-specifier 
+                          ( ("uint8_t" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [5332 5889])
+                    ("TagTypeHelper" type
+                       (:type "struct"
+                        :members 
+                          ( ("CanConvertFrom" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("c" variable
+                                       (:constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [5964 5977]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5937 6094])
+                            ("CanConvertTo" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("c" variable
+                                       (:constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [6124 6137]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6099 6365])
+                            ("TypeCode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6391 6396]))                                  
+                                :type "char")
+                                (reparse-symbol classsubparts) [6370 6437]))                          
+                        :template-specifier 
+                          ( ("int8_t" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [5891 6440])
+                    ("TagTypeHelper" type
+                       (:type "struct"
+                        :members 
+                          ( ("CanConvertFrom" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("c" variable
+                                       (:constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [6517 6530]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6490 6704])
+                            ("CanConvertTo" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("c" variable
+                                       (:constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [6734 6747]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6709 6866])
+                            ("TypeCode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6892 6897]))                                  
+                                :type "char")
+                                (reparse-symbol classsubparts) [6871 6940]))                          
+                        :template-specifier 
+                          ( ("uint16_t" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [6442 6943])
+                    ("TagTypeHelper" type
+                       (:type "struct"
+                        :members 
+                          ( ("CanConvertFrom" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("c" variable
+                                       (:constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [7019 7032]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6992 7204])
+                            ("CanConvertTo" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("c" variable
+                                       (:constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [7234 7247]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7209 7364])
+                            ("TypeCode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7390 7395]))                                  
+                                :type "char")
+                                (reparse-symbol classsubparts) [7369 7437]))                          
+                        :template-specifier 
+                          ( ("int16_t" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [6945 7440])
+                    ("TagTypeHelper" type
+                       (:type "struct"
+                        :members 
+                          ( ("CanConvertFrom" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("c" variable
+                                       (:constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [7517 7530]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7490 7762])
+                            ("CanConvertTo" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("c" variable
+                                       (:constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [7792 7805]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7767 7869])
+                            ("TypeCode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7895 7900]))                                  
+                                :type "char")
+                                (reparse-symbol classsubparts) [7874 7943]))                          
+                        :template-specifier 
+                          ( ("uint32_t" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [7442 7946])
+                    ("TagTypeHelper" type
+                       (:type "struct"
+                        :members 
+                          ( ("CanConvertFrom" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("c" variable
+                                       (:constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [8022 8035]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7995 8264])
+                            ("CanConvertTo" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("c" variable
+                                       (:constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [8294 8307]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8269 8370])
+                            ("TypeCode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8396 8401]))                                  
+                                :type "char")
+                                (reparse-symbol classsubparts) [8375 8443]))                          
+                        :template-specifier 
+                          ( ("int32_t" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [7948 8446])
+                    ("TagTypeHelper" type
+                       (:type "struct"
+                        :members 
+                          ( ("CanConvertFrom" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("c" variable
+                                       (:constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [8520 8533]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8493 8987])
+                            ("CanConvertTo" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("c" variable
+                                       (:constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [9017 9030]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8992 9093])
+                            ("TypeCode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9119 9124]))                                  
+                                :type "char")
+                                (reparse-symbol classsubparts) [9098 9166]))                          
+                        :template-specifier 
+                          ( ("float" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [8448 9169])
+                    ("TagTypeHelper" type
+                       (:type "struct"
+                        :members 
+                          ( ("CanConvertFrom" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("c" variable
+                                       (:constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [9249 9262]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9222 9379])
+                            ("CanConvertTo" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("c" variable
+                                       (:constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [9409 9422]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9384 9539])
+                            ("TypeCode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9565 9570]))                                  
+                                :type "char")
+                                (reparse-symbol classsubparts) [9544 9613]))                          
+                        :template-specifier 
+                          ( ("std::string" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [9171 9616]))                  
+                :type "namespace")
+                nil [716 9633]))          
+    :file "BamConstants.h"
+    :pointmax 9683
+    :fsize 9682
+    :lastmodtime '(21557 38355 176878 505000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BAM_CONSTANTS_H")
+          )
+
+    )
+   (semanticdb-table "api_global.h"
+    :file "api_global.h"
+    :fsize 757
+    :lastmodtime '(21557 38355 201877 310000)
+    )
+   (semanticdb-table "BamAux.h"
+    :file "BamAux.h"
+    :fsize 14569
+    :lastmodtime '(21557 38355 176878 505000)
+    )
+   (semanticdb-table "BamWriter.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BAMWRITER_H" variable (:constant-flag t) nil [554 565])
+            ("api/api_global.h" include nil nil [567 594])
+            ("api/BamAux.h" include nil nil [595 618])
+            ("string" include (:system-flag t) nil [619 636])
+            ("BamTools" type
+               (:members 
+                  ( ("BamAlignment" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [660 679])
+                    ("SamHeader" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [680 696])
+                    ("Internal" type
+                       (:members 
+                          ( ("BamWriterPrivate" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [733 756]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [708 758])
+                    ("BamWriter" variable (:type ("API_EXPORT" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [795 2095]))                  
+                :type "namespace")
+                nil [638 2098]))          
+    :file "BamWriter.h"
+    :pointmax 2137
+    :fsize 2207
+    :lastmodtime '(21557 38355 197877 502000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BAMWRITER_H")
+          )
+
+    )
+   )
+  :file "!home!dlee!Projects!bamtools!src!api!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

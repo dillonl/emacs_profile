@@ -1,0 +1,235 @@
+;; Object genotyper/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "genotyper/"
+  :tables (list 
+    (semanticdb-table "IGenotyperVariant.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GWIZ_GENOTYPERVARIANT_H" variable (:constant-flag t) nil [41 64])
+            ("memory" include (:system-flag t) nil [66 83])
+            ("boost/noncopyable.hpp" include (:system-flag t) nil [85 117])
+            ("GenotyperAllele.hpp" include nil nil [119 149])
+            ("gwiz" type
+               (:members 
+                  ( ("IGenotyperVariant" type
+                       (:superclasses 
+                          ( ("boost::noncopyable" type
+                               (:protection "private"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [226 233])
+                            ("SharedPtr" type
+                               (:typedef ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("IGenotyperVariant" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "std::shared_ptr"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [236 291])
+                            ("IGenotyperVariant" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("pos" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [311 324]))                                  
+                                :type ("IGenotyperVariant" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [293 356])
+                            ("IGenotyperVariant" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [360 396])
+                            ("addAllele" function
+                               (:arguments 
+                                  ( ("allele" variable (:type ("GenotyperAllele::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [415 449]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [400 489])
+                            ("getGenotyperAlleles" function (:type ("std::list" type
+                                 (:template-specifier 
+                                    ( ("GenotyperAllele::SharedPtr" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [493 582])
+                            ("getPosition" function (:type ("position" type (:type "class") nil nil)) (reparse-symbol classsubparts) [586 637])
+                            ("protected" label nil (reparse-symbol classsubparts) [640 650])
+                            ("m_position" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol classsubparts) [653 673])
+                            ("m_alleles" variable (:type ("std::list" type
+                                 (:template-specifier 
+                                    ( ("GenotyperAllele::SharedPtr" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [676 726]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [169 730]))                  
+                :type "namespace")
+                nil [151 732]))          
+    :file "IGenotyperVariant.h"
+    :pointmax 767
+    :fsize 766
+    :lastmodtime '(21758 35760 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GWIZ_GENOTYPERVARIANT_H")
+          )
+
+    )
+   (semanticdb-table "IGenotyper.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GWIZ_GENOTYPER_H" variable (:constant-flag t) nil [34 50])
+            ("IGenotyperVariant.h" include nil nil [52 82])
+            ("memory" include (:system-flag t) nil [84 101])
+            ("iostream" include (:system-flag t) nil [102 121])
+            ("fstream" include (:system-flag t) nil [122 140])
+            ("boost/noncopyable.hpp" include (:system-flag t) nil [142 174])
+            ("gwiz" type
+               (:members 
+                  ( ("IGenotyper" type
+                       (:superclasses 
+                          ( ("boost::noncopyable" type
+                               (:protection "private"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [244 251])
+                            ("Instance" function
+                               (:pointer 1
+                                :typemodifiers ("static")
+                                :type ("IGenotyper" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [254 426])
+                            ("generateVariant" function
+                               (:arguments 
+                                  ( ("pos" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [475 488]))                                  
+                                :type ("IGenotyperVariant::SharedPtr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [430 721])
+                            ("printVariants" function (:type "void") (reparse-symbol classsubparts) [725 1665])
+                            ("protected" label nil (reparse-symbol classsubparts) [1668 1678])
+                            ("m_genotyper_variant" variable (:type ("std::list" type
+                                 (:template-specifier 
+                                    ( ("IGenotyperVariant::SharedPtr" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1681 1743])
+                            ("m_variant_mutex" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1746 1773])
+                            ("private" label nil (reparse-symbol classsubparts) [1776 1784])
+                            ("IGenotyper" function
+                               (:constructor-flag t
+                                :type ("IGenotyper" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1790 1810])
+                            ("IGenotyper" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [1814 1843])
+                            ("s_genotyper" variable
+                               (:pointer 1
+                                :typemodifiers ("static")
+                                :type ("IGenotyper" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1847 1878]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [194 1882]))                  
+                :type "namespace")
+                nil [176 1884]))          
+    :file "IGenotyper.h"
+    :pointmax 1912
+    :fsize 2240
+    :lastmodtime '(21767 33931 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GWIZ_GENOTYPER_H")
+          )
+
+    )
+   (semanticdb-table "GenotyperAllele.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("GWIZ_GENOTYPERALLELE_H" variable (:constant-flag t) nil [40 62])
+            ("core/alignments/IAlignment.h" include nil nil [64 103])
+            ("memory" include (:system-flag t) nil [105 122])
+            ("boost/noncopyable.hpp" include (:system-flag t) nil [124 156])
+            ("gwiz" type
+               (:members 
+                  ( ("GenotyperAllele" type
+                       (:superclasses 
+                          ( ("boost::noncopyable" type
+                               (:protection "private"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [231 238])
+                            ("SharedPtr" type
+                               (:typedef ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("GenotyperAllele" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "std::shared_ptr"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [241 294])
+                            ("Type" type (:type "class") (reparse-symbol classsubparts) [303 364])
+                            ("TypeToString" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("type" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [400 410]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [368 573])
+                            ("GenotyperAllele" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("alleleType" variable
+                                       (:constant-flag t
+                                        :type ("Type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [596 618])
+                                    ("sequence" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [619 647])
+                                    ("pos" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [648 661]))                                  
+                                :type ("GenotyperAllele" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [580 768])
+                            ("GenotyperAllele" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [772 806])
+                            ("getSequence" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [810 864])
+                            ("getReadCount" function (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [984 1045])
+                            ("getPosition" function (:type ("position" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1048 1098])
+                            ("getType" function (:type ("Type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1101 1147])
+                            ("addAlignment" function
+                               (:arguments 
+                                  ( ("alignmentPtr" variable (:type ("IAlignment::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1168 1203]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1150 1251])
+                            ("getAlignments" function (:type ("std::list" type
+                                 (:template-specifier 
+                                    ( ("IAlignment::SharedPtr" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1254 1335])
+                            ("protected" label nil (reparse-symbol classsubparts) [1338 1348])
+                            ("m_alignments" variable (:type ("std::list" type
+                                 (:template-specifier 
+                                    ( ("IAlignment::SharedPtr" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1351 1399])
+                            ("m_read_count" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1402 1424])
+                            ("m_allele_type" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1427 1446])
+                            ("m_sequence" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1449 1472])
+                            ("m_position" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1475 1495]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [176 1499]))                  
+                :type "namespace")
+                nil [158 1501]))          
+    :file "GenotyperAllele.hpp"
+    :pointmax 1535
+    :fsize 1534
+    :lastmodtime '(21777 34798 0 0)
+    :unmatched-syntax '((symbol 345 . 362) (punctuation 343 . 344) (symbol 326 . 343) (punctuation 324 . 325) (symbol 315 . 324) (symbol 345 . 362) (punctuation 343 . 344) (symbol 326 . 343) (punctuation 324 . 325) (symbol 315 . 324) (ENUM 298 . 302))
+    :lexical-table 
+        '(("GWIZ_GENOTYPERALLELE_H")
+          )
+
+    )
+   )
+  :file "!Users!dillonl!Projects!gwiz!src!core!genotyper!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

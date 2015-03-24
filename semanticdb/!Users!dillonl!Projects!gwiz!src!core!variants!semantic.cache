@@ -1,0 +1,651 @@
+;; Object variants/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "variants/"
+  :tables (list 
+   (semanticdb-table "Variant.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GWIZ_VARIANT_H" variable (:constant-flag t) nil [32 46])
+            ("exception" include (:system-flag t) nil [48 68])
+            ("cstring" include (:system-flag t) nil [69 87])
+            ("string" include (:system-flag t) nil [88 105])
+            ("vector" include (:system-flag t) nil [106 123])
+            ("memory" include (:system-flag t) nil [124 141])
+            ("IVariant.h" include nil nil [143 164])
+            ("VCFParser.hpp" include nil nil [165 189])
+            ("core/reference/Reference.h" include nil nil [190 227])
+            ("gwiz" type
+               (:members 
+                  ( ("VARIANT_TYPE" type (:type "class") (reparse-symbol namespacesubparts) [253 313])
+                    ("Variant" type
+                       (:superclasses 
+                          ( ("IVariant" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [352 359])
+                            ("SharedPtr" type
+                               (:typedef ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Variant" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "std::shared_ptr"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [362 405])
+                            ("Variant" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("Variant" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [408 418])
+                            ("Variant" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [421 432])
+                            ("BuildVariant" function
+                               (:typemodifiers ("inline" "static")
+                                :arguments 
+                                  ( ("vcf_line" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [482 503])
+                                    ("parser" variable
+                                       (:reference 1
+                                        :type ("VariantParser" type
+                                             (:template-specifier 
+                                                ( ("char" type
+                                                     (:pointer 1
+                                                      :constant-flag t)
+                                                      nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [504 541]))                                  
+                                :type ("Variant::SharedPtr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [436 1030])
+                            ("getVariantType" function (:type ("VARIANT_TYPE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1034 1096])
+                            ("getChrom" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1099 1147])
+                            ("getPosition" function (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1150 1201])
+                            ("getID" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1204 1246])
+                            ("getRef" function (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("std::string" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1249 1308])
+                            ("getAlt" function (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("std::string" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1311 1370])
+                            ("private" label nil (reparse-symbol classsubparts) [1372 1380])
+                            ("m_variant_type" variable (:type ("VARIANT_TYPE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1384 1412])
+                            ("m_position" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1415 1435])
+                            ("m_chrom" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1438 1458])
+                            ("m_id" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1461 1478])
+                            ("m_ref" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("std::string" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1481 1514])
+                            ("m_alt" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("std::string" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1517 1550]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [316 1554]))                  
+                :type "namespace")
+                nil [229 1557]))          
+    :file "Variant.h"
+    :pointmax 1583
+    :fsize 1582
+    :lastmodtime '(21744 13367 0 0)
+    :unmatched-syntax '((punctuation 308 . 309) (symbol 305 . 308) (punctuation 301 . 302) (symbol 298 . 301) (punctuation 294 . 295) (symbol 291 . 294) (punctuation 287 . 288) (symbol 284 . 287) (punctuation 280 . 281) (symbol 277 . 280) (ENUM 248 . 252))
+    :lexical-table 
+        '(("GWIZ_VARIANT_H")
+          )
+
+    )
+   (semanticdb-table "IVariant.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GWIZ_IVARIANT_H" variable (:constant-flag t) nil [33 48])
+            ("boost/noncopyable.hpp" include (:system-flag t) nil [50 82])
+            ("memory" include (:system-flag t) nil [84 101])
+            ("gwiz" type
+               (:members 
+                  ( ("IVariant" type
+                       (:superclasses 
+                          ( ("boost::noncopyable" type
+                               (:protection "private"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [182 189])
+                            ("SharedPtr" type
+                               (:typedef ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("IVariant" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "std::shared_ptr"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [202 246])
+                            ("IVariant" function
+                               (:constructor-flag t
+                                :type ("IVariant" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [259 272])
+                            ("IVariant" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [285 307])
+                            ("private" label nil (reparse-symbol classsubparts) [316 324]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [124 331]))                  
+                :type "namespace")
+                nil [103 333]))          
+    :file "IVariant.h"
+    :pointmax 360
+    :fsize 359
+    :lastmodtime '(21744 13419 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GWIZ_IVARIANT_H")
+          )
+
+    )
+   (semanticdb-table "VCFParser.hpp"
+    :file "VCFParser.hpp"
+    :fsize 2086
+    :lastmodtime '(21744 13367 0 0)
+    )
+   (semanticdb-table "VCFFileReader.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("VCFFileReader.h" include nil nil [1 27])
+            ("fstream" include (:system-flag t) nil [29 47])
+            ("iostream" include (:system-flag t) nil [48 67])
+            ("sstream" include (:system-flag t) nil [68 86])
+            ("boost/iostreams/filtering_streambuf.hpp" include (:system-flag t) nil [88 138])
+            ("boost/iostreams/copy.hpp" include (:system-flag t) nil [139 174])
+            ("boost/iostreams/filter/gzip.hpp" include (:system-flag t) nil [175 217])
+            ("boost/spirit/include/qi.hpp" include (:system-flag t) nil [219 257])
+            ("boost/spirit/include/phoenix_core.hpp" include (:system-flag t) nil [258 306])
+            ("boost/spirit/include/phoenix_operator.hpp" include (:system-flag t) nil [307 359])
+            ("gwiz" type
+               (:members 
+                  ( ("VCFFileReader" function
+                       (:constructor-flag t
+                        :parent "VCFFileReader"
+                        :arguments 
+                          ( ("path" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [408 426]))                          
+                        :type ("VCFFileReader" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [379 458])
+                    ("VCFFileReader" function
+                       (:destructor-flag t
+                        :parent "VCFFileReader"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [461 498])
+                    ("Open" function
+                       (:parent "VCFFileReader"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [501 789])
+                    ("Open" function
+                       (:parent "VCFFileReader"
+                        :arguments 
+                          ( ("region" variable (:type ("Region::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [817 842]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [792 973])
+                    ("getHeaderSize" function
+                       (:parent "VCFFileReader"
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [976 1322])
+                    ("readHeader" function
+                       (:parent "VCFFileReader"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1489 1718])
+                    ("getPositionFromLine" function
+                       (:parent "VCFFileReader"
+                        :arguments 
+                          ( ("line" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1765 1782]))                          
+                        :type ("position" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1721 2172])
+                    ("setRegionPositions" function
+                       (:parent "VCFFileReader"
+                        :arguments 
+                          ( ("regionPtr" variable (:type ("Region::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2214 2242])
+                            ("startLine" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2243 2265])
+                            ("endLine" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2266 2286]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2175 4020])
+                    ("registerRegion" function
+                       (:parent "VCFFileReader"
+                        :arguments 
+                          ( ("region" variable (:type ("Region::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4058 4083]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [4023 5450]))                  
+                :type "namespace")
+                nil [361 5453]))          
+    :file "VCFFileReader.cpp"
+    :pointmax 5476
+    :fsize 5895
+    :lastmodtime '(21744 13367 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "VCFFileReader.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GWIZ_VCFFILEREADER_H" variable (:constant-flag t) nil [38 58])
+            ("core/utils/file/ASCIIFileReader.h" include nil nil [60 104])
+            ("core/variants/IVariantList.h" include nil nil [105 144])
+            ("core/variants/VCFParser.hpp" include nil nil [146 184])
+            ("core/variants/ChromParser.hpp" include nil nil [185 225])
+            ("core/region/Region.h" include nil nil [226 257])
+            ("Variant.h" include nil nil [259 279])
+            ("boost/spirit/include/phoenix_core.hpp" include (:system-flag t) nil [281 329])
+            ("boost/spirit/include/phoenix_operator.hpp" include (:system-flag t) nil [330 382])
+            ("list" include (:system-flag t) nil [384 399])
+            ("tuple" include (:system-flag t) nil [400 416])
+            ("map" include (:system-flag t) nil [417 431])
+            ("thread" include (:system-flag t) nil [432 449])
+            ("mutex" include (:system-flag t) nil [450 466])
+            ("future" include (:system-flag t) nil [467 484])
+            ("gwiz" type
+               (:members 
+                  ( ("VCFFileReader" type
+                       (:superclasses 
+                          ( ("ASCIIFileReader" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil)
+                            ("IVariantList" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [577 584])
+                            ("SharedPtr" type
+                               (:typedef ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("VCFFileReader" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "std::shared_ptr"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [587 636])
+                            ("VCFFileReader" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("path" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [653 677])
+                                    ("region" variable (:type ("Region::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [678 703]))                                  
+                                :type ("VCFFileReader" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [639 704])
+                            ("VCFFileReader" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("path" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [721 745]))                                  
+                                :type ("VCFFileReader" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [707 746])
+                            ("VCFFileReader" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [749 766])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [1096 1105])
+                            ("Open" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("region" variable (:type ("Region::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1118 1143]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1108 1144])
+                            ("protected" label nil (reparse-symbol classsubparts) [1146 1156])
+                            ("private" label nil (reparse-symbol classsubparts) [1160 1168])
+                            ("getHeaderSize" function
+                               (:prototype-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1171 1194])
+                            ("readHeader" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [1203 1221])
+                            ("getPositionFromLine" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("line" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [1253 1270]))                                  
+                                :type ("position" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1224 1271])
+                            ("setRegionPositions" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("regionPtr" variable (:type ("Region::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1298 1326])
+                                    ("startLine" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [1327 1349])
+                                    ("endLine" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [1350 1370]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1274 1371])
+                            ("registerRegion" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("region" variable (:type ("Region::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1394 1419]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1374 1420])
+                            ("m_vcf_parser" variable (:type ("VariantParser" type
+                                 (:template-specifier 
+                                    ( ("char" type
+                                         (:pointer 1
+                                          :constant-flag t)
+                                          nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1424 1466])
+                            ("m_region_mutex" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1470 1496]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [504 1500]))                  
+                :type "namespace")
+                nil [486 1502]))          
+    :file "VCFFileReader.h"
+    :pointmax 1557
+    :fsize 1556
+    :lastmodtime '(21744 13367 0 0)
+    :unmatched-syntax '((semantic-list 1093 . 1095) (symbol 1089 . 1093) (VOID 1084 . 1088) (semantic-list 837 . 1080) (symbol 826 . 834) (semantic-list 796 . 825) (symbol 782 . 796) (BOOL 777 . 781) (INLINE 770 . 776))
+    :lexical-table 
+        '(("GWIZ_VCFFILEREADER_H")
+          )
+
+    )
+   (semanticdb-table "ChromParser.hpp"
+    :file "ChromParser.hpp"
+    :fsize 1327
+    :lastmodtime '(21744 13367 0 0)
+    )
+   (semanticdb-table "VariantIterator.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GWIZ_VARIANT_ITERATOR_H" variable (:constant-flag t) nil [41 64])
+            ("core/utils/NonCopyable.h" include nil nil [66 101])
+            ("gwiz" type
+               (:members 
+                  ( ("VariantIterator" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :superclasses 
+                          ( ("noncopyable" type
+                               (:protection "private"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [121 196]))                  
+                :type "namespace")
+                nil [103 198]))          
+    :file "VariantIterator.h"
+    :pointmax 233
+    :fsize 232
+    :lastmodtime '(21744 13367 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GWIZ_VARIANT_ITERATOR_H")
+          )
+
+    )
+   (semanticdb-table "IVariantList.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GWIZ_IVARIANT_READER_H" variable (:constant-flag t) nil [40 62])
+            ("boost/noncopyable.hpp" include (:system-flag t) nil [64 96])
+            ("core/variants/IVariant.h" include nil nil [98 133])
+            ("core/variants/Variant.h" include nil nil [134 168])
+            ("core/region/Region.h" include nil nil [170 201])
+            ("list" include (:system-flag t) nil [203 218])
+            ("gwiz" type
+               (:members 
+                  ( ("IVariantList" type
+                       (:superclasses 
+                          ( ("boost::noncopyable" type
+                               (:protection "private"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [467 474])
+                            ("SharedPtr" type
+                               (:typedef ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("IVariantList" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "std::shared_ptr"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [477 527])
+                            ("IVariantList" function
+                               (:constructor-flag t
+                                :type ("IVariantList" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [530 547])
+                            ("IVariantList" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [550 576])
+                            ("getNextVariant" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual" "inline")
+                                :arguments 
+                                  ( ("variant" variable
+                                       (:reference 1
+                                        :type ("Variant::SharedPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [615 643]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [580 648]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [415 652]))                  
+                :type "namespace")
+                nil [220 654]))          
+    :file "IVariantList.h"
+    :pointmax 710
+    :fsize 709
+    :lastmodtime '(21751 10257 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GWIZ_IVARIANT_READER_H")
+          )
+
+    )
+   (semanticdb-table "Variant.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("Variant.h" include nil nil [1 21])
+            ("gwiz" type
+               (:members 
+                  ( ("Variant" function
+                       (:constructor-flag t
+                        :parent "Variant"
+                        :type ("Variant" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [41 65])
+                    ("Variant" function
+                       (:destructor-flag t
+                        :parent "Variant"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [68 93]))                  
+                :type "namespace")
+                nil [23 95]))          
+    :file "Variant.cpp"
+    :pointmax 96
+    :fsize 95
+    :lastmodtime '(21744 13367 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "PositionParser.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("GWIZ_CHROMPARSER_H" variable (:constant-flag t) nil [36 54])
+            ("core/utils/Types.h" include nil nil [56 85])
+            ("string" include (:system-flag t) nil [87 104])
+            ("boost/spirit/include/qi.hpp" include (:system-flag t) nil [106 144])
+            ("boost/spirit/include/phoenix_core.hpp" include (:system-flag t) nil [145 193])
+            ("boost/spirit/include/phoenix_operator.hpp" include (:system-flag t) nil [194 246])
+            ("boost/spirit/include/phoenix_object.hpp" include (:system-flag t) nil [247 297])
+            ("boost/fusion/include/adapt_struct.hpp" include (:system-flag t) nil [298 346])
+            ("boost/fusion/include/io.hpp" include (:system-flag t) nil [347 385])
+            ("gwiz" type (:type "namespace") nil [387 1285]))          
+    :file "PositionParser.hpp"
+    :pointmax 1337
+    :fsize 1336
+    :lastmodtime '(21744 13367 0 0)
+    :unmatched-syntax '((punctuation 1281 . 1282) (semantic-list 510 . 1281) (punctuation 507 . 508) (semantic-list 504 . 506) (symbol 496 . 504) (punctuation 494 . 495) (symbol 486 . 494) (punctuation 485 . 486) (symbol 478 . 485) (punctuation 477 . 478) (punctuation 476 . 477) (symbol 474 . 476) (punctuation 473 . 474) (punctuation 472 . 473) (symbol 466 . 472) (punctuation 465 . 466) (punctuation 464 . 465) (symbol 459 . 464) (punctuation 457 . 458) (symbol 442 . 456) (STRUCT 435 . 441) (punctuation 432 . 433) (symbol 424 . 432) (TYPENAME 415 . 423) (punctuation 414 . 415) (TEMPLATE 406 . 414))
+    :lexical-table 
+        '(("GWIZ_CHROMPARSER_H")
+          )
+
+    )
+   (semanticdb-table "VariantFile.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GWIZ_VARIANT_FILE_H" variable (:constant-flag t) nil [37 56])
+            ("boost/noncopyable.hpp" include (:system-flag t) nil [58 90])
+            ("gwiz" type
+               (:members 
+                  ( ("VariantFile" type
+                       (:superclasses 
+                          ( ("boost::noncopyable" type
+                               (:protection "private"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [161 168])
+                            ("VariantFile" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("file_path" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [183 212]))                                  
+                                :type ("VariantFile" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [171 213])
+                            ("VariantFile" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [216 231])
+                            ("private" label nil (reparse-symbol classsubparts) [234 242])
+                            ("m_file_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [419 443]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [110 447]))                  
+                :type "namespace")
+                nil [92 449]))          
+    :file "VariantFile.h"
+    :pointmax 480
+    :fsize 479
+    :lastmodtime '(21744 13419 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GWIZ_VARIANT_FILE_H")
+          )
+
+    )
+   (semanticdb-table "VariantList.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GWIZ_VARIANTLIST_H" variable (:constant-flag t) nil [36 54])
+            ("IVariantList.h" include nil nil [56 81])
+            ("memory" include (:system-flag t) nil [83 100])
+            ("queue" include (:system-flag t) nil [101 117])
+            ("gwiz" type
+               (:members 
+                  ( ("VariantList" type
+                       (:superclasses 
+                          ( ("IVariantList" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [181 188])
+                            ("SharedPtr" type
+                               (:typedef ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("VariantList" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "std::shared_ptr"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [191 240])
+                            ("VariantList" function
+                               (:constructor-flag t
+                                :type ("VariantList" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [243 259])
+                            ("VariantList" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [262 279])
+                            ("addVariant" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("variant" variable
+                                       (:constant-flag t
+                                        :type ("Variant::SharedPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [558 591]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [535 634])
+                            ("private" label nil (reparse-symbol classsubparts) [637 645])
+                            ("m_variants" variable (:type ("std::queue" type
+                                 (:template-specifier 
+                                    ( ("Variant::SharedPtr" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [648 692]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [137 696]))                  
+                :type "namespace")
+                nil [119 698]))          
+    :file "VariantList.h"
+    :pointmax 728
+    :fsize 727
+    :lastmodtime '(21751 58338 0 0)
+    :unmatched-syntax '((semantic-list 353 . 531) (symbol 342 . 350) (semantic-list 309 . 341) (symbol 295 . 309) (BOOL 290 . 294) (INLINE 283 . 289))
+    :lexical-table 
+        '(("GWIZ_VARIANTLIST_H")
+          )
+
+    )
+   )
+  :file "!Users!dillonl!Projects!gwiz!src!core!variants!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

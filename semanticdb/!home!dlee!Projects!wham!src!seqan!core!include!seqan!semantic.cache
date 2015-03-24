@@ -1,0 +1,112 @@
+;; Object seqan/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "seqan/"
+  :tables (list 
+   (semanticdb-table "graph_msa.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SEQAN_HEADER_GRAPH_MSA_H" variable (:constant-flag t) nil [1954 1978])
+            ("seqan/score.h" include (:system-flag t) nil [1989 2013])
+            ("seqan/graph_types.h" include (:system-flag t) nil [2014 2044])
+            ("seqan/graph_algorithms.h" include (:system-flag t) nil [2045 2080])
+            ("seqan/graph_align.h" include (:system-flag t) nil [2081 2111])
+            ("seqan/align.h" include (:system-flag t) nil [2112 2136])
+            ("seqan/graph_msa/graph_align_tcoffee_base.h" include (:system-flag t) nil [2144 2197])
+            ("seqan/graph_msa/graph_align_tcoffee_library.h" include (:system-flag t) nil [2198 2254])
+            ("seqan/graph_msa/graph_align_tcoffee_kmer.h" include (:system-flag t) nil [2255 2308])
+            ("seqan/graph_msa/graph_align_tcoffee_distance.h" include (:system-flag t) nil [2309 2366])
+            ("seqan/graph_msa/graph_align_tcoffee_guidetree.h" include (:system-flag t) nil [2367 2425])
+            ("seqan/graph_msa/graph_align_tcoffee_io.h" include (:system-flag t) nil [2426 2477])
+            ("seqan/graph_msa/graph_align_tcoffee_progressive.h" include (:system-flag t) nil [2478 2538])
+            ("seqan/graph_msa/graph_align_tcoffee_refinement.h" include (:system-flag t) nil [2539 2598])
+            ("seqan/graph_msa/graph_align_tcoffee_msa.h" include (:system-flag t) nil [2599 2651]))          
+    :file "graph_msa.h"
+    :pointmax 2687
+    :fsize 2686
+    :lastmodtime '(21564 11039 158788 569000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SEQAN_HEADER_GRAPH_MSA_H")
+          )
+
+    )
+   (semanticdb-table "graph_types.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SEQAN_HEADER_GRAPH_TYPES_H" variable (:constant-flag t) nil [1956 1982])
+            ("deque" include (:system-flag t) nil [2002 2018])
+            ("seqan/basic.h" include (:system-flag t) nil [2030 2054])
+            ("seqan/sequence.h" include (:system-flag t) nil [2055 2082])
+            ("seqan/stream.h" include (:system-flag t) nil [2083 2108])
+            ("seqan/graph_types/graph_base.h" include (:system-flag t) nil [2131 2172])
+            ("seqan/graph_types/graph_idmanager.h" include (:system-flag t) nil [2173 2219])
+            ("seqan/graph_types/graph_edgestump.h" include (:system-flag t) nil [2234 2280])
+            ("seqan/graph_types/graph_interface.h" include (:system-flag t) nil [2295 2341])
+            ("seqan/graph_types/graph_impl_directed.h" include (:system-flag t) nil [2381 2431])
+            ("seqan/graph_types/graph_impl_undirected.h" include (:system-flag t) nil [2451 2503])
+            ("seqan/graph_types/graph_impl_automaton.h" include (:system-flag t) nil [2524 2575])
+            ("seqan/graph_types/graph_impl_wordgraph.h" include (:system-flag t) nil [2590 2641])
+            ("seqan/graph_types/graph_impl_tree.h" include (:system-flag t) nil [2680 2726])
+            ("seqan/graph_types/graph_impl_fragment.h" include (:system-flag t) nil [2737 2787])
+            ("seqan/graph_types/graph_impl_hmm.h" include (:system-flag t) nil [2801 2846])
+            ("seqan/graph_types/graph_iterator.h" include (:system-flag t) nil [2876 2921])
+            ("seqan/graph_types/graph_iterator_vertex.h" include (:system-flag t) nil [2922 2974])
+            ("seqan/graph_types/graph_iterator_outedge.h" include (:system-flag t) nil [2975 3028])
+            ("seqan/graph_types/graph_iterator_adjacency.h" include (:system-flag t) nil [3029 3084])
+            ("seqan/graph_types/graph_iterator_edge.h" include (:system-flag t) nil [3085 3135])
+            ("seqan/graph_types/graph_property.h" include (:system-flag t) nil [3160 3205])
+            ("seqan/graph_types/graph_impl_oracle.h" include (:system-flag t) nil [3226 3274])
+            ("seqan/graph_types/graph_impl_trie.h" include (:system-flag t) nil [3285 3331])
+            ("seqan/graph_types/graph_iterator_bfs.h" include (:system-flag t) nil [3367 3416])
+            ("seqan/graph_types/graph_iterator_dfs.h" include (:system-flag t) nil [3417 3466])
+            ("seqan/graph_types/graph_drawing.h" include (:system-flag t) nil [3507 3551])
+            ("seqan/misc/misc_parsing.h" include (:system-flag t) nil [3552 3588])
+            ("seqan/graph_types/graph_utility_parsing.h" include (:system-flag t) nil [3589 3641]))          
+    :file "graph_types.h"
+    :pointmax 3677
+    :fsize 3676
+    :lastmodtime '(21564 11039 160788 473000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SEQAN_HEADER_GRAPH_TYPES_H")
+          )
+
+    )
+   (semanticdb-table "graph_align.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SEQAN_CORE_INCLUDE_SEQAN_GRAPH_ALIGN_H_" variable (:constant-flag t) nil [2274 2313])
+            ("map" include (:system-flag t) nil [2331 2345])
+            ("seqan/score.h" include (:system-flag t) nil [2356 2380])
+            ("seqan/graph_types.h" include (:system-flag t) nil [2381 2411])
+            ("seqan/graph_algorithms.h" include (:system-flag t) nil [2412 2447])
+            ("seqan/graph_align/graph_impl_align.h" include (:system-flag t) nil [2469 2516])
+            ("seqan/graph_align/graph_impl_align_adapt.h" include (:system-flag t) nil [2517 2570])
+            ("seqan/misc/misc_interval_tree.h" include (:system-flag t) nil [2590 2632])
+            ("seqan/graph_align/graph_algorithm_refine_scoring.h" include (:system-flag t) nil [2704 2765])
+            ("seqan/graph_align/graph_algorithm_refine_fragment.h" include (:system-flag t) nil [2766 2828])
+            ("seqan/graph_align/graph_algorithm_refine_aligngraph.h" include (:system-flag t) nil [2829 2893])
+            ("seqan/graph_align/graph_algorithm_refine_align.h" include (:system-flag t) nil [2894 2953])
+            ("seqan/graph_align/graph_algorithm_refine_exact_iterative.h" include (:system-flag t) nil [3016 3085])
+            ("seqan/graph_align/graph_algorithm_refine_inexact.h" include (:system-flag t) nil [3086 3147])
+            ("seqan/graph_align/graph_algorithm_refine_annotation.h" include (:system-flag t) nil [3148 3212]))          
+    :file "graph_align.h"
+    :pointmax 3273
+    :fsize 3272
+    :lastmodtime '(21564 11039 155788 712000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SEQAN_CORE_INCLUDE_SEQAN_GRAPH_ALIGN_H_")
+          )
+
+    )
+   (semanticdb-table "map"
+    :file "map"
+    :fsize 4096
+    :lastmodtime '(21564 11039 182787 422000)
+    )
+   )
+  :file "!home!dlee!Projects!wham!src!seqan!core!include!seqan!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

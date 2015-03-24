@@ -1,0 +1,285 @@
+;; Object bam/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bam/"
+  :tables (list 
+   (semanticdb-table "BamReader_p.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("api/BamConstants.h" include nil nil [510 539])
+            ("api/BamReader.h" include nil nil [540 566])
+            ("api/IBamIODevice.h" include nil nil [567 596])
+            ("api/internal/bam/BamHeader_p.h" include nil nil [597 638])
+            ("api/internal/bam/BamRandomAccessController_p.h" include nil nil [639 696])
+            ("api/internal/bam/BamReader_p.h" include nil nil [697 738])
+            ("api/internal/index/BamStandardIndex_p.h" include nil nil [739 789])
+            ("api/internal/index/BamToolsIndex_p.h" include nil nil [790 837])
+            ("api/internal/io/BamDeviceFactory_p.h" include nil nil [838 885])
+            ("api/internal/utils/BamException_p.h" include nil nil [886 932])
+            ("BamTools" using (:type ("BamTools" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [933 958])
+            ("BamTools::Internal" using (:type ("BamTools::Internal" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [959 994])
+            ("algorithm" include (:system-flag t) nil [996 1016])
+            ("cassert" include (:system-flag t) nil [1017 1035])
+            ("iostream" include (:system-flag t) nil [1036 1055])
+            ("iterator" include (:system-flag t) nil [1056 1075])
+            ("vector" include (:system-flag t) nil [1076 1093])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1094 1114])
+            ("BamReaderPrivate" function
+               (:constructor-flag t
+                :parent "BamReaderPrivate"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("BamReader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1166 1184]))                  
+                :type ("BamReaderPrivate" type (:type "class") nil nil))
+                nil [1131 1295])
+            ("BamReaderPrivate" function
+               (:destructor-flag t
+                :parent "BamReaderPrivate"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1347 1352]))                  
+                :type "void")
+                nil [1311 1369])
+            ("Close" function
+               (:parent "BamReaderPrivate"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1423 1428]))                  
+                :type "bool")
+                nil [1394 2065])
+            ("CreateIndex" function
+               (:parent "BamReaderPrivate"
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("BamIndex::IndexType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2165 2197]))                  
+                :type "bool")
+                nil [2130 2750])
+            ("Filename" function
+               (:parent "BamReaderPrivate"
+                :constant-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2838 2843]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [2798 2876])
+            ("GetConstSamHeader" function
+               (:parent "BamReaderPrivate"
+                :constant-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2931 2936]))                  
+                :type ("SamHeader" type (:type "class") nil nil))
+                nil [2878 2986])
+            ("GetErrorString" function
+               (:parent "BamReaderPrivate"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3028 3033]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [2988 3069])
+            ("GetHeaderText" function
+               (:parent "BamReaderPrivate"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3147 3152]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [3108 3194])
+            ("GetSamHeader" function
+               (:parent "BamReaderPrivate"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3279 3284]))                  
+                :type ("SamHeader" type (:type "class") nil nil))
+                nil [3238 3329])
+            ("GetNextAlignment" function
+               (:parent "BamReaderPrivate"
+                :arguments 
+                  ( ("alignment" variable
+                       (:reference 1
+                        :type ("BamAlignment" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3428 3452]))                  
+                :type "bool")
+                nil [3388 4080])
+            ("GetNextAlignmentCore" function
+               (:parent "BamReaderPrivate"
+                :arguments 
+                  ( ("alignment" variable
+                       (:reference 1
+                        :type ("BamAlignment" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4451 4475]))                  
+                :type "bool")
+                nil [4407 6270])
+            ("GetReferenceCount" function
+               (:parent "BamReaderPrivate"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6312 6317]))                  
+                :type "int")
+                nil [6272 6359])
+            ("GetReferenceData" function
+               (:parent "BamReaderPrivate"
+                :constant-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6413 6418]))                  
+                :type ("RefVector" type (:type "class") nil nil))
+                nil [6361 6453])
+            ("GetReferenceID" function
+               (:parent "BamReaderPrivate"
+                :arguments 
+                  ( ("refName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6568 6590]))                  
+                :type "int")
+                nil [6531 7113])
+            ("HasIndex" function
+               (:parent "BamReaderPrivate"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7147 7152]))                  
+                :type "bool")
+                nil [7115 7210])
+            ("IsOpen" function
+               (:parent "BamReaderPrivate"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7242 7247]))                  
+                :type "bool")
+                nil [7212 7287])
+            ("LoadHeaderData" function
+               (:parent "BamReaderPrivate"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7351 7356]))                  
+                :type "void")
+                nil [7313 7390])
+            ("LoadNextAlignment" function
+               (:parent "BamReaderPrivate"
+                :arguments 
+                  ( ("alignment" variable
+                       (:reference 1
+                        :type ("BamAlignment" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7520 7544]))                  
+                :type "bool")
+                nil [7479 10904])
+            ("LoadReferenceData" function
+               (:parent "BamReaderPrivate"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10985 10990]))                  
+                :type "bool")
+                nil [10944 12227])
+            ("LocateIndex" function
+               (:parent "BamReaderPrivate"
+                :arguments 
+                  ( ("preferredType" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("BamIndex::IndexType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12264 12305]))                  
+                :type "bool")
+                nil [12229 12657])
+            ("Open" function
+               (:parent "BamReaderPrivate"
+                :arguments 
+                  ( ("filename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12717 12740]))                  
+                :type "bool")
+                nil [12689 13458])
+            ("OpenIndex" function
+               (:parent "BamReaderPrivate"
+                :arguments 
+                  ( ("indexFilename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13493 13526]))                  
+                :type "bool")
+                nil [13460 13872])
+            ("Rewind" function
+               (:parent "BamReaderPrivate"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13963 13968]))                  
+                :type "bool")
+                nil [13933 14380])
+            ("Seek" function
+               (:parent "BamReaderPrivate"
+                :arguments 
+                  ( ("position" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("int64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14410 14434]))                  
+                :type "bool")
+                nil [14382 14919])
+            ("SetErrorString" function
+               (:parent "BamReaderPrivate"
+                :arguments 
+                  ( ("where" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14959 14979])
+                    ("what" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14980 14999]))                  
+                :type "void")
+                nil [14921 15091])
+            ("SetIndex" function
+               (:parent "BamReaderPrivate"
+                :arguments 
+                  ( ("index" variable
+                       (:pointer 1
+                        :type ("BamIndex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15125 15141]))                  
+                :type "void")
+                nil [15093 15191])
+            ("SetRegion" function
+               (:parent "BamReaderPrivate"
+                :arguments 
+                  ( ("region" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("BamRegion" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15301 15325]))                  
+                :type "bool")
+                nil [15268 15679])
+            ("Tell" function
+               (:parent "BamReaderPrivate"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [15712 15717]))                  
+                :type ("int64_t" type (:type "class") nil nil))
+                nil [15681 15755]))          
+    :file "BamReader_p.cpp"
+    :pointmax 15756
+    :fsize 15755
+    :lastmodtime '(21565 38085 130278 30000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "BamHeader_p.h"
+    :file "BamHeader_p.h"
+    :fsize 2254
+    :lastmodtime '(21565 38085 128278 125000)
+    )
+   (semanticdb-table "BamRandomAccessController_p.h"
+    :file "BamRandomAccessController_p.h"
+    :fsize 2883
+    :lastmodtime '(21565 38085 129278 78000)
+    )
+   (semanticdb-table "BamReader_p.h"
+    :file "BamReader_p.h"
+    :fsize 3813
+    :lastmodtime '(21565 38085 130278 30000)
+    )
+   )
+  :file "!home!dlee!Projects!freebayes!bamtools!src!api!internal!bam!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

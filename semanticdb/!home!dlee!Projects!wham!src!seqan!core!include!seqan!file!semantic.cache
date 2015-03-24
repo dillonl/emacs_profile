@@ -1,0 +1,337 @@
+;; Object file/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "file/"
+  :tables (list 
+   (semanticdb-table "file_format_raw.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SEQAN_HEADER_FILE_RAW_H" variable (:constant-flag t) nil [1953 1976])
+            ("SEQAN_NAMESPACE_MAIN" type
+               (:members 
+                  ( ("TagRaw_" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2795 2810])
+                    ("Raw" type
+                       (:typedef ("Tag" type
+                             (:template-specifier 
+                                ( ("TagRaw_" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Tag"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2819 2844])
+                    ("ReadRaw_" type
+                       (:template 
+                          ( ("TFile" type (:type "class") nil nil)
+                            ("TData" type (:type "class") nil nil)
+                            ("TTag" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [3023 3096])
+                    ("ReadRaw_" type
+                       (:template 
+                          ( ("TFile" type (:type "class") nil nil)
+                            ("TData" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("read_" function
+                               (:template 
+                                  ( ("TSize" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("file" variable
+                                       (:reference 1
+                                        :type ("TFile" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3328 3341])
+                                    ("data" variable
+                                       (:reference 1
+                                        :type ("TData" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3344 3357])
+                                    ("_limit" variable (:type ("TSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3360 3373]))                                  
+                                :typemodifiers ("inline" "static"))
+                                (reparse-symbol classsubparts) [3275 3980])
+                            ("read_" function
+                               (:typemodifiers ("inline" "static")
+                                :arguments 
+                                  ( ("file" variable
+                                       (:reference 1
+                                        :type ("TFile" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4089 4102])
+                                    ("data" variable
+                                       (:reference 1
+                                        :type ("TData" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4106 4119]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4063 4225]))                          
+                        :template-specifier 
+                          ( ("TFile" type nil nil nil)
+                            ("TData" type nil nil nil)
+                            ("True" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [3186 4229])
+                    ("ReadRaw_" type
+                       (:template 
+                          ( ("TFile" type (:type "class") nil nil)
+                            ("TData" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("read_" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("file" variable
+                                       (:reference 1
+                                        :type ("TFile" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4433 4446])
+                                    ("data" variable
+                                       (:reference 1
+                                        :type ("TData" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4449 4462]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4414 4668])
+                            ("read_" function
+                               (:template 
+                                  ( ("TSize" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("file" variable
+                                       (:reference 1
+                                        :type ("TFile" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4797 4810])
+                                    ("data" variable
+                                       (:reference 1
+                                        :type ("TData" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4813 4826])
+                                    ("limit" variable (:type ("TSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4829 4841]))                                  
+                                :typemodifiers ("static"))
+                                (reparse-symbol classsubparts) [4751 5061]))                          
+                        :template-specifier 
+                          ( ("TFile" type nil nil nil)
+                            ("TData" type nil nil nil)
+                            ("False" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [4311 5064])
+                    ("read" function
+                       (:template 
+                          ( ("TFile" type (:type "class") nil nil)
+                            ("TData" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("file" variable
+                               (:reference 1
+                                :type ("TFile" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5199 5212])
+                            ("data" variable
+                               (:reference 1
+                                :type ("TData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5215 5228])
+                            ("" variable (:type ("Raw" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5231 5235]))                          )
+                        (reparse-symbol namespacesubparts) [5147 5365])
+                    ("read" function
+                       (:template 
+                          ( ("TFile" type (:type "class") nil nil)
+                            ("TData" type (:type "class") nil nil)
+                            ("TSize" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("file" variable
+                               (:reference 1
+                                :type ("TFile" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5515 5528])
+                            ("data" variable
+                               (:reference 1
+                                :type ("TData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5531 5544])
+                            ("limit" variable (:type ("TSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5547 5559])
+                            ("" variable (:type ("Raw" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5562 5566]))                          )
+                        (reparse-symbol namespacesubparts) [5447 5703])
+                    ("readID" function
+                       (:template 
+                          ( ("TFile" type (:type "class") nil nil)
+                            ("TString" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("TFile" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5931 5948])
+                            ("id" variable
+                               (:reference 1
+                                :type ("TString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5953 5966])
+                            ("" variable (:type ("Raw" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5971 5975]))                          )
+                        (reparse-symbol namespacesubparts) [5875 6029])
+                    ("readMeta" function
+                       (:template 
+                          ( ("TFile" type (:type "class") nil nil)
+                            ("TMeta" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("TFile" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6258 6275])
+                            ("meta" variable
+                               (:reference 1
+                                :type ("TMeta" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6279 6292])
+                            ("" variable (:type ("Raw" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6296 6300]))                          )
+                        (reparse-symbol namespacesubparts) [6202 6356])
+                    ("goNext" function
+                       (:template 
+                          ( ("TFile" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("file" variable
+                               (:reference 1
+                                :type ("TFile" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6566 6579])
+                            ("" variable (:type ("Raw" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6584 6588]))                          )
+                        (reparse-symbol namespacesubparts) [6528 6795])
+                    ("write" function
+                       (:template 
+                          ( ("TFile" type (:type "class") nil nil)
+                            ("TData" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("file" variable
+                               (:reference 1
+                                :type ("TFile" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7021 7034])
+                            ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7038 7057])
+                            ("" variable (:type ("Raw" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7061 7065]))                          )
+                        (reparse-symbol namespacesubparts) [6968 7134])
+                    ("write" function
+                       (:template 
+                          ( ("TFile" type (:type "class") nil nil)
+                            ("TData" type (:type "class") nil nil)
+                            ("TString" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("file" variable
+                               (:reference 1
+                                :type ("TFile" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7287 7300])
+                            ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7304 7323])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7327 7343])
+                            ("" variable (:type ("Raw" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7347 7351]))                          )
+                        (reparse-symbol namespacesubparts) [7216 7420])
+                    ("write" function
+                       (:template 
+                          ( ("TFile" type (:type "class") nil nil)
+                            ("TString" type (:type "class") nil nil)
+                            ("TData" type (:type "class") nil nil)
+                            ("TMeta" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("file" variable
+                               (:reference 1
+                                :type ("TFile" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7589 7602])
+                            ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7606 7625])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7629 7645])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TMeta" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7649 7663])
+                            ("" variable (:type ("Raw" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7667 7671]))                          )
+                        (reparse-symbol namespacesubparts) [7502 7740])
+                    ("read" function
+                       (:template 
+                          ( ("TFile" type (:type "class") nil nil)
+                            ("TData" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("file" variable
+                               (:reference 1
+                                :type ("TFile" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7975 7988])
+                            ("data" variable
+                               (:reference 1
+                                :type ("TData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7991 8004]))                          )
+                        (reparse-symbol namespacesubparts) [7923 8055])
+                    ("read" function
+                       (:template 
+                          ( ("TFile" type (:type "class") nil nil)
+                            ("TData" type (:type "class") nil nil)
+                            ("TSize" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("file" variable
+                               (:reference 1
+                                :type ("TFile" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8125 8138])
+                            ("data" variable
+                               (:reference 1
+                                :type ("TData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8141 8154])
+                            ("limit" variable (:type ("TSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8157 8169]))                          )
+                        (reparse-symbol namespacesubparts) [8057 8245])
+                    ("write" function
+                       (:template 
+                          ( ("TFile" type (:type "class") nil nil)
+                            ("TData" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("file" variable
+                               (:reference 1
+                                :type ("TFile" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8380 8393])
+                            ("data" variable
+                               (:reference 1
+                                :type ("TData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8397 8410]))                          )
+                        (reparse-symbol namespacesubparts) [8327 8483])
+                    ("write" function
+                       (:template 
+                          ( ("TFile" type (:type "class") nil nil)
+                            ("TData" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("file" variable
+                               (:reference 1
+                                :type ("TFile" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8537 8550])
+                            ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8554 8573]))                          )
+                        (reparse-symbol namespacesubparts) [8484 8646]))                  
+                :type "namespace")
+                nil [2361 8728]))          
+    :file "file_format_raw.h"
+    :pointmax 8877
+    :fsize 8876
+    :lastmodtime '(21564 11039 146789 142000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SEQAN_HEADER_FILE_RAW_H")
+          )
+
+    )
+   )
+  :file "!home!dlee!Projects!wham!src!seqan!core!include!seqan!file!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,118 @@
+;; Object tests/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tests/"
+  :tables (list 
+   (semanticdb-table "GSSWGraphTests.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("GWIZ_GSSW_GSSWGRAPH_TESTS_HPP" variable (:constant-flag t) nil [47 76])
+            ("chrono" include (:system-flag t) nil [78 95])
+            ("thread" include (:system-flag t) nil [96 113])
+            ("memory" include (:system-flag t) nil [114 131])
+            ("gssw/gssw.h" include nil nil [133 155])
+            ("gssw/graph/GraphManager.h" include nil nil [156 192])
+            ("gtest/gtest.h" include nil nil [194 218])
+            ("config/TestConfig.h" include nil nil [220 250])
+            ("tests/classes/TestReference.hpp" include nil nil [251 293])
+            ("tests/classes/TestVariantList.hpp" include nil nil [294 338])
+            ("tests/classes/TestReferenceVariantGenerator.hpp" include nil nil [339 397])
+            ("tests/classes/TestAlignmentReader.hpp" include nil nil [398 446])
+            ("plugins/gssw/graph/GSSWGraph.h" include nil nil [447 488])
+            ("plugins/gssw/graph/AlignmentReporter.h" include nil nil [489 538])
+            ("core/alignments/BamAlignmentReader.h" include nil nil [540 587])
+            ("core/alignments/BamAlignmentReaderManager.h" include nil nil [588 642])
+            ("core/alignments/BamAlignmentReaderPreloadManager.h" include nil nil [643 704])
+            ("core/variants/VCFFileReader.h" include nil nil [705 745])
+            ("core/variants/IVariant.h" include nil nil [746 781])
+            ("core/reference/FastaReference.h" include nil nil [782 824])
+            ("core/utils/ThreadPool.hpp" include nil nil [825 861])
+            ("unnamed" type
+               (:members 
+                  ( ("GSSWGraphTest" type
+                       (:superclasses 
+                          ( ("gwiz::gssw::GSSWGraph" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [933 940])
+                            ("GSSWGraphTestPtr" type
+                               (:typedef ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("GSSWGraphTest" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "std::shared_ptr"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [943 1001])
+                            ("GSSWGraphTest" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("referencePtr" variable (:type ("gwiz::IReference::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1019 1060])
+                                    ("variantListPtr" variable (:type ("gwiz::IVariantList::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1061 1106])
+                                    ("alignmentReader" variable (:type ("gwiz::IAlignmentReader::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1107 1157]))                                  
+                                :type ("GSSWGraphTest" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1005 1239])
+                            ("GSSWGraphTest" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [1243 1267])
+                            ("Build31VariantsTestData" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("referencePtr" variable
+                                       (:reference 1
+                                        :type ("gwiz::IReference::SharedPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1568 1610])
+                                    ("variantListPtr" variable
+                                       (:reference 1
+                                        :type ("gwiz::IVariantList::SharedPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1611 1657])
+                                    ("alignmentReaderPtr" variable
+                                       (:reference 1
+                                        :type ("gwiz::testing::TestAlignmentReader::SharedPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1658 1724]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1532 17640]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [878 17645])
+                    ("TEST" function
+                       (:arguments 
+                          ( ("" variable (:type ("GSSWTests" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17657 17667])
+                            ("" variable (:type ("TestAlignmentReport" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17668 17688]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [17652 18484])
+                    ("TEST" function
+                       (:arguments 
+                          ( ("" variable (:type ("GSSWTests" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18496 18506])
+                            ("" variable (:type ("TestConstructChr20" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18507 18526]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [18491 20308])
+                    ("TEST" function
+                       (:arguments 
+                          ( ("" variable (:type ("GSSWTests" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20316 20326])
+                            ("" variable (:type ("TestConstructTestData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20327 20349]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [20311 21468]))                  
+                :type "namespace")
+                nil [864 21471]))          
+    :file "GSSWGraphTests.hpp"
+    :pointmax 21514
+    :fsize 21511
+    :lastmodtime '(21777 34852 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GWIZ_GSSW_GSSWGRAPH_TESTS_HPP")
+          )
+
+    )
+   (semanticdb-table "TestIncludes.h"
+    :file "TestIncludes.h"
+    :fsize 126
+    :lastmodtime '(21744 13419 0 0)
+    )
+   )
+  :file "!Users!dillonl!Projects!gwiz!plugins!gssw!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

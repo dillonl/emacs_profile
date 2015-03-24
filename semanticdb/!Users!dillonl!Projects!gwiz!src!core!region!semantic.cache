@@ -1,0 +1,116 @@
+;; Object region/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "region/"
+  :tables (list 
+   (semanticdb-table "Region.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GWIZ_REGION_H" variable (:constant-flag t) nil [31 44])
+            ("boost/noncopyable.hpp" include (:system-flag t) nil [46 78])
+            ("string" include (:system-flag t) nil [80 97])
+            ("core/utils/Types.h" include nil nil [99 128])
+            ("RegionParser.hpp" include nil nil [129 156])
+            ("gwiz" type
+               (:members 
+                  ( ("Region" type
+                       (:superclasses 
+                          ( ("boost::noncopyable" type
+                               (:protection "private"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [310 317])
+                            ("SharedPtr" type
+                               (:typedef ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Region" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "std::shared_ptr"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [320 362])
+                            ("Region" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("regionString" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [372 404]))                                  
+                                :type ("Region" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [365 405])
+                            ("Region" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [458 468])
+                            ("getRegionString" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [472 535])
+                            ("getReferenceID" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [538 605])
+                            ("getStartPosition" function (:type ("position" type (:type "class") nil nil)) (reparse-symbol classsubparts) [608 676])
+                            ("getEndPosition" function (:type ("position" type (:type "class") nil nil)) (reparse-symbol classsubparts) [679 743])
+                            ("setStartPosition" function
+                               (:arguments 
+                                  ( ("startPosition" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [769 792]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [747 836])
+                            ("setEndPosition" function
+                               (:arguments 
+                                  ( ("endPosition" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [859 880]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [839 920])
+                            ("private" label nil (reparse-symbol classsubparts) [923 931])
+                            ("m_region_string" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [934 962])
+                            ("m_reference_id" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [965 992])
+                            ("m_start_position" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol classsubparts) [995 1021])
+                            ("m_end_position" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1024 1048])
+                            ("m_region_parser" variable (:type ("RegionParser" type
+                                 (:template-specifier 
+                                    ( ("char" type
+                                         (:pointer 1
+                                          :constant-flag t)
+                                          nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1052 1096]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [264 1100]))                  
+                :type "namespace")
+                nil [158 1103]))          
+    :file "Region.h"
+    :pointmax 1089
+    :fsize 1127
+    :lastmodtime '(21731 32581 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GWIZ_REGION_H")
+          )
+
+    )
+   (semanticdb-table "RegionParser.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("GWIZ_REGIONPARSER_H" variable (:constant-flag t) nil [37 56])
+            ("core/utils/Types.h" include nil nil [58 87])
+            ("string" include (:system-flag t) nil [89 106])
+            ("boost/spirit/include/qi.hpp" include (:system-flag t) nil [108 146])
+            ("boost/spirit/include/phoenix_core.hpp" include (:system-flag t) nil [147 195])
+            ("boost/spirit/include/phoenix_operator.hpp" include (:system-flag t) nil [196 248])
+            ("boost/spirit/include/phoenix_object.hpp" include (:system-flag t) nil [249 299])
+            ("boost/fusion/include/adapt_struct.hpp" include (:system-flag t) nil [300 348])
+            ("boost/fusion/include/io.hpp" include (:system-flag t) nil [349 387])
+            ("gwiz" type (:type "namespace") nil [389 1624]))          
+    :file "RegionParser.hpp"
+    :pointmax 1677
+    :fsize 1676
+    :lastmodtime '(21714 6036 0 0)
+    :unmatched-syntax '((punctuation 1620 . 1621) (semantic-list 561 . 1620) (punctuation 558 . 559) (semantic-list 555 . 557) (punctuation 554 . 555) (punctuation 552 . 553) (symbol 544 . 552) (punctuation 542 . 543) (punctuation 541 . 542) (symbol 533 . 541) (punctuation 531 . 532) (punctuation 530 . 531) (symbol 524 . 530) (punctuation 523 . 524) (punctuation 522 . 523) (symbol 519 . 522) (punctuation 517 . 518) (symbol 511 . 517) (punctuation 510 . 511) (punctuation 509 . 510) (symbol 503 . 509) (punctuation 502 . 503) (punctuation 501 . 502) (symbol 496 . 501) (punctuation 494 . 495) (symbol 486 . 494) (punctuation 485 . 486) (symbol 478 . 485) (punctuation 477 . 478) (punctuation 476 . 477) (symbol 474 . 476) (punctuation 473 . 474) (punctuation 472 . 473) (symbol 466 . 472) (punctuation 465 . 466) (punctuation 464 . 465) (symbol 459 . 464) (punctuation 457 . 458) (symbol 444 . 456) (STRUCT 437 . 443) (punctuation 434 . 435) (symbol 426 . 434) (TYPENAME 417 . 425) (punctuation 416 . 417) (TEMPLATE 408 . 416))
+    :lexical-table 
+        '(("GWIZ_REGIONPARSER_H")
+          )
+
+    )
+   )
+  :file "!Users!dillonl!Projects!gwiz!src!core!region!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

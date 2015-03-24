@@ -1,0 +1,466 @@
+;; Object graph/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "graph/"
+  :tables (list 
+   (semanticdb-table "VariantGraph.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("boost/graph/graphviz.hpp" include (:system-flag t) nil [1 36])
+            ("VariantGraph.h" include nil nil [38 63])
+            ("SNPNode.h" include nil nil [64 84])
+            ("gwiz" type
+               (:members 
+                  ( ("vg" type
+                       (:members 
+                          ( ("VariantGraph" function
+                               (:constructor-flag t
+                                :parent "VariantGraph"
+                                :arguments 
+                                  ( ("referencePtr" variable (:type ("IReference::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [150 185])
+                                    ("variantListPtr" variable (:type ("IVariantList::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [186 225]))                                  
+                                :type ("VariantGraph" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [123 320])
+                            ("VariantGraph" function
+                               (:destructor-flag t
+                                :parent "VariantGraph"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [324 361])
+                            ("getVertexAtPosition" function
+                               (:parent "VariantGraph"
+                                :arguments 
+                                  ( ("referencePosition" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [437 464]))                                  
+                                :type ("VariantGraph::VariantVertexDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [365 1106])
+                            ("constructGraph" function
+                               (:parent "VariantGraph"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1110 2493])
+                            ("addReference" function
+                               (:parent "VariantGraph"
+                                :arguments 
+                                  ( ("altAndRefVertices" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("VariantGraph::VariantVertexDescriptor" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2562 2634])
+                                    ("referenceNode" variable (:type ("ReferenceNode::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2635 2674]))                                  
+                                :type ("VariantGraph::VariantVertexDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2497 3025])
+                            ("addVariantVertices" function
+                               (:parent "VariantGraph"
+                                :arguments 
+                                  ( ("altAndRefVertices" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("VariantGraph::VariantVertexDescriptor" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [3115 3186])
+                                    ("variantPtr" variable (:type ("Variant::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3187 3217])
+                                    ("variantReferenceSize" variable
+                                       (:reference 1
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3218 3247]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("VariantGraph::VariantVertexDescriptor" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [3029 4278])
+                            ("printGraph" function
+                               (:parent "VariantGraph"
+                                :arguments 
+                                  ( ("path" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [4312 4329]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4282 4460]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [104 4464]))                  
+                :type "namespace")
+                nil [86 4486]))          
+    :file "VariantGraph.cpp"
+    :pointmax 4508
+    :fsize 4507
+    :lastmodtime '(21746 20640 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "VariantGraph.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GWIZ_VG_VARIANT_GRAPH_H" variable (:constant-flag t) nil [41 64])
+            ("ReferenceNode.h" include nil nil [66 92])
+            ("core/graph/IGraph.h" include nil nil [93 123])
+            ("core/graph/INode.h" include nil nil [124 153])
+            ("boost/graph/adjacency_list.hpp" include (:system-flag t) nil [155 196])
+            ("mutex" include (:system-flag t) nil [198 214])
+            ("gwiz" type
+               (:members 
+                  ( ("vg" type
+                       (:members 
+                          ( ("VariantGraph" type
+                               (:superclasses 
+                                  ( ("IGraph" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [293 300])
+                                    ("VariantGraphPtr" type
+                                       (:typedef ("std::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("VariantGraph" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :superclasses "std::shared_ptr"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [304 360])
+                                    ("Graph" type
+                                       (:typedef ("boost::adjacency_list" type
+                                             (:template-specifier 
+                                                ( ("boost::vecS" type nil nil nil)
+                                                  ("boost::vecS" type nil nil nil)
+                                                  ("boost::directedS" type nil nil nil)
+                                                  ("INode::SharedPtr" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :superclasses "boost::adjacency_list"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [364 464])
+                                    ("GraphPtr" type
+                                       (:typedef ("std::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("Graph" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :superclasses "std::shared_ptr"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [468 510])
+                                    ("VariantVertexDescriptor" type
+                                       (:typedef ("vg::VariantGraph::Graph::vertex_descriptor" type (:type "class") nil nil)
+                                        :superclasses "vg::VariantGraph::Graph::vertex_descriptor"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [514 589])
+                                    ("VariantGraph" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("referencePtr" variable (:type ("IReference::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [607 642])
+                                            ("variantListPtr" variable (:type ("IVariantList::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [643 682]))                                          
+                                        :type ("VariantGraph" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [594 683])
+                                    ("VariantGraph" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [687 711])
+                                    ("printGraph" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("path" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [732 749]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [716 750])
+                                    ("override" variable (:type "int") (reparse-symbol classsubparts) [784 793])
+                                    ("getVertexAtPosition" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("referencePosition" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [842 869]))                                          
+                                        :type ("VariantVertexDescriptor" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [798 870])
+                                    ("protected" label nil (reparse-symbol classsubparts) [874 884])
+                                    ("addReference" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("altAndRefVertices" variable
+                                               (:reference 1
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("VariantVertexDescriptor" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [925 983])
+                                            ("referenceNode" variable (:type ("ReferenceNode::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [984 1023]))                                          
+                                        :type ("VariantVertexDescriptor" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [888 1024])
+                                    ("addVariantVertices" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("altAndRefVertices" variable (:type ("std::vector" type
+                                                 (:template-specifier 
+                                                    ( ("VariantVertexDescriptor" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [1086 1143])
+                                            ("variantPtr" variable (:type ("Variant::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1144 1174])
+                                            ("variantReferenceSize" variable
+                                               (:reference 1
+                                                :type ("size_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1175 1204]))                                          
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("VariantVertexDescriptor" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [1028 1205])
+                                    ("addVariantNode" function
+                                       (:typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("variantNodePtr" variable (:type ("INode::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1257 1289]))                                          
+                                        :type ("VariantVertexDescriptor" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1210 1359])
+                                    ("addReferenceNodeAtVariantPosition" function
+                                       (:typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("referenceNodePtr" variable (:type ("ReferenceNode::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1430 1472]))                                          
+                                        :type ("VariantVertexDescriptor" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1364 1544])
+                                    ("addReferenceNode" function
+                                       (:typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("referenceNodePtr" variable (:type ("ReferenceNode::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1598 1640]))                                          
+                                        :type ("VariantVertexDescriptor" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1549 1712])
+                                    ("graphConstructed" function
+                                       (:typemodifiers ("virtual" "inline")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1789 1830])
+                                    ("m_graph_ptr" variable (:type ("GraphPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1835 1856])
+                                    ("m_graph_mutex" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1938 1963])
+                                    ("private" label nil (reparse-symbol classsubparts) [1967 1975])
+                                    ("OurVertexPropertyWriter" type
+                                       (:members 
+                                          ( ("OurVertexPropertyWriter" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("g_" variable
+                                                       (:reference 1
+                                                        :type ("Graph" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2042 2052]))                                                  
+                                                :type ("OurVertexPropertyWriter" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [2018 2063])
+                                            ("()" function
+                                               (:template 
+                                                  ( ("Vertex" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("out" variable
+                                                       (:reference 1
+                                                        :type ("std::ostream" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2113 2131])
+                                                    ("u" variable (:type ("Vertex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2132 2141]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [2068 2322])
+                                            ("g" variable (:type ("Graph" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2328 2337]))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [1982 2343]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [252 2348]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [234 2351]))                  
+                :type "namespace")
+                nil [216 2353]))          
+    :file "VariantGraph.h"
+    :pointmax 2389
+    :fsize 2388
+    :lastmodtime '(21747 24504 0 0)
+    :unmatched-syntax '((semantic-list 781 . 783) (symbol 767 . 781) (VOID 762 . 766) (VIRTUAL 754 . 761) (semantic-list 781 . 783) (symbol 767 . 781) (VOID 762 . 766) (VIRTUAL 754 . 761))
+    :lexical-table 
+        '(("GWIZ_VG_VARIANT_GRAPH_H")
+          )
+
+    )
+   (semanticdb-table "ReferenceNode.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GWIZ_VG_REFERENCE_NODE" variable (:constant-flag t) nil [40 62])
+            ("core/reference/IReference.h" include nil nil [64 102])
+            ("core/graph/INode.h" include nil nil [103 132])
+            ("gwiz" type
+               (:members 
+                  ( ("vg" type
+                       (:members 
+                          ( ("ReferenceNode" type
+                               (:superclasses 
+                                  ( ("INode" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [211 218])
+                                    ("SharedPtr" type
+                                       (:typedef ("std::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("ReferenceNode" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :superclasses "std::shared_ptr"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [222 273])
+                                    ("ReferenceNode" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("reference" variable (:type ("IReference::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [294 326])
+                                            ("offset" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [327 341])
+                                            ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [342 356]))                                          
+                                        :type ("ReferenceNode" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [280 551])
+                                    ("ReferenceNode" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [555 574])
+                                    ("getReferenceID" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [579 676])
+                                    ("private" label nil (reparse-symbol classsubparts) [681 689])
+                                    ("m_offset" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [693 709])
+                                    ("m_reference_ptr" variable (:type ("IReference::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [713 751]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [170 756]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [152 759]))                  
+                :type "namespace")
+                nil [134 761]))          
+    :file "ReferenceNode.h"
+    :pointmax 795
+    :fsize 794
+    :lastmodtime '(21744 13419 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GWIZ_VG_REFERENCE_NODE")
+          )
+
+    )
+   (semanticdb-table "SNPNode.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GWIZ_VG_SNPNODE" variable (:constant-flag t) nil [33 48])
+            ("IVariantNode.h" include nil nil [50 75])
+            ("core/graph/INode.h" include nil nil [76 105])
+            ("core/utils/Types.h" include nil nil [106 135])
+            ("gwiz" type
+               (:members 
+                  ( ("vg" type
+                       (:members 
+                          ( ("SNPNode" type
+                               (:superclasses 
+                                  ( ("IVariantNode" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [215 222])
+                                    ("SharedPtr" type
+                                       (:typedef ("std::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("SNPNode" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :superclasses "std::shared_ptr"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [226 271])
+                                    ("SNPNode" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("variant" variable (:type ("Variant::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [287 314])
+                                            ("altIndex" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [315 333]))                                          
+                                        :type ("SNPNode" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [279 381])
+                                    ("SNPNode" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [385 398]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [173 404]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [155 407]))                  
+                :type "namespace")
+                nil [137 428]))          
+    :file "SNPNode.h"
+    :pointmax 476
+    :fsize 475
+    :lastmodtime '(21744 13419 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GWIZ_VG_SNPNODE")
+          )
+
+    )
+   (semanticdb-table "IVariantNode.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GWIZ_VG_IVARIANTNODE" variable (:constant-flag t) nil [38 58])
+            ("core/graph/INode.h" include nil nil [60 89])
+            ("core/variants/Variant.h" include nil nil [91 125])
+            ("core/utils/Types.h" include nil nil [126 155])
+            ("gwiz" type
+               (:members 
+                  ( ("vg" type
+                       (:members 
+                          ( ("SNPNode" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [193 207])
+                            ("IVariantNode" type
+                               (:superclasses 
+                                  ( ("INode" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [250 257])
+                                    ("SharedPtr" type
+                                       (:typedef ("std::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("IVariantNode" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :superclasses "std::shared_ptr"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [261 311])
+                                    ("IVariantNode" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("variant" variable (:type ("Variant::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [331 358])
+                                            ("altIndex" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [359 377]))                                          
+                                        :type ("IVariantNode" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [318 569])
+                                    ("IVariantNode" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [574 592])
+                                    ("BuildVariantNodes" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("variant" variable (:type ("Variant::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [738 765])
+                                            ("altIndex" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [766 784]))                                          
+                                        :type ("IVariantNode::SharedPtr" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [689 896])
+                                    ("private" label nil (reparse-symbol classsubparts) [900 908])
+                                    ("m_variant" variable (:type ("Variant::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [912 941])
+                                    ("m_alt_index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [945 964]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [210 969]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [175 972]))                  
+                :type "namespace")
+                nil [157 993]))          
+    :file "IVariantNode.h"
+    :pointmax 1046
+    :fsize 1045
+    :lastmodtime '(21744 13419 0 0)
+    :unmatched-syntax '((semantic-list 632 . 684) (symbol 623 . 631) (semantic-list 620 . 622) (symbol 609 . 620) (punctuation 607 . 608) (CHAR 603 . 607) (CONST 597 . 602))
+    :lexical-table 
+        '(("GWIZ_VG_IVARIANTNODE")
+          )
+
+    )
+   )
+  :file "!Users!dillonl!Projects!gwiz!plugins!vg!graph!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

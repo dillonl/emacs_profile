@@ -1,0 +1,18 @@
+;; Object graph/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "graph/"
+  :tables (list 
+   (semanticdb-table "GSSWGraph.cpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "GSSWGraph.cpp"
+    :pointmax 1339
+    :fsize 1338
+    :lastmodtime '(21744 13419 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!dillonl!Projects!gwiz_git!plugins!gssw!graph!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

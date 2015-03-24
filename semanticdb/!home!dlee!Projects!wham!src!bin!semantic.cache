@@ -1,0 +1,1196 @@
+;; Object bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin/"
+  :tables (list 
+   (semanticdb-table "multi-wham-testing.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("stdlib.h" include (:system-flag t) nil [40 59])
+            ("unistd.h" include (:system-flag t) nil [60 79])
+            ("cmath" include (:system-flag t) nil [80 96])
+            ("time.h" include (:system-flag t) nil [97 114])
+            ("algorithm" include (:system-flag t) nil [115 135])
+            ("split.h" include nil nil [136 154])
+            ("omp.h" include (:system-flag t) nil [186 202])
+            ("api/BamMultiReader.h" include nil nil [231 262])
+            ("readPileUp.h" include nil nil [263 286])
+            ("seqan/align.h" include (:system-flag t) nil [303 327])
+            ("seqan/graph_msa.h" include (:system-flag t) nil [328 356])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [359 379])
+            ("BamTools" using (:type ("BamTools" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [380 405])
+            ("cigar" type
+               (:members 
+                  ( ("type" variable (:type "char") (reparse-symbol classsubparts) [423 433])
+                    ("length" variable (:type "unsigned int") (reparse-symbol classsubparts) [436 456]))                  
+                :type "struct")
+                nil [407 459])
+            ("regionDat" type
+               (:members 
+                  ( ("seqidIndex" variable (:type "int") (reparse-symbol classsubparts) [481 497])
+                    ("start" variable (:type "int") (reparse-symbol classsubparts) [500 516])
+                    ("end" variable (:type "int") (reparse-symbol classsubparts) [519 535]))                  
+                :type "struct")
+                nil [461 538])
+            ("indvDat" type
+               (:members 
+                  ( ("support" variable (:type "bool") (reparse-symbol classsubparts) [558 574])
+                    ("genotype" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [577 599])
+                    ("genotypeIndex" variable (:type "int") (reparse-symbol classsubparts) [602 624])
+                    ("nReads" variable (:type "int") (reparse-symbol classsubparts) [628 650])
+                    ("mappedPairs" variable (:type "int") (reparse-symbol classsubparts) [653 675])
+                    ("nAboveAvg" variable (:type "int") (reparse-symbol classsubparts) [678 700])
+                    ("notMapped" variable (:type "int") (reparse-symbol classsubparts) [703 725])
+                    ("mateMissing" variable (:type "int") (reparse-symbol classsubparts) [728 750])
+                    ("sameStrand" variable (:type "int") (reparse-symbol classsubparts) [753 775])
+                    ("nClipping" variable (:type "int") (reparse-symbol classsubparts) [778 800])
+                    ("mateCrossChromosome" variable (:type "int") (reparse-symbol classsubparts) [804 832])
+                    ("maxLength" variable (:type "int") (reparse-symbol classsubparts) [835 858])
+                    ("nBad" variable (:type "double") (reparse-symbol classsubparts) [861 884])
+                    ("nGood" variable (:type "double") (reparse-symbol classsubparts) [887 910])
+                    ("insertSum" variable (:type "double") (reparse-symbol classsubparts) [913 931])
+                    ("insertMean" variable (:type "double") (reparse-symbol classsubparts) [934 953])
+                    ("lengthSum" variable (:type "double") (reparse-symbol classsubparts) [956 974])
+                    ("clipped" variable (:type "double") (reparse-symbol classsubparts) [977 993])
+                    ("inserts" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [996 1019])
+                    ("hInserts" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1022 1046])
+                    ("gls" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1049 1068])
+                    ("alignments" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("BamAlignment" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1071 1105])
+                    ("badFlag" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1108 1133])
+                    ("MapQ" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1136 1153])
+                    ("cluster" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1156 1190]))                  
+                :type "struct")
+                nil [540 1193])
+            ("insertDat" type
+               (:members 
+                  ( ("mus" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1215 1239])
+                    ("sds" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1302 1326])
+                    ("lq" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1352 1376])
+                    ("up" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1395 1419]))                  
+                :type "struct")
+                nil [1195 1454])
+            ("insertDists" variable (:type ("insertDat" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [1195 1454])
+            ("global_opts" type
+               (:members 
+                  ( ("targetBams" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1479 1509])
+                    ("backgroundBams" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1512 1542])
+                    ("all" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1545 1575])
+                    ("nthreads" variable (:type "int") (reparse-symbol classsubparts) [1578 1608])
+                    ("seqid" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1611 1641])
+                    ("bed" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1644 1674])
+                    ("region" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1678 1708]))                  
+                :type "struct")
+                nil [1456 1723])
+            ("globalOpts" variable (:type ("global_opts" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [1456 1723])
+            ("info_field" type
+               (:members 
+                  ( ("lrt" variable (:type "double") (reparse-symbol classsubparts) [1747 1758])
+                    ("taf" variable (:type "double") (reparse-symbol classsubparts) [1762 1773])
+                    ("baf" variable (:type "double") (reparse-symbol classsubparts) [1776 1787])
+                    ("aaf" variable (:type "double") (reparse-symbol classsubparts) [1790 1801])
+                    ("nat" variable (:type "double") (reparse-symbol classsubparts) [1805 1816])
+                    ("nbt" variable (:type "double") (reparse-symbol classsubparts) [1819 1830])
+                    ("nab" variable (:type "double") (reparse-symbol classsubparts) [1834 1845])
+                    ("nbb" variable (:type "double") (reparse-symbol classsubparts) [1848 1859])
+                    ("tgc" variable (:type "double") (reparse-symbol classsubparts) [1863 1874])
+                    ("bgc" variable (:type "double") (reparse-symbol classsubparts) [1877 1888]))                  
+                :type "struct")
+                nil [1726 1892])
+            ("optString" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [1894 1938])
+            ("lock" variable (:type ("omp_lock_t" type (:type "class") nil nil)) nil [2006 2022])
+            ("sortStringSize" function
+               (:arguments 
+                  ( ("i" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2044 2053])
+                    ("j" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2054 2063]))                  
+                :type "bool")
+                nil [2024 2095])
+            ("initInfo" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("info_field" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2111 2126]))                  
+                :type "void")
+                nil [2097 2290])
+            ("initIndv" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("indvDat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2306 2318]))                  
+                :type "void")
+                nil [2292 2951])
+            ("printHeader" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2970 2975]))                  
+                :type "void")
+                nil [2953 5332])
+            ("joinComma" function
+               (:arguments 
+                  ( ("strings" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5351 5376]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [5334 5536])
+            ("printIndvDat" function
+               (:arguments 
+                  ( ("d" variable
+                       (:pointer 1
+                        :type ("indvDat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5560 5573]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [5538 6742])
+            ("join" function
+               (:arguments 
+                  ( ("strings" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [6758 6781]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [6746 6958])
+            ("printVersion" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6978 6983]))                  
+                :type "void")
+                nil [6960 7081])
+            ("printHelp" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7098 7103]))                  
+                :type "void")
+                nil [7083 7859])
+            ("parseOpts" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [7876 7885])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7886 7898]))                  
+                :type "void")
+                nil [7861 9860])
+            ("bound" function
+               (:arguments 
+                  ( ("v" variable (:type "double") (reparse-symbol arg-sub-list) [9875 9884]))                  
+                :type "double")
+                nil [9862 9988])
+            ("mean" function
+               (:arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10003 10025]))                  
+                :type "double")
+                nil [9991 10193])
+            ("var" function
+               (:arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10206 10228])
+                    ("mu" variable (:type "double") (reparse-symbol arg-sub-list) [10229 10239]))                  
+                :type "double")
+                nil [10195 10420])
+            ("grabInsertLengths" function
+               (:arguments 
+                  ( ("file" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10445 10457]))                  
+                :type "bool")
+                nil [10422 11716])
+            ("getInsertDists" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11739 11744]))                  
+                :type "bool")
+                nil [11719 11902])
+            ("prepBams" function
+               (:arguments 
+                  ( ("bamMreader" variable
+                       (:reference 1
+                        :type ("BamMultiReader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11918 11946])
+                    ("group" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11947 11960]))                  
+                :type "void")
+                nil [11904 12830])
+            ("logLbinomial" function
+               (:arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [12852 12861])
+                    ("n" variable (:type "double") (reparse-symbol arg-sub-list) [12862 12871])
+                    ("p" variable (:type "double") (reparse-symbol arg-sub-list) [12872 12881]))                  
+                :type "double")
+                nil [12832 12986])
+            ("logDbeta" function
+               (:arguments 
+                  ( ("alpha" variable (:type "double") (reparse-symbol arg-sub-list) [13005 13018])
+                    ("beta" variable (:type "double") (reparse-symbol arg-sub-list) [13019 13031])
+                    ("x" variable (:type "double") (reparse-symbol arg-sub-list) [13032 13041]))                  
+                :type "double")
+                nil [12989 13330])
+            ("totalLL" function
+               (:arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13347 13369])
+                    ("alpha" variable (:type "double") (reparse-symbol arg-sub-list) [13370 13383])
+                    ("beta" variable (:type "double") (reparse-symbol arg-sub-list) [13384 13396]))                  
+                :type "double")
+                nil [13332 13559])
+            ("unphred" function
+               (:arguments 
+                  ( ("p" variable (:type "double") (reparse-symbol arg-sub-list) [13577 13586]))                  
+                :type "double")
+                nil [13562 13616])
+            ("processGenotype" function
+               (:arguments 
+                  ( ("idat" variable
+                       (:pointer 1
+                        :type ("indvDat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13640 13655])
+                    ("totalAlt" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [13656 13674]))                  
+                :type "bool")
+                nil [13619 15348])
+            ("checkN" function
+               (:arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15362 15373]))                  
+                :type "bool")
+                nil [15350 15555])
+            ("loadIndv" function
+               (:arguments 
+                  ( ("ti" variable
+                       (:reference 1
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil)
+                                  ("indvDat" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15571 15598])
+                    ("pileup" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("readPileUp" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15607 15633])
+                    ("localOpts" variable
+                       (:constant-flag t
+                        :type ("global_opts" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15642 15670])
+                    ("localDists" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("insertDat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15679 15708])
+                    ("pos" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "long int")
+                        (reparse-symbol arg-sub-list) [15717 15738])
+                    ("clusters" variable
+                       (:reference 1
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("long int" type nil nil nil)
+                                  ("vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15746 15797])
+                    ("cluster_pair" variable
+                       (:reference 1
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("long int" type nil nil nil)
+                                  ("vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15805 15860])
+                    ("primary" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [15868 15882])
+                    ("frontS" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [15890 15903])
+                    ("backS" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [15911 15931]))                  
+                :type "bool")
+                nil [15557 18551])
+            ("cleanUp" function
+               (:arguments 
+                  ( ("ti" variable
+                       (:reference 1
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil)
+                                  ("indvDat" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18568 18597])
+                    ("localOpts" variable (:type ("global_opts" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18598 18620]))                  
+                :type "bool")
+                nil [18554 18760])
+            ("loadInfoField" function
+               (:arguments 
+                  ( ("dat" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("indvDat" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [18781 18807])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("info_field" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18808 18826])
+                    ("opts" variable
+                       (:reference 1
+                        :type ("global_opts" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18827 18846]))                  
+                :type "bool")
+                nil [18762 19927])
+            ("infoText" function
+               (:arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("info_field" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19946 19964]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [19930 20179])
+            ("burnCigar" function
+               (:arguments 
+                  ( ("s" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20196 20205])
+                    ("cigs" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("cigar" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20206 20227]))                  
+                :type "bool")
+                nil [20181 22061])
+            ("endPos" function
+               (:arguments 
+                  ( ("cigs" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("cigar" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22075 22096])
+                    ("pos" variable
+                       (:pointer 1
+                        :type "long int")
+                        (reparse-symbol arg-sub-list) [22097 22112]))                  
+                :type "void")
+                nil [22063 22388])
+            ("otherBreak" function
+               (:arguments 
+                  ( ("pos" variable
+                       (:pointer 1
+                        :type "long int")
+                        (reparse-symbol arg-sub-list) [22407 22422])
+                    ("supliment" variable
+                       (:reference 1
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("long int" type nil nil nil)
+                                  ("vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22431 22483])
+                    ("otherside" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22493 22512])
+                    ("bestEnd" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22521 22538]))                  
+                :type "int")
+                nil [22392 24310])
+            ("uniqClips" function
+               (:arguments 
+                  ( ("pos" variable
+                       (:pointer 1
+                        :type "long int")
+                        (reparse-symbol arg-sub-list) [24327 24342])
+                    ("clusters" variable
+                       (:reference 1
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("long int" type nil nil nil)
+                                  ("vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24352 24403])
+                    ("alts" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24413 24435]))                  
+                :type "bool")
+                nil [24312 25474])
+            ("consensus" function
+               (:arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25495 25514])
+                    ("alnL" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [25515 25529])
+                    ("nn" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [25530 25542]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [25478 26817])
+            ("score" function
+               (:arguments 
+                  ( ("seqid" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26830 26850])
+                    ("pos" variable
+                       (:pointer 1
+                        :type "long int")
+                        (reparse-symbol arg-sub-list) [26855 26870])
+                    ("totalDat" variable
+                       (:reference 1
+                        :type ("readPileUp" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26876 26898])
+                    ("localDists" variable
+                       (:reference 1
+                        :type ("insertDat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26904 26927])
+                    ("results" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26933 26950])
+                    ("localOpts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("global_opts" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26959 26988]))                  
+                :type "bool")
+                nil [26819 30144])
+            ("runRegion" function
+               (:arguments 
+                  ( ("seqidIndex" variable (:type "int") (reparse-symbol arg-sub-list) [30163 30178])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [30179 30189])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [30190 30198])
+                    ("seqNames" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("RefData" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30199 30233]))                  
+                :type "bool")
+                nil [30148 33151])
+            ("loadBed" function
+               (:arguments 
+                  ( ("features" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("regionDat" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33166 33196])
+                    ("seqs" variable (:type ("RefVector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33197 33212]))                  
+                :type "bool")
+                nil [33153 33903])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [33914 33923])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33924 33936]))                  
+                :type "int")
+                nil [33905 37307]))          
+    :file "multi-wham-testing.cpp"
+    :pointmax 37146
+    :fsize 37285
+    :lastmodtime '(21566 42354 389778 982000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "single-wham-testing.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("stdlib.h" include (:system-flag t) nil [40 59])
+            ("unistd.h" include (:system-flag t) nil [60 79])
+            ("cmath" include (:system-flag t) nil [80 96])
+            ("time.h" include (:system-flag t) nil [97 114])
+            ("algorithm" include (:system-flag t) nil [115 135])
+            ("split.h" include nil nil [136 154])
+            ("JenksBreaks.h" include nil nil [155 179])
+            ("omp.h" include (:system-flag t) nil [181 197])
+            ("api/BamMultiReader.h" include nil nil [198 229])
+            ("readPileUp.h" include nil nil [230 253])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [255 275])
+            ("BamTools" using (:type ("BamTools" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [276 301])
+            ("regionDat" type
+               (:members 
+                  ( ("seqidIndex" variable (:type "int") (reparse-symbol classsubparts) [323 339])
+                    ("start" variable (:type "int") (reparse-symbol classsubparts) [342 358])
+                    ("end" variable (:type "int") (reparse-symbol classsubparts) [361 377]))                  
+                :type "struct")
+                nil [303 380])
+            ("indvDat" type
+               (:members 
+                  ( ("support" variable (:type "bool") (reparse-symbol classsubparts) [400 415])
+                    ("nReads" variable (:type "int") (reparse-symbol classsubparts) [418 432])
+                    ("mappedPairs" variable (:type "int") (reparse-symbol classsubparts) [435 454])
+                    ("nAboveAvg" variable (:type "int") (reparse-symbol classsubparts) [457 474])
+                    ("notMapped" variable (:type "int") (reparse-symbol classsubparts) [477 494])
+                    ("mateMissing" variable (:type "int") (reparse-symbol classsubparts) [497 516])
+                    ("sameStrand" variable (:type "int") (reparse-symbol classsubparts) [519 537])
+                    ("mateCrossChromosome" variable (:type "int") (reparse-symbol classsubparts) [540 567])
+                    ("maxLength" variable (:type "int") (reparse-symbol classsubparts) [570 588])
+                    ("insertSum" variable (:type "double") (reparse-symbol classsubparts) [591 609])
+                    ("insertMean" variable (:type "double") (reparse-symbol classsubparts) [612 630])
+                    ("lengthSum" variable (:type "double") (reparse-symbol classsubparts) [633 650])
+                    ("clipped" variable (:type "double") (reparse-symbol classsubparts) [653 668])
+                    ("alignments" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("BamAlignment" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [672 706])
+                    ("inserts" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [709 732])
+                    ("hInserts" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [735 759])
+                    ("badFlag" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [762 787])
+                    ("MapQ" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [790 807])
+                    ("cluster" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [810 844]))                  
+                :type "struct")
+                nil [382 847])
+            ("insertDat" type
+               (:members 
+                  ( ("mus" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [869 893])
+                    ("sds" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [956 980])
+                    ("lq" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1006 1030])
+                    ("up" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1049 1073]))                  
+                :type "struct")
+                nil [849 1108])
+            ("insertDists" variable (:type ("insertDat" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [849 1108])
+            ("global_opts" type
+               (:members 
+                  ( ("targetBam" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1133 1163])
+                    ("nthreads" variable (:type "int") (reparse-symbol classsubparts) [1166 1196])
+                    ("seqid" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1199 1229])
+                    ("region" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1232 1262]))                  
+                :type "struct")
+                nil [1110 1277])
+            ("globalOpts" variable (:type ("global_opts" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [1110 1277])
+            ("optString" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [1279 1321])
+            ("lock" variable (:type ("omp_lock_t" type (:type "class") nil nil)) nil [1323 1339])
+            ("initIndv" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("indvDat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1355 1367]))                  
+                :type "void")
+                nil [1341 1846])
+            ("printIndv" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("indvDat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1863 1875])
+                    ("t" variable (:type "int") (reparse-symbol arg-sub-list) [1876 1882]))                  
+                :type "void")
+                nil [1848 2396])
+            ("printHeader" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2415 2420]))                  
+                :type "void")
+                nil [2398 3888])
+            ("printVersion" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3908 3913]))                  
+                :type "void")
+                nil [3890 4011])
+            ("printHelp" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4028 4033]))                  
+                :type "void")
+                nil [4013 4540])
+            ("parseOpts" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4557 4566])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4567 4579]))                  
+                :type "void")
+                nil [4542 5925])
+            ("bound" function
+               (:arguments 
+                  ( ("v" variable (:type "double") (reparse-symbol arg-sub-list) [5940 5949]))                  
+                :type "double")
+                nil [5927 6053])
+            ("mean" function
+               (:arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6068 6090]))                  
+                :type "double")
+                nil [6056 6258])
+            ("var" function
+               (:arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6271 6293])
+                    ("mu" variable (:type "double") (reparse-symbol arg-sub-list) [6294 6304]))                  
+                :type "double")
+                nil [6260 6485])
+            ("grabInsertLengths" function
+               (:arguments 
+                  ( ("file" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6510 6522]))                  
+                :type "bool")
+                nil [6487 7655])
+            ("getInsertDists" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7678 7683]))                  
+                :type "bool")
+                nil [7658 7757])
+            ("prepBams" function
+               (:arguments 
+                  ( ("bamReader" variable
+                       (:reference 1
+                        :type ("BamReader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7773 7795])
+                    ("group" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7796 7809]))                  
+                :type "void")
+                nil [7759 8377])
+            ("logLbinomial" function
+               (:arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [8399 8408])
+                    ("n" variable (:type "double") (reparse-symbol arg-sub-list) [8409 8418])
+                    ("p" variable (:type "double") (reparse-symbol arg-sub-list) [8419 8428]))                  
+                :type "double")
+                nil [8379 8533])
+            ("logDbeta" function
+               (:arguments 
+                  ( ("alpha" variable (:type "double") (reparse-symbol arg-sub-list) [8552 8565])
+                    ("beta" variable (:type "double") (reparse-symbol arg-sub-list) [8566 8578])
+                    ("x" variable (:type "double") (reparse-symbol arg-sub-list) [8579 8588]))                  
+                :type "double")
+                nil [8536 8877])
+            ("totalLL" function
+               (:arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8894 8916])
+                    ("alpha" variable (:type "double") (reparse-symbol arg-sub-list) [8917 8930])
+                    ("beta" variable (:type "double") (reparse-symbol arg-sub-list) [8931 8943]))                  
+                :type "double")
+                nil [8879 9106])
+            ("methodOfMoments" function
+               (:arguments 
+                  ( ("mu" variable (:type "double") (reparse-symbol arg-sub-list) [9131 9141])
+                    ("var" variable (:type "double") (reparse-symbol arg-sub-list) [9142 9153])
+                    ("aHat" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [9154 9168])
+                    ("bHat" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [9169 9183]))                  
+                :type "double")
+                nil [9108 9308])
+            ("unphred" function
+               (:arguments 
+                  ( ("p" variable (:type "double") (reparse-symbol arg-sub-list) [9325 9334]))                  
+                :type "double")
+                nil [9310 9364])
+            ("processGenotype" function
+               (:arguments 
+                  ( ("idat" variable
+                       (:pointer 1
+                        :type ("indvDat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9387 9402])
+                    ("gls" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9403 9424])
+                    ("geno" variable
+                       (:pointer 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9425 9439])
+                    ("nr" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [9440 9452])
+                    ("na" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [9453 9465])
+                    ("ga" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [9466 9478])
+                    ("gb" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [9479 9491])
+                    ("aa" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [9492 9504])
+                    ("ab" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [9505 9517])
+                    ("gc" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [9518 9530])
+                    ("localDists" variable
+                       (:reference 1
+                        :type ("insertDat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9531 9554])
+                    ("ss" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [9555 9564])
+                    ("insert" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [9565 9579]))                  
+                :type "int")
+                nil [9367 11394])
+            ("pseudoCounts" function
+               (:arguments 
+                  ( ("dat" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11414 11445])
+                    ("alpha" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [11446 11460])
+                    ("beta" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [11461 11475]))                  
+                :type "void")
+                nil [11396 11670])
+            ("permute" function
+               (:arguments 
+                  ( ("dat" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11687 11718])
+                    ("tsize" variable (:type "int") (reparse-symbol arg-sub-list) [11719 11729])
+                    ("bsize" variable (:type "int") (reparse-symbol arg-sub-list) [11730 11740])
+                    ("score" variable (:type "double") (reparse-symbol arg-sub-list) [11741 11754]))                  
+                :type "double")
+                nil [11672 12989])
+            ("loadIndv" function
+               (:arguments 
+                  ( ("ti" variable
+                       (:reference 1
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil)
+                                  ("indvDat" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13009 13036])
+                    ("pileup" variable
+                       (:reference 1
+                        :type ("readPileUp" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13037 13057])
+                    ("localOpts" variable (:type ("global_opts" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13058 13080])
+                    ("localDists" variable
+                       (:reference 1
+                        :type ("insertDat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13081 13104])
+                    ("pos" variable (:type "long int") (reparse-symbol arg-sub-list) [13105 13118]))                  
+                :type "bool")
+                nil [12995 15234])
+            ("score" function
+               (:arguments 
+                  ( ("seqid" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15249 15262])
+                    ("pos" variable (:type "long int") (reparse-symbol arg-sub-list) [15263 15276])
+                    ("targDat" variable
+                       (:reference 1
+                        :type ("readPileUp" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15277 15298])
+                    ("cp" variable (:type "long int") (reparse-symbol arg-sub-list) [15299 15311])
+                    ("localDists" variable
+                       (:reference 1
+                        :type ("insertDat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15313 15336])
+                    ("results" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15337 15354])
+                    ("localOpts" variable (:type ("global_opts" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15355 15377]))                  
+                :type "bool")
+                nil [15238 18346])
+            ("runRegion" function
+               (:arguments 
+                  ( ("seqidIndex" variable (:type "int") (reparse-symbol arg-sub-list) [18365 18380])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [18381 18391])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [18392 18400])
+                    ("seqNames" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("RefData" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [18401 18428]))                  
+                :type "bool")
+                nil [18350 19971])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [19983 19992])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19993 20005]))                  
+                :type "int")
+                nil [19974 22407]))          
+    :file "single-wham-testing.cpp"
+    :pointmax 22408
+    :fsize 22407
+    :lastmodtime '(21564 11003 803477 442000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "wham.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("api/api_global.h" include nil nil [136 164])
+            ("api/BamReader.h" include nil nil [165 192])
+            ("read_pileup.h" include nil nil [194 219])
+            ("randomregion.h" include nil nil [220 246])
+            ("flag.h" include nil nil [247 265])
+            ("boost/lexical_cast.hpp" include nil nil [267 300])
+            ("boost/math/distributions/binomial.hpp" include nil nil [301 349])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [351 371])
+            ("BamTools" using (:type ("BamTools" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [372 397])
+            ("boost" using (:type ("boost" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [398 420])
+            ("flagPileupInfo" type
+               (:members 
+                  ( ("good" variable (:type "int") (reparse-symbol classsubparts) [574 583])
+                    ("bad" variable (:type "int") (reparse-symbol classsubparts) [586 594])
+                    ("total_reads" variable (:type "int") (reparse-symbol classsubparts) [597 613]))                  
+                :type "struct")
+                nil [549 616])
+            ("printFlagCounts" function
+               (:arguments 
+                  ( ("flags" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [766 791]))                  
+                :type "void")
+                nil [745 964])
+            ("processFlagCounts" function
+               (:arguments 
+                  ( ("flags" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [1126 1151]))                  
+                :type ("flagPileupInfo" type (:type "class") nil nil))
+                nil [1093 1786])
+            ("prepFileIterator" function
+               (:arguments 
+                  ( ("filename" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1937 1964])
+                    ("fileindex" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1965 1993])
+                    ("seqid" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1994 2018])
+                    ("reader" variable
+                       (:reference 1
+                        :type ("BamTools::BamReader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2019 2048]))                  
+                :type "void")
+                nil [1915 3286])
+            ("collectFlags" function
+               (:arguments 
+                  ( ("reader" variable
+                       (:reference 1
+                        :type ("BamTools::BamReader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3432 3461])
+                    ("flag_count" variable
+                       (:reference 1
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil)
+                                  ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3462 3490]))                  
+                :type "void")
+                nil [3414 3797])
+            ("runPileup" function
+               (:arguments 
+                  ( ("reader" variable
+                       (:reference 1
+                        :type ("BamTools::BamReader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3941 3970])
+                    ("global" variable
+                       (:reference 1
+                        :type ("flagPileupInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3971 3995])
+                    ("seqid" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3996 4020]))                  
+                :type "void")
+                nil [3926 5285])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5423 5432])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5433 5453]))                  
+                :type "int")
+                nil [5414 5942]))          
+    :file "wham.cpp"
+    :pointmax 6070
+    :fsize 6069
+    :lastmodtime '(21564 11003 804477 394000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!dlee!Projects!wham!src!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

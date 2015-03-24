@@ -1,0 +1,245 @@
+;; Object graph/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "graph/"
+  :tables (list 
+   (semanticdb-table "INode.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GWIZ_INODE_H" variable (:constant-flag t) nil [30 42])
+            ("boost/noncopyable.hpp" include (:system-flag t) nil [44 76])
+            ("core/utils/Types.h" include nil nil [78 107])
+            ("string" include (:system-flag t) nil [108 125])
+            ("memory" include (:system-flag t) nil [126 143])
+            ("gwiz" type
+               (:members 
+                  ( ("INode" type
+                       (:superclasses 
+                          ( ("boost::noncopyable" type
+                               (:protection "private"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [209 216])
+                            ("SharedPtr" type
+                               (:typedef ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("INode" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "std::shared_ptr"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [219 260])
+                            ("INode" function
+                               (:constructor-flag t
+                                :type ("INode" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [263 273])
+                            ("INode" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("sequence" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [285 306])
+                                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [307 321]))                                  
+                                :type ("INode" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [279 379])
+                            ("INode" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [383 402])
+                            ("getSequence" function
+                               (:pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [406 462])
+                            ("getLength" function (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [465 506])
+                            ("getPosition" function (:type ("position" type (:type "class") nil nil)) (reparse-symbol classsubparts) [509 554])
+                            ("protected" label nil (reparse-symbol classsubparts) [557 567])
+                            ("m_sequence" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [570 593])
+                            ("m_length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [596 612])
+                            ("m_position" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol classsubparts) [615 635]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [164 640]))                  
+                :type "namespace")
+                nil [145 643]))          
+    :file "INode.h"
+    :pointmax 690
+    :fsize 689
+    :lastmodtime '(21744 13419 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GWIZ_INODE_H")
+          )
+
+    )
+   (semanticdb-table "IGraph.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GWIZ_IGRAPH_H" variable (:constant-flag t) nil [31 44])
+            ("core/reference/IReference.h" include nil nil [46 84])
+            ("core/variants/IVariantList.h" include nil nil [85 124])
+            ("core/variants/IVariant.h" include nil nil [125 160])
+            ("core/graph/INode.h" include nil nil [161 190])
+            ("boost/noncopyable.hpp" include (:system-flag t) nil [192 224])
+            ("list" include (:system-flag t) nil [226 241])
+            ("string" include (:system-flag t) nil [242 259])
+            ("memory" include (:system-flag t) nil [260 277])
+            ("gwiz" type
+               (:members 
+                  ( ("IGraph" type
+                       (:superclasses 
+                          ( ("boost::noncopyable" type
+                               (:protection "private"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [343 350])
+                            ("SharedPtr" type
+                               (:typedef ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("IGraph" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "std::shared_ptr"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [353 395])
+                            ("IGraph" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("referencePtr" variable (:type ("IReference::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [409 444])
+                                    ("variantListPtr" variable (:type ("IVariantList::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [445 484]))                                  
+                                :type ("IGraph" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [402 594])
+                            ("IGraph" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [597 617])
+                            ("protected" label nil (reparse-symbol classsubparts) [620 630])
+                            ("getNextCompoundVariant" function
+                               (:arguments 
+                                  ( ("variant" variable
+                                       (:reference 1
+                                        :type ("Variant::SharedPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [662 690]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [634 3185])
+                            ("buildCompoundVariant" function
+                               (:arguments 
+                                  ( ("startPosition" variable
+                                       (:constant-flag t
+                                        :type ("position" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3229 3258])
+                                    ("referenceString" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3259 3294])
+                                    ("variants" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("Variant::SharedPtr" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3295 3345]))                                  
+                                :type ("Variant::SharedPtr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3189 4631])
+                            ("constructGraph" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [4635 4669])
+                            ("m_reference_ptr" variable (:type ("IReference::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4673 4711])
+                            ("m_variant_list_ptr" variable (:type ("IVariantList::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4714 4757])
+                            ("m_next_variant" variable (:type ("Variant::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4897 4931])
+                            ("m_vcf_parser" variable (:type ("VariantParser" type
+                                 (:template-specifier 
+                                    ( ("char" type
+                                         (:pointer 1
+                                          :constant-flag t)
+                                          nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [4934 4976])
+                            ("private" label nil (reparse-symbol classsubparts) [4978 4986])
+                            ("m_next_variant_init" variable (:type "bool") (reparse-symbol classsubparts) [4989 5014]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [297 5020]))                  
+                :type "namespace")
+                nil [279 5022]))          
+    :file "IGraph.h"
+    :pointmax 5070
+    :fsize 5069
+    :lastmodtime '(21744 13419 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GWIZ_IGRAPH_H")
+          )
+
+    )
+   (semanticdb-table "IEdge.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GWIZ_IEDGE_H" variable (:constant-flag t) nil [30 42])
+            ("boost/noncopyable.hpp" include (:system-flag t) nil [44 76])
+            ("list" include (:system-flag t) nil [78 93])
+            ("memory" include (:system-flag t) nil [94 111])
+            ("INode.h" include nil nil [113 131])
+            ("gwiz" type
+               (:members 
+                  ( ("IEdge" type
+                       (:superclasses 
+                          ( ("boost::noncopyable" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [188 195])
+                            ("SharedPtr" type
+                               (:typedef ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("IEdge" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "std::shared_ptr"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [198 239])
+                            ("IEdge" function
+                               (:constructor-flag t
+                                :type ("IEdge" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [242 252])
+                            ("IEdge" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [255 274])
+                            ("protected" label nil (reparse-symbol classsubparts) [277 287])
+                            ("private" label nil (reparse-symbol classsubparts) [290 298]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [151 303]))                  
+                :type "namespace")
+                nil [133 305]))          
+    :file "IEdge.h"
+    :pointmax 330
+    :fsize 329
+    :lastmodtime '(21744 13419 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GWIZ_IEDGE_H")
+          )
+
+    )
+   )
+  :file "!Users!dillonl!Projects!gwiz!src!core!graph!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,1660 @@
+;; Object graph_align/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "graph_align/"
+  :tables (list 
+   (semanticdb-table "graph_impl_align.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SEQAN_CORE_INCLUDE_SEQAN_GRAPH_ALIGN_GRAPH_IMPL_ALIGN_H_" variable (:constant-flag t) nil [2166 2222])
+            ("seqan" type
+               (:members 
+                  ( ("MsfFormat_" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [3831 3849])
+                    ("MsfFormat" type
+                       (:typedef ("Tag" type
+                             (:template-specifier 
+                                ( ("MsfFormat_" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Tag"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [3850 3890])
+                    ("FastaFormat_" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [4100 4120])
+                    ("FastaFormat" type
+                       (:typedef ("Tag" type
+                             (:template-specifier 
+                                ( ("FastaFormat_" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Tag"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [4121 4165])
+                    ("CgVizFormat_" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [4375 4395])
+                    ("CgVizFormat" type
+                       (:typedef ("Tag" type
+                             (:template-specifier 
+                                ( ("CgVizFormat_" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Tag"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [4396 4440])
+                    ("Alignment" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [4718 4735])
+                    ("EdgeType" type
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("Type" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5199 5209]))                          
+                        :template-specifier 
+                          ( ("Graph" type (:constant-flag t) nil nil))                          )
+                        (reparse-symbol namespacesubparts) [4997 5212])
+                    ("EdgeType" type
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("Type" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5486 5496]))                          
+                        :template-specifier 
+                          ( ("Graph" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [5294 5499])
+                    ("Host" type
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("Type" type
+                               (:typedef ("TStringSet" type (:type "class") nil nil)
+                                :superclasses "TStringSet"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5707 5731]))                          
+                        :template-specifier 
+                          ( ("Graph" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [5582 5734])
+                    ("Host" type
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("Type" type
+                               (:typedef ("TStringSet" type (:type "class") nil nil)
+                                :superclasses "TStringSet"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5946 5976]))                          
+                        :template-specifier 
+                          ( ("Graph" type (:constant-flag t) nil nil))                          )
+                        (reparse-symbol namespacesubparts) [5816 5979])
+                    ("FragmentInfo" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [6348 6355])
+                            ("data_seq_id" variable (:type ("TId" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6357 6373])
+                            ("data_begin" variable (:type ("TSize" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6375 6392])
+                            ("data_length" variable (:type ("TSize" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6394 6412])
+                            ("FragmentInfo" function
+                               (:constructor-flag t
+                                :type ("FragmentInfo" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6415 6489])
+                            ("FragmentInfo" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("id" variable (:type ("TId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6505 6512])
+                                    ("beg" variable (:type ("TSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6513 6523])
+                                    ("len" variable (:type ("TSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6524 6534]))                                  
+                                :type ("FragmentInfo" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6492 6599]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [6327 6603])
+                    ("Graph" type
+                       (:template 
+                          ( ("TString" type (:type "class") nil nil)
+                            ("TSpecial" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [8764 8771])
+                            ("TIdType_" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8802 8816])
+                            ("TVertexDescriptor_" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8861 8885])
+                            ("TSize_" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8918 8930])
+                            ("TKey_" type
+                               (:typedef ("std::pair" type
+                                     (:template-specifier 
+                                        ( ("TIdType_" type nil nil nil)
+                                          ("TSize_" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "std::pair"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [8933 8975])
+                            ("TPosToVertexMap_" type
+                               (:typedef ("std::map" type
+                                     (:template-specifier 
+                                        ( ("TKey_" type nil nil nil)
+                                          ("TVertexDescriptor_" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "std::map"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [8978 9039])
+                            ("TFragmentInfo_" type
+                               (:typedef ("FragmentInfo" type
+                                     (:template-specifier 
+                                        ( ("TIdType_" type nil nil nil)
+                                          ("TSize_" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "FragmentInfo"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [9042 9096])
+                            ("data_align" variable (:type ("Graph" type
+                                 (:template-specifier 
+                                    ( ("Undirected" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [9121 9166])
+                            ("data_sequence" variable (:type ("Holder" type
+                                 (:template-specifier 
+                                    ( ("StringSet" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [9185 9249])
+                            ("data_fragment" variable (:type ("String" type
+                                 (:template-specifier 
+                                    ( ("TFragmentInfo_" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [9287 9324])
+                            ("data_pvMap" variable (:type ("TPosToVertexMap_" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9384 9412])
+                            ("Graph" function
+                               (:constructor-flag t
+                                :type ("Graph" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9417 9430])
+                            ("Graph" function
+                               (:template 
+                                  ( ("TDefault" type (:type "class") nil nil))                                  
+                                :type ("Graph" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("sSet" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("StringSet" type
+                                             (:template-specifier 
+                                                ( ("TString" type nil nil nil)
+                                                  ("Dependent" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [9472 9525]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [9435 9848])
+                            ("Graph" function
+                               (:template 
+                                  ( ("TDefault" type (:type "class") nil nil))                                  
+                                :type ("Graph" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("sSet" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("StringSet" type
+                                             (:template-specifier 
+                                                ( ("TString" type nil nil nil)
+                                                  ("Owner" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [9889 9938]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [9852 10364])
+                            ("Graph" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [10369 10420])
+                            ("Graph" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("_other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Graph" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10430 10451]))                                  
+                                :type ("Graph" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10424 10511])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("_other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Graph" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10541 10562]))                                  
+                                :type ("Graph" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10516 10690]))                          
+                        :template-specifier 
+                          ( ("Alignment" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [8600 10693])
+                    ("_getVertexString" function
+                       (:arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11123 11177]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [11106 11382])
+                    ("_getVertexIdManager" function
+                       (:arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11632 11686]))                          
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [11606 11906])
+                    ("_getEdgeIdManager" function
+                       (:arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12153 12207]))                          
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [12129 12421])
+                    ("_copyGraph" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("source" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12589 12648])
+                            ("dest" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12654 12705])
+                            ("" variable (:type "bool") (reparse-symbol arg-sub-list) [12711 12716]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [12503 12917])
+                    ("_copyGraph" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("source" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [13085 13144])
+                            ("dest" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [13150 13201]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [12999 13291])
+                    ("transpose" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("source" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [13633 13692])
+                            ("dest" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [13697 13748]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [13547 13848])
+                    ("transpose" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [14016 14062]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [13930 14124])
+                    ("numEdges" function
+                       (:arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [14353 14407]))                          
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14338 14462])
+                    ("numVertices" function
+                       (:arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [14694 14748]))                          
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14676 14806])
+                    ("empty" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [14970 15024]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [14888 15076])
+                    ("clearEdges" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [15244 15292]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [15158 15342])
+                    ("clearVertices" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [15513 15561]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [15424 16229])
+                    ("clear" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [16393 16441]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [16311 16557])
+                    ("outDegree" function
+                       (:arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [16816 16870])
+                            ("vertex" variable
+                               (:constant-flag t
+                                :type ("TVertexDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16876 16907]))                          
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [16800 16971])
+                    ("inDegree" function
+                       (:arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [17229 17283])
+                            ("vertex" variable
+                               (:constant-flag t
+                                :type ("TVertexDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17288 17319]))                          
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [17214 17382])
+                    ("degree" function
+                       (:arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [17638 17692])
+                            ("vertex" variable
+                               (:constant-flag t
+                                :type ("TVertexDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17697 17728]))                          
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [17625 17789])
+                    ("addVertex" function
+                       (:arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [18079 18127])
+                            ("id" variable (:type ("TId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18132 18139])
+                            ("begin" variable (:type ("TPos" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18144 18155])
+                            ("len" variable (:type ("TLength" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18160 18172]))                          
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [18063 20979])
+                    ("removeVertex" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TVD" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [21163 21211])
+                            ("v" variable
+                               (:constant-flag t
+                                :type ("TVD" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21216 21228]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [21061 22276])
+                    ("addEdge" function
+                       (:arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [22543 22591])
+                            ("source" variable
+                               (:constant-flag t
+                                :type ("TVertexDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22595 22626])
+                            ("target" variable
+                               (:constant-flag t
+                                :type ("TVertexDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22630 22661]))                          
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [22529 22731])
+                    ("addEdge" function
+                       (:arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [23016 23064])
+                            ("source" variable
+                               (:constant-flag t
+                                :type ("TVertexDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23068 23099])
+                            ("target" variable
+                               (:constant-flag t
+                                :type ("TVertexDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23103 23134])
+                            ("cargo" variable
+                               (:constant-flag t
+                                :type ("TCargo2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23137 23157]))                          
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [23002 23234])
+                    ("removeEdge" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TVertexDescriptor" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [23431 23479])
+                            ("source" variable
+                               (:constant-flag t
+                                :type ("TVertexDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23486 23517])
+                            ("target" variable
+                               (:constant-flag t
+                                :type ("TVertexDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23524 23555]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [23316 23621])
+                    ("removeEdge" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TEdgeDescriptor" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [23816 23864])
+                            ("edge" variable
+                               (:constant-flag t
+                                :type ("TEdgeDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23870 23897]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [23703 24012])
+                    ("removeOutEdges" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TVertexDescriptor" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [24214 24262])
+                            ("v" variable
+                               (:constant-flag t
+                                :type ("TVertexDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [24270 24296]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [24094 24353])
+                    ("removeInEdges" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TVertexDescriptor" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [24554 24602])
+                            ("v" variable
+                               (:constant-flag t
+                                :type ("TVertexDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [24608 24634]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [24435 24689])
+                    ("targetVertex" function
+                       (:arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [24961 25015])
+                            ("edge" variable
+                               (:constant-flag t
+                                :type ("TEdgeDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25020 25047]))                          
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [24942 25112])
+                    ("sourceVertex" function
+                       (:arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [25383 25437])
+                            ("edge" variable
+                               (:constant-flag t
+                                :type ("TEdgeDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25442 25469]))                          
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [25364 25534])
+                    ("getAdjacencyMatrix" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TMatrix" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [25728 25782])
+                            ("mat" variable
+                               (:reference 1
+                                :type ("TMatrix" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25791 25804]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [25616 25867])
+                    ("findEdge" function
+                       (:arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [26134 26188])
+                            ("v" variable
+                               (:constant-flag t
+                                :type ("TVertexDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26192 26218])
+                            ("w" variable
+                               (:constant-flag t
+                                :type ("TVertexDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26222 26248]))                          
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [26119 26308])
+                    ("write" function
+                       (:template 
+                          ( ("TFile" type (:type "class") nil nil)
+                            ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TIDString" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("target" variable
+                               (:reference 1
+                                :type ("TFile" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26508 26523])
+                            ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [26527 26581])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TIDString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26585 26603])
+                            ("" variable (:type ("Raw" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26607 26611]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [26390 30558])
+                    ("write" function
+                       (:template 
+                          ( ("TFile" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TNames" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("file" variable
+                               (:reference 1
+                                :type ("TFile" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [30717 30730])
+                            ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("TSpec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [30734 30756])
+                            ("names" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TNames" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [30760 30780])
+                            ("" variable (:type ("FastaFormat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30784 30796]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [30640 31521])
+                    ("write" function
+                       (:template 
+                          ( ("TFile" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TNames" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("file" variable
+                               (:reference 1
+                                :type ("TFile" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31682 31695])
+                            ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("TSpec" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [31699 31721])
+                            ("names" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TNames" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31725 31745])
+                            ("" variable (:type ("MsfFormat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31749 31759]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [31605 33341])
+                    ("_writeCargo" function
+                       (:template 
+                          ( ("TFile" type (:type "class") nil nil)
+                            ("TStringSet" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TEdge" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("file" variable
+                               (:reference 1
+                                :type ("TFile" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [33526 33539])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [33544 33594])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TEdge" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [33599 33612]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [33423 33637])
+                    ("_writeCargo" function
+                       (:template 
+                          ( ("TFile" type (:type "class") nil nil)
+                            ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TEdge" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("file" variable
+                               (:reference 1
+                                :type ("TFile" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [33838 33851])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [33856 33908])
+                            ("edge" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TEdge" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [33913 33931]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [33718 33974])
+                    ("write" function
+                       (:template 
+                          ( ("TFile" type (:type "class") nil nil)
+                            ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TNames" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("file" variable
+                               (:reference 1
+                                :type ("TFile" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [34172 34185])
+                            ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [34189 34243])
+                            ("names" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TNames" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [34247 34267])
+                            ("" variable (:type ("CgVizFormat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34271 34283]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [34057 37802])
+                    ("assignStringSet" function
+                       (:template 
+                          ( ("TString" type (:type "class") nil nil)
+                            ("TDefault" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TDefault2" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [38697 38775])
+                            ("sStr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TString" type nil nil nil)
+                                          ("Dependent" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [38780 38834]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [38570 39394])
+                    ("assignStringSet" function
+                       (:template 
+                          ( ("TString" type (:type "class") nil nil)
+                            ("TDefault" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TDefault2" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [39603 39681])
+                            ("sStr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StringSet" type
+                                     (:template-specifier 
+                                        ( ("TString" type nil nil nil)
+                                          ("Owner" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [39686 39736]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [39476 39835])
+                    ("getStringSet" function
+                       (:arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [40710 40764]))                          
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [40691 40818])
+                    ("StringSetType" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [41593 41636])
+                    ("StringSetType" type
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("Type" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [41843 41855]))                          
+                        :template-specifier 
+                          ( ("Graph" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [41638 41858])
+                    ("stringSet" function
+                       (:arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [42017 42071]))                          
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [42002 42150])
+                    ("label" function
+                       (:arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [43113 43167])
+                            ("v" variable
+                               (:constant-flag t
+                                :type ("TVertexDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [43171 43197]))                          
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [43102 43845])
+                    ("sequenceId" function
+                       (:arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [44844 44898])
+                            ("v" variable
+                               (:constant-flag t
+                                :type ("TVertexDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [44904 44930]))                          
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [44827 45071])
+                    ("fragmentBegin" function
+                       (:arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [46033 46087])
+                            ("v" variable
+                               (:constant-flag t
+                                :type ("TVertexDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [46093 46119]))                          
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [46013 46265])
+                    ("fragmentLength" function
+                       (:arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [47272 47326])
+                            ("v" variable
+                               (:constant-flag t
+                                :type ("TVertexDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [47333 47359]))                          
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [47251 47502])
+                    ("findVertex" function
+                       (:arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [48691 48739])
+                            ("id" variable (:type ("TSeqId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48745 48755])
+                            ("pos" variable (:type ("TPos" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48761 48770]))                          
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [48674 49209])
+                    ("getProjectedPosition" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TSeqId" type (:type "class") nil nil)
+                            ("TPosition" type (:type "class") nil nil)
+                            ("TSeqId2" type (:type "class") nil nil)
+                            ("TPosition2" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [50196 50244])
+                            ("id1" variable
+                               (:constant-flag t
+                                :type ("TSeqId" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [50251 50268])
+                            ("pos1" variable
+                               (:constant-flag t
+                                :type ("TPosition" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [50275 50296])
+                            ("id2" variable
+                               (:reference 1
+                                :type ("TSeqId2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [50303 50316])
+                            ("pos2" variable
+                               (:reference 1
+                                :type ("TPosition2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [50323 50340]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [50023 51527])
+                    ("getProjectedPosition" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TValue" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TSeqId" type (:type "class") nil nil)
+                            ("TPosition" type (:type "class") nil nil)
+                            ("TSeqId2" type (:type "class") nil nil)
+                            ("TPosition2" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [51799 51847])
+                            ("seg_num" variable (:type ("TValue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51854 51869])
+                            ("id1" variable
+                               (:constant-flag t
+                                :type ("TSeqId" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [51876 51893])
+                            ("pos1" variable
+                               (:constant-flag t
+                                :type ("TPosition" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [51900 51921])
+                            ("id2" variable
+                               (:reference 1
+                                :type ("TSeqId2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [51928 51941])
+                            ("pos2" variable
+                               (:reference 1
+                                :type ("TPosition2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [51948 51965]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [51609 53243])
+                    ("getFirstCoveredPosition" function
+                       (:arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [54277 54331])
+                            ("id" variable
+                               (:constant-flag t
+                                :type ("TSeqId" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [54338 54354]))                          
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [54248 55150])
+                    ("getLastCoveredPosition" function
+                       (:arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [56179 56227])
+                            ("id" variable (:type ("TSeqId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56236 56246]))                          
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [56151 57070])
+                    ("convertAlignment" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TComponentMap" type (:type "class") nil nil)
+                            ("TOrderMap" type (:type "class") nil nil)
+                            ("TComponentLength" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [58577 58631])
+                            ("component" variable
+                               (:reference 1
+                                :type ("TComponentMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [58637 58662])
+                            ("order" variable
+                               (:reference 1
+                                :type ("TOrderMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [58668 58685])
+                            ("compLength" variable
+                               (:reference 1
+                                :type ("TComponentLength" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [58691 58720]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [58413 62413])
+                    ("convertAlignment" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TMatrix" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [63012 63066])
+                            ("mat" variable
+                               (:reference 1
+                                :type ("TMatrix" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [63072 63085]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [62901 65198])
+                    ("convertAlignment" function
+                       (:template 
+                          ( ("TValue" type (:type "class") nil nil)
+                            ("TSpec1" type (:type "class") nil nil)
+                            ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec2" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("mat" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type
+                                     (:template-specifier 
+                                        ( ("TValue" type nil nil nil)
+                                          ("TSpec1" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [65409 65443])
+                            ("g" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [65449 65498]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [65282 66811])
+                    ("rebuildGraph" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [66984 67032]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [66896 69164])
+                    ("_heaviestCommonSubsequence" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TSize2" type (:type "class") nil nil)
+                            ("TSpec2" type (:type "class") nil nil)
+                            ("TPositions" type (:type "class") nil nil)
+                            ("TSize" type (:type "class") nil nil)
+                            ("TVertexDescriptor" type (:type "class") nil nil)
+                            ("TString" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [69670 69722])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type
+                                     (:template-specifier 
+                                        ( ("TSize2" type nil nil nil)
+                                          ("TSpec2" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [69730 69774])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TPositions" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [69782 69800])
+                            ("" variable
+                               (:constant-flag t
+                                :type ("TSize" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [69808 69820])
+                            ("" variable
+                               (:constant-flag t
+                                :type ("TSize" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [69828 69840])
+                            ("" variable
+                               (:constant-flag t
+                                :type ("TVertexDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [69848 69872])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [69880 69895])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [69904 69919])
+                            ("" variable
+                               (:reference 1
+                                :type ("Nothing" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [69927 69936]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [69451 69959])
+                    ("_heaviestCommonSubsequence" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TSize2" type (:type "class") nil nil)
+                            ("TSpec2" type (:type "class") nil nil)
+                            ("TPositions" type (:type "class") nil nil)
+                            ("TSize" type (:type "class") nil nil)
+                            ("TString" type (:type "class") nil nil)
+                            ("TOutString" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [70253 70307])
+                            ("slotToPos" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type
+                                     (:template-specifier 
+                                        ( ("TSize2" type nil nil nil)
+                                          ("TSpec2" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [70315 70355])
+                            ("positions" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TPositions" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [70363 70391])
+                            ("m" variable
+                               (:constant-flag t
+                                :type ("TSize" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [70399 70413])
+                            ("n" variable
+                               (:constant-flag t
+                                :type ("TSize" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [70421 70435])
+                            ("str1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [70443 70463])
+                            ("str2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [70472 70492])
+                            ("align" variable
+                               (:reference 1
+                                :type ("TOutString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [70500 70518]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [70041 74441])
+                    ("heaviestCommonSubsequence" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TString" type (:type "class") nil nil)
+                            ("TOutString" type (:type "class") nil nil))                          
+                        :type ("TCargo" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [75374 75428])
+                            ("str1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [75437 75457])
+                            ("str2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [75467 75487])
+                            ("align" variable
+                               (:reference 1
+                                :type ("TOutString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [75496 75514]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [75232 79796])
+                    ("heaviestCommonSubsequence" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TString" type (:type "class") nil nil))                          
+                        :type ("TCargo" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [79999 80053])
+                            ("str1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [80062 80082])
+                            ("str2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [80092 80112]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [79878 80206])
+                    ("_alignTracePrint" function
+                       (:template 
+                          ( ("TStringSet" type (:type "class") nil nil)
+                            ("TCargo" type (:type "class") nil nil)
+                            ("TSpec" type (:type "class") nil nil)
+                            ("TSequenceH" type (:type "class") nil nil)
+                            ("TSequenceV" type (:type "class") nil nil)
+                            ("TId" type (:type "class") nil nil)
+                            ("TPos" type (:type "class") nil nil)
+                            ("TTraceValue" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("g" variable
+                               (:reference 1
+                                :type ("Graph" type
+                                     (:template-specifier 
+                                        ( ("Alignment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [80394 80442])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TSequenceH" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [80460 80479])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TSequenceV" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [80497 80516])
+                            ("id1" variable
+                               (:constant-flag t
+                                :type ("TId" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [80534 80548])
+                            ("pos1" variable
+                               (:constant-flag t
+                                :type ("TPos" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [80566 80582])
+                            ("id2" variable
+                               (:constant-flag t
+                                :type ("TId" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [80600 80614])
+                            ("pos2" variable
+                               (:constant-flag t
+                                :type ("TPos" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [80632 80648])
+                            ("segLen" variable
+                               (:constant-flag t
+                                :type ("TPos" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [80666 80684])
+                            ("tv" variable
+                               (:constant-flag t
+                                :type ("TTraceValue" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [80702 80723]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [80208 81118])
+                    ("_alignTracePrint" function
+                       (:template 
+                          ( ("TFragment" type (:type "class") nil nil)
+                            ("TSequenceH" type (:type "class") nil nil)
+                            ("TSequenceV" type (:type "class") nil nil)
+                            ("TId" type (:type "class") nil nil)
+                            ("TPos" type (:type "class") nil nil)
+                            ("TTraceValue" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("matches" variable
+                               (:reference 1
+                                :type ("String" type
+                                     (:template-specifier 
+                                        ( ("TFragment" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [81580 81607])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TSequenceH" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [81625 81644])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TSequenceV" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [81662 81681])
+                            ("id1" variable
+                               (:constant-flag t
+                                :type ("TId" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [81699 81713])
+                            ("pos1" variable
+                               (:constant-flag t
+                                :type ("TPos" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [81731 81747])
+                            ("id2" variable
+                               (:constant-flag t
+                                :type ("TId" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [81765 81779])
+                            ("pos2" variable
+                               (:constant-flag t
+                                :type ("TPos" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [81797 81813])
+                            ("seqLen" variable
+                               (:constant-flag t
+                                :type ("TPos" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [81831 81849])
+                            ("tv" variable
+                               (:constant-flag t
+                                :type ("TTraceValue" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [81867 81888]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [81428 82036]))                  
+                :type "namespace")
+                nil [2224 82039]))          
+    :file "graph_impl_align.h"
+    :pointmax 82137
+    :fsize 82136
+    :lastmodtime '(21564 11039 158788 569000)
+    :unmatched-syntax '((punctuation 56150 . 56151) (punctuation 56149 . 56150) (punctuation 56148 . 56149) (punctuation 56146 . 56147) (punctuation 56144 . 56145) (symbol 56139 . 56144) (punctuation 56137 . 56138) (symbol 56131 . 56137) (punctuation 56129 . 56130) (symbol 56119 . 56129) (punctuation 56118 . 56119) (symbol 56109 . 56118) (punctuation 56108 . 56109) (symbol 56103 . 56108) (punctuation 56102 . 56103) (symbol 56094 . 56102) (TYPENAME 56085 . 56093) (INLINE 56078 . 56084) (punctuation 56076 . 56077) (symbol 56070 . 56076) (TYPENAME 56061 . 56069) (punctuation 56059 . 56060) (symbol 56054 . 56059) (TYPENAME 56045 . 56053) (punctuation 56043 . 56044) (symbol 56037 . 56043) (TYPENAME 56028 . 56036) (punctuation 56026 . 56027) (symbol 56016 . 56026) (TYPENAME 56007 . 56015) (punctuation 56006 . 56007) (TEMPLATE 55998 . 56006) (punctuation 54247 . 54248) (punctuation 54246 . 54247) (punctuation 54245 . 54246) (punctuation 54243 . 54244) (punctuation 54241 . 54242) (symbol 54236 . 54241) (punctuation 54234 . 54235) (symbol 54228 . 54234) (punctuation 54226 . 54227) (symbol 54216 . 54226) (punctuation 54215 . 54216) (symbol 54206 . 54215) (punctuation 54205 . 54206) (symbol 54200 . 54205) (punctuation 54199 . 54200) (symbol 54191 . 54199) (TYPENAME 54182 . 54190) (INLINE 54175 . 54181) (punctuation 54173 . 54174) (symbol 54167 . 54173) (TYPENAME 54158 . 54166) (punctuation 54156 . 54157) (symbol 54151 . 54156) (TYPENAME 54142 . 54150) (punctuation 54140 . 54141) (symbol 54134 . 54140) (TYPENAME 54125 . 54133) (punctuation 54123 . 54124) (symbol 54113 . 54123) (TYPENAME 54104 . 54112) (punctuation 54103 . 54104) (TEMPLATE 54095 . 54103) (punctuation 48673 . 48674) (punctuation 48672 . 48673) (punctuation 48671 . 48672) (punctuation 48669 . 48670) (punctuation 48667 . 48668) (symbol 48662 . 48667) (punctuation 48660 . 48661) (symbol 48654 . 48660) (punctuation 48652 . 48653) (symbol 48642 . 48652) (punctuation 48641 . 48642) (symbol 48632 . 48641) (punctuation 48631 . 48632) (symbol 48626 . 48631) (punctuation 48625 . 48626) (symbol 48609 . 48625) (TYPENAME 48600 . 48608) (INLINE 48593 . 48599) (punctuation 48590 . 48591) (symbol 48586 . 48590) (TYPENAME 48577 . 48585) (punctuation 48575 . 48576) (symbol 48569 . 48575) (TYPENAME 48560 . 48568) (punctuation 48558 . 48559) (symbol 48553 . 48558) (TYPENAME 48544 . 48552) (punctuation 48542 . 48543) (symbol 48536 . 48542) (TYPENAME 48527 . 48535) (punctuation 48525 . 48526) (symbol 48515 . 48525) (TYPENAME 48506 . 48514) (punctuation 48505 . 48506) (TEMPLATE 48497 . 48505) (punctuation 47250 . 47251) (punctuation 47249 . 47250) (punctuation 47248 . 47249) (punctuation 47246 . 47247) (punctuation 47244 . 47245) (symbol 47239 . 47244) (punctuation 47237 . 47238) (symbol 47231 . 47237) (punctuation 47229 . 47230) (symbol 47219 . 47229) (punctuation 47218 . 47219) (symbol 47209 . 47218) (punctuation 47208 . 47209) (symbol 47203 . 47208) (punctuation 47202 . 47203) (symbol 47198 . 47202) (TYPENAME 47189 . 47197) (INLINE 47182 . 47188) (punctuation 47180 . 47181) (symbol 47163 . 47180) (TYPENAME 47154 . 47162) (punctuation 47152 . 47153) (symbol 47147 . 47152) (TYPENAME 47138 . 47146) (punctuation 47136 . 47137) (symbol 47130 . 47136) (TYPENAME 47121 . 47129) (punctuation 47119 . 47120) (symbol 47109 . 47119) (TYPENAME 47100 . 47108) (punctuation 47099 . 47100) (TEMPLATE 47091 . 47099) (punctuation 46012 . 46013) (punctuation 46011 . 46012) (punctuation 46010 . 46011) (punctuation 46008 . 46009) (punctuation 46006 . 46007) (symbol 46001 . 46006) (punctuation 45999 . 46000) (symbol 45993 . 45999) (punctuation 45991 . 45992) (symbol 45981 . 45991) (punctuation 45980 . 45981) (symbol 45971 . 45980) (punctuation 45970 . 45971) (symbol 45965 . 45970) (punctuation 45964 . 45965) (symbol 45956 . 45964) (TYPENAME 45947 . 45955) (INLINE 45940 . 45946) (punctuation 45938 . 45939) (symbol 45921 . 45938) (TYPENAME 45912 . 45920) (punctuation 45910 . 45911) (symbol 45905 . 45910) (TYPENAME 45896 . 45904) (punctuation 45894 . 45895) (symbol 45888 . 45894) (TYPENAME 45879 . 45887) (punctuation 45877 . 45878) (symbol 45867 . 45877) (TYPENAME 45858 . 45866) (punctuation 45857 . 45858) (TEMPLATE 45849 . 45857) (punctuation 44826 . 44827) (punctuation 44825 . 44826) (punctuation 44824 . 44825) (punctuation 44822 . 44823) (punctuation 44820 . 44821) (symbol 44815 . 44820) (punctuation 44813 . 44814) (symbol 44807 . 44813) (punctuation 44805 . 44806) (symbol 44795 . 44805) (punctuation 44794 . 44795) (symbol 44785 . 44794) (punctuation 44784 . 44785) (symbol 44779 . 44784) (punctuation 44778 . 44779) (symbol 44776 . 44778) (TYPENAME 44767 . 44775) (INLINE 44760 . 44766) (punctuation 44758 . 44759) (symbol 44741 . 44758) (TYPENAME 44732 . 44740) (punctuation 44730 . 44731) (symbol 44725 . 44730) (TYPENAME 44716 . 44724) (punctuation 44714 . 44715) (symbol 44708 . 44714) (TYPENAME 44699 . 44707) (punctuation 44697 . 44698) (symbol 44687 . 44697) (TYPENAME 44678 . 44686) (punctuation 44677 . 44678) (TEMPLATE 44669 . 44677) (punctuation 43101 . 43102) (punctuation 43100 . 43101) (punctuation 43099 . 43100) (symbol 43095 . 43099) (punctuation 43094 . 43095) (punctuation 43093 . 43094) (punctuation 43092 . 43093) (symbol 43082 . 43092) (punctuation 43081 . 43082) (symbol 43076 . 43081) (TYPENAME 43067 . 43075) (punctuation 43066 . 43067) (symbol 43061 . 43066) (TYPENAME 43052 . 43060) (INLINE 43045 . 43051) (punctuation 43043 . 43044) (symbol 43026 . 43043) (TYPENAME 43017 . 43025) (punctuation 43015 . 43016) (symbol 43010 . 43015) (TYPENAME 43001 . 43009) (punctuation 42999 . 43000) (symbol 42993 . 42999) (TYPENAME 42984 . 42992) (punctuation 42982 . 42983) (symbol 42972 . 42982) (TYPENAME 42963 . 42971) (punctuation 42962 . 42963) (TEMPLATE 42954 . 42962) (punctuation 42001 . 42002) (punctuation 42000 . 42001) (punctuation 41999 . 42000) (punctuation 41997 . 41998) (punctuation 41995 . 41996) (symbol 41990 . 41995) (punctuation 41988 . 41989) (symbol 41982 . 41988) (punctuation 41980 . 41981) (symbol 41970 . 41980) (punctuation 41969 . 41970) (symbol 41960 . 41969) (punctuation 41959 . 41960) (symbol 41954 . 41959) (punctuation 41953 . 41954) (symbol 41940 . 41953) (TYPENAME 41931 . 41939) (INLINE 41924 . 41930) (punctuation 41922 . 41923) (symbol 41917 . 41922) (TYPENAME 41908 . 41916) (punctuation 41906 . 41907) (symbol 41900 . 41906) (TYPENAME 41891 . 41899) (punctuation 41889 . 41890) (symbol 41879 . 41889) (TYPENAME 41870 . 41878) (punctuation 41869 . 41870) (TEMPLATE 41861 . 41869) (punctuation 41842 . 41843) (punctuation 41841 . 41842) (punctuation 41840 . 41841) (punctuation 41838 . 41839) (punctuation 41836 . 41837) (symbol 41831 . 41836) (punctuation 41829 . 41830) (symbol 41823 . 41829) (punctuation 41821 . 41822) (symbol 41811 . 41821) (punctuation 41810 . 41811) (symbol 41801 . 41810) (punctuation 41800 . 41801) (symbol 41795 . 41800) (punctuation 41794 . 41795) (symbol 41790 . 41794) (TYPENAME 41781 . 41789) (TYPEDEF 41773 . 41780) (punctuation 40690 . 40691) (punctuation 40689 . 40690) (punctuation 40688 . 40689) (CONST 40683 . 40688) (punctuation 40681 . 40682) (punctuation 40679 . 40680) (symbol 40674 . 40679) (punctuation 40672 . 40673) (symbol 40666 . 40672) (punctuation 40664 . 40665) (symbol 40654 . 40664) (punctuation 40653 . 40654) (symbol 40644 . 40653) (punctuation 40643 . 40644) (symbol 40638 . 40643) (punctuation 40637 . 40638) (symbol 40633 . 40637) (TYPENAME 40624 . 40632) (INLINE 40617 . 40623) (punctuation 40615 . 40616) (symbol 40610 . 40615) (TYPENAME 40601 . 40609) (punctuation 40599 . 40600) (symbol 40593 . 40599) (TYPENAME 40584 . 40592) (punctuation 40582 . 40583) (symbol 40572 . 40582) (TYPENAME 40563 . 40571) (punctuation 40562 . 40563) (TEMPLATE 40554 . 40562) (punctuation 26118 . 26119) (punctuation 26117 . 26118) (punctuation 26116 . 26117) (punctuation 26114 . 26115) (punctuation 26112 . 26113) (symbol 26107 . 26112) (punctuation 26105 . 26106) (symbol 26099 . 26105) (punctuation 26097 . 26098) (symbol 26087 . 26097) (punctuation 26086 . 26087) (symbol 26077 . 26086) (punctuation 26076 . 26077) (symbol 26071 . 26076) (punctuation 26070 . 26071) (symbol 26056 . 26070) (TYPENAME 26047 . 26055) (INLINE 26040 . 26046) (punctuation 26038 . 26039) (symbol 26021 . 26038) (TYPENAME 26012 . 26020) (punctuation 26010 . 26011) (symbol 26005 . 26010) (TYPENAME 25996 . 26004) (punctuation 25994 . 25995) (symbol 25988 . 25994) (TYPENAME 25979 . 25987) (punctuation 25977 . 25978) (symbol 25967 . 25977) (TYPENAME 25958 . 25966) (punctuation 25957 . 25958) (TEMPLATE 25949 . 25957) (punctuation 25363 . 25364) (punctuation 25362 . 25363) (punctuation 25361 . 25362) (punctuation 25359 . 25360) (punctuation 25357 . 25358) (symbol 25352 . 25357) (punctuation 25350 . 25351) (symbol 25344 . 25350) (punctuation 25342 . 25343) (symbol 25332 . 25342) (punctuation 25331 . 25332) (symbol 25322 . 25331) (punctuation 25321 . 25322) (symbol 25316 . 25321) (punctuation 25315 . 25316) (symbol 25299 . 25315) (TYPENAME 25290 . 25298) (INLINE 25283 . 25289) (punctuation 25281 . 25282) (symbol 25266 . 25281) (TYPENAME 25257 . 25265) (punctuation 25255 . 25256) (symbol 25250 . 25255) (TYPENAME 25241 . 25249) (punctuation 25239 . 25240) (symbol 25233 . 25239) (TYPENAME 25224 . 25232) (punctuation 25222 . 25223) (symbol 25212 . 25222) (TYPENAME 25203 . 25211) (punctuation 25202 . 25203) (TEMPLATE 25194 . 25202) (punctuation 24941 . 24942) (punctuation 24940 . 24941) (punctuation 24939 . 24940) (punctuation 24937 . 24938) (punctuation 24935 . 24936) (symbol 24930 . 24935) (punctuation 24928 . 24929) (symbol 24922 . 24928) (punctuation 24920 . 24921) (symbol 24910 . 24920) (punctuation 24909 . 24910) (symbol 24900 . 24909) (punctuation 24899 . 24900) (symbol 24894 . 24899) (punctuation 24893 . 24894) (symbol 24877 . 24893) (TYPENAME 24868 . 24876) (INLINE 24861 . 24867) (punctuation 24858 . 24859) (symbol 24843 . 24858) (TYPENAME 24834 . 24842) (punctuation 24832 . 24833) (symbol 24827 . 24832) (TYPENAME 24818 . 24826) (punctuation 24816 . 24817) (symbol 24810 . 24816) (TYPENAME 24801 . 24809) (punctuation 24799 . 24800) (symbol 24789 . 24799) (TYPENAME 24780 . 24788) (punctuation 24779 . 24780) (TEMPLATE 24771 . 24779) (punctuation 23001 . 23002) (punctuation 23000 . 23001) (punctuation 22999 . 23000) (punctuation 22997 . 22998) (punctuation 22995 . 22996) (symbol 22990 . 22995) (punctuation 22988 . 22989) (symbol 22982 . 22988) (punctuation 22980 . 22981) (symbol 22970 . 22980) (punctuation 22969 . 22970) (symbol 22960 . 22969) (punctuation 22959 . 22960) (symbol 22954 . 22959) (punctuation 22953 . 22954) (symbol 22939 . 22953) (TYPENAME 22930 . 22938) (INLINE 22923 . 22929) (punctuation 22920 . 22921) (symbol 22913 . 22920) (TYPENAME 22904 . 22912) (punctuation 22902 . 22903) (symbol 22885 . 22902) (TYPENAME 22876 . 22884) (punctuation 22874 . 22875) (symbol 22869 . 22874) (TYPENAME 22860 . 22868) (punctuation 22858 . 22859) (symbol 22852 . 22858) (TYPENAME 22843 . 22851) (punctuation 22841 . 22842) (symbol 22831 . 22841) (TYPENAME 22822 . 22830) (punctuation 22821 . 22822) (TEMPLATE 22813 . 22821) (punctuation 22528 . 22529) (punctuation 22527 . 22528) (punctuation 22526 . 22527) (punctuation 22524 . 22525) (punctuation 22522 . 22523) (symbol 22517 . 22522) (punctuation 22515 . 22516) (symbol 22509 . 22515) (punctuation 22507 . 22508) (symbol 22497 . 22507) (punctuation 22496 . 22497) (symbol 22487 . 22496) (punctuation 22486 . 22487) (symbol 22481 . 22486) (punctuation 22480 . 22481) (symbol 22466 . 22480) (TYPENAME 22457 . 22465) (INLINE 22450 . 22456) (punctuation 22447 . 22448) (symbol 22430 . 22447) (TYPENAME 22421 . 22429) (punctuation 22419 . 22420) (symbol 22414 . 22419) (TYPENAME 22405 . 22413) (punctuation 22403 . 22404) (symbol 22397 . 22403) (TYPENAME 22388 . 22396) (punctuation 22386 . 22387) (symbol 22376 . 22386) (TYPENAME 22367 . 22375) (punctuation 22366 . 22367) (TEMPLATE 22358 . 22366) (punctuation 18062 . 18063) (punctuation 18061 . 18062) (punctuation 18060 . 18061) (punctuation 18058 . 18059) (punctuation 18056 . 18057) (symbol 18051 . 18056) (punctuation 18049 . 18050) (symbol 18043 . 18049) (punctuation 18041 . 18042) (symbol 18031 . 18041) (punctuation 18030 . 18031) (symbol 18021 . 18030) (punctuation 18020 . 18021) (symbol 18015 . 18020) (punctuation 18014 . 18015) (symbol 17998 . 18014) (TYPENAME 17989 . 17997) (INLINE 17982 . 17988) (punctuation 17979 . 17980) (symbol 17972 . 17979) (TYPENAME 17963 . 17971) (punctuation 17961 . 17962) (symbol 17957 . 17961) (TYPENAME 17948 . 17956) (punctuation 17946 . 17947) (symbol 17943 . 17946) (TYPENAME 17934 . 17942) (punctuation 17932 . 17933) (symbol 17927 . 17932) (TYPENAME 17918 . 17926) (punctuation 17916 . 17917) (symbol 17910 . 17916) (TYPENAME 17901 . 17909) (punctuation 17899 . 17900) (symbol 17889 . 17899) (TYPENAME 17880 . 17888) (punctuation 17879 . 17880) (TEMPLATE 17871 . 17879) (punctuation 17624 . 17625) (punctuation 17623 . 17624) (punctuation 17622 . 17623) (punctuation 17620 . 17621) (punctuation 17618 . 17619) (symbol 17613 . 17618) (punctuation 17611 . 17612) (symbol 17605 . 17611) (punctuation 17603 . 17604) (symbol 17593 . 17603) (punctuation 17592 . 17593) (symbol 17583 . 17592) (punctuation 17582 . 17583) (symbol 17577 . 17582) (punctuation 17576 . 17577) (symbol 17572 . 17576) (TYPENAME 17563 . 17571) (INLINE 17556 . 17562) (punctuation 17553 . 17554) (symbol 17536 . 17553) (TYPENAME 17527 . 17535) (punctuation 17525 . 17526) (symbol 17520 . 17525) (TYPENAME 17511 . 17519) (punctuation 17509 . 17510) (symbol 17503 . 17509) (TYPENAME 17494 . 17502) (punctuation 17492 . 17493) (symbol 17482 . 17492) (TYPENAME 17473 . 17481) (punctuation 17472 . 17473) (TEMPLATE 17464 . 17472) (punctuation 17213 . 17214) (punctuation 17212 . 17213) (punctuation 17211 . 17212) (punctuation 17209 . 17210) (punctuation 17207 . 17208) (symbol 17202 . 17207) (punctuation 17200 . 17201) (symbol 17194 . 17200) (punctuation 17192 . 17193) (symbol 17182 . 17192) (punctuation 17181 . 17182) (symbol 17172 . 17181) (punctuation 17171 . 17172) (symbol 17166 . 17171) (punctuation 17165 . 17166) (symbol 17161 . 17165) (TYPENAME 17152 . 17160) (INLINE 17145 . 17151) (punctuation 17142 . 17143) (symbol 17125 . 17142) (TYPENAME 17116 . 17124) (punctuation 17114 . 17115) (symbol 17109 . 17114) (TYPENAME 17100 . 17108) (punctuation 17098 . 17099) (symbol 17092 . 17098) (TYPENAME 17083 . 17091) (punctuation 17081 . 17082) (symbol 17071 . 17081) (TYPENAME 17062 . 17070) (punctuation 17061 . 17062) (TEMPLATE 17053 . 17061) (punctuation 16799 . 16800) (punctuation 16798 . 16799) (punctuation 16797 . 16798) (punctuation 16795 . 16796) (punctuation 16793 . 16794) (symbol 16788 . 16793) (punctuation 16786 . 16787) (symbol 16780 . 16786) (punctuation 16778 . 16779) (symbol 16768 . 16778) (punctuation 16767 . 16768) (symbol 16758 . 16767) (punctuation 16757 . 16758) (symbol 16752 . 16757) (punctuation 16751 . 16752) (symbol 16747 . 16751) (TYPENAME 16738 . 16746) (INLINE 16731 . 16737) (punctuation 16728 . 16729) (symbol 16711 . 16728) (TYPENAME 16702 . 16710) (punctuation 16700 . 16701) (symbol 16695 . 16700) (TYPENAME 16686 . 16694) (punctuation 16684 . 16685) (symbol 16678 . 16684) (TYPENAME 16669 . 16677) (punctuation 16667 . 16668) (symbol 16657 . 16667) (TYPENAME 16648 . 16656) (punctuation 16647 . 16648) (TEMPLATE 16639 . 16647) (punctuation 14675 . 14676) (punctuation 14674 . 14675) (punctuation 14673 . 14674) (punctuation 14671 . 14672) (punctuation 14669 . 14670) (symbol 14664 . 14669) (punctuation 14662 . 14663) (symbol 14656 . 14662) (punctuation 14654 . 14655) (symbol 14644 . 14654) (punctuation 14643 . 14644) (symbol 14634 . 14643) (punctuation 14633 . 14634) (symbol 14628 . 14633) (punctuation 14627 . 14628) (symbol 14623 . 14627) (TYPENAME 14614 . 14622) (INLINE 14607 . 14613) (punctuation 14605 . 14606) (symbol 14600 . 14605) (TYPENAME 14591 . 14599) (punctuation 14589 . 14590) (symbol 14583 . 14589) (TYPENAME 14574 . 14582) (punctuation 14572 . 14573) (symbol 14562 . 14572) (TYPENAME 14553 . 14561) (punctuation 14552 . 14553) (TEMPLATE 14544 . 14552) (punctuation 14337 . 14338) (punctuation 14336 . 14337) (punctuation 14335 . 14336) (punctuation 14333 . 14334) (punctuation 14331 . 14332) (symbol 14326 . 14331) (punctuation 14324 . 14325) (symbol 14318 . 14324) (punctuation 14316 . 14317) (symbol 14306 . 14316) (punctuation 14305 . 14306) (symbol 14296 . 14305) (punctuation 14295 . 14296) (symbol 14290 . 14295) (punctuation 14289 . 14290) (symbol 14285 . 14289) (TYPENAME 14276 . 14284) (INLINE 14269 . 14275) (punctuation 14267 . 14268) (symbol 14262 . 14267) (TYPENAME 14253 . 14261) (punctuation 14251 . 14252) (symbol 14245 . 14251) (TYPENAME 14236 . 14244) (punctuation 14234 . 14235) (symbol 14224 . 14234) (TYPENAME 14215 . 14223) (punctuation 14214 . 14215) (TEMPLATE 14206 . 14214) (punctuation 12128 . 12129) (punctuation 12127 . 12128) (punctuation 12126 . 12127) (punctuation 12124 . 12125) (punctuation 12122 . 12123) (symbol 12117 . 12122) (punctuation 12115 . 12116) (symbol 12109 . 12115) (punctuation 12107 . 12108) (symbol 12097 . 12107) (punctuation 12096 . 12097) (symbol 12087 . 12096) (punctuation 12086 . 12087) (symbol 12081 . 12086) (punctuation 12080 . 12081) (symbol 12067 . 12080) (TYPENAME 12058 . 12066) (INLINE 12051 . 12057) (punctuation 12049 . 12050) (symbol 12044 . 12049) (TYPENAME 12035 . 12043) (punctuation 12033 . 12034) (symbol 12027 . 12033) (TYPENAME 12018 . 12026) (punctuation 12016 . 12017) (symbol 12006 . 12016) (TYPENAME 11997 . 12005) (punctuation 11996 . 11997) (TEMPLATE 11988 . 11996) (punctuation 11605 . 11606) (punctuation 11604 . 11605) (punctuation 11603 . 11604) (punctuation 11601 . 11602) (punctuation 11599 . 11600) (symbol 11594 . 11599) (punctuation 11592 . 11593) (symbol 11586 . 11592) (punctuation 11584 . 11585) (symbol 11574 . 11584) (punctuation 11573 . 11574) (symbol 11564 . 11573) (punctuation 11563 . 11564) (symbol 11558 . 11563) (punctuation 11557 . 11558) (symbol 11542 . 11557) (TYPENAME 11533 . 11541) (INLINE 11526 . 11532) (punctuation 11524 . 11525) (symbol 11519 . 11524) (TYPENAME 11510 . 11518) (punctuation 11508 . 11509) (symbol 11502 . 11508) (TYPENAME 11493 . 11501) (punctuation 11491 . 11492) (symbol 11481 . 11491) (TYPENAME 11472 . 11480) (punctuation 11471 . 11472) (TEMPLATE 11463 . 11471) (punctuation 11104 . 11105) (punctuation 11103 . 11104) (punctuation 11102 . 11103) (symbol 11098 . 11102) (punctuation 11097 . 11098) (punctuation 11096 . 11097) (punctuation 11095 . 11096) (punctuation 11093 . 11094) (punctuation 11091 . 11092) (symbol 11086 . 11091) (punctuation 11084 . 11085) (symbol 11078 . 11084) (punctuation 11076 . 11077) (symbol 11066 . 11076) (punctuation 11065 . 11066) (symbol 11056 . 11065) (punctuation 11055 . 11056) (symbol 11050 . 11055) (punctuation 11049 . 11050) (symbol 11041 . 11049) (TYPENAME 11032 . 11040) (punctuation 11031 . 11032) (symbol 11025 . 11031) (INLINE 11018 . 11024) (punctuation 11016 . 11017) (symbol 11011 . 11016) (TYPENAME 11002 . 11010) (punctuation 11000 . 11001) (symbol 10994 . 11000) (TYPENAME 10985 . 10993) (punctuation 10983 . 10984) (symbol 10973 . 10983) (TYPENAME 10964 . 10972) (punctuation 10963 . 10964) (TEMPLATE 10955 . 10963) (punctuation 8917 . 8918) (punctuation 8916 . 8917) (punctuation 8915 . 8916) (symbol 8910 . 8915) (punctuation 8909 . 8910) (symbol 8905 . 8909) (TYPENAME 8896 . 8904) (TYPEDEF 8888 . 8895) (punctuation 8860 . 8861) (punctuation 8859 . 8860) (punctuation 8858 . 8859) (symbol 8853 . 8858) (punctuation 8852 . 8853) (symbol 8836 . 8852) (TYPENAME 8827 . 8835) (TYPEDEF 8819 . 8826) (punctuation 8801 . 8802) (punctuation 8800 . 8801) (punctuation 8799 . 8800) (symbol 8794 . 8799) (punctuation 8793 . 8794) (symbol 8791 . 8793) (TYPENAME 8782 . 8790) (TYPEDEF 8774 . 8781) (punctuation 6325 . 6326) (INT 6322 . 6325) (UNSIGNED 6313 . 6321) (punctuation 6311 . 6312) (symbol 6305 . 6310) (TYPENAME 6296 . 6304) (punctuation 6294 . 6295) (INT 6291 . 6294) (UNSIGNED 6282 . 6290) (punctuation 6280 . 6281) (symbol 6276 . 6279) (TYPENAME 6267 . 6275) (punctuation 6266 . 6267) (TEMPLATE 6258 . 6266) (punctuation 5485 . 5486) (punctuation 5484 . 5485) (punctuation 5483 . 5484) (punctuation 5481 . 5482) (punctuation 5479 . 5480) (symbol 5474 . 5479) (punctuation 5472 . 5473) (symbol 5466 . 5472) (punctuation 5465 . 5466) (symbol 5455 . 5465) (punctuation 5454 . 5455) (symbol 5449 . 5454) (punctuation 5448 . 5449) (symbol 5440 . 5448) (TYPENAME 5431 . 5439) (TYPEDEF 5423 . 5430) (punctuation 5198 . 5199) (punctuation 5197 . 5198) (punctuation 5196 . 5197) (CONST 5191 . 5196) (punctuation 5189 . 5190) (punctuation 5187 . 5188) (symbol 5182 . 5187) (punctuation 5180 . 5181) (symbol 5174 . 5180) (punctuation 5173 . 5174) (symbol 5163 . 5173) (punctuation 5162 . 5163) (symbol 5157 . 5162) (punctuation 5156 . 5157) (symbol 5148 . 5156) (TYPENAME 5139 . 5147) (TYPEDEF 5131 . 5138) (punctuation 4716 . 4717) (symbol 4709 . 4716) (punctuation 4707 . 4708) (symbol 4701 . 4706) (TYPENAME 4692 . 4700) (punctuation 4690 . 4691) (INT 4687 . 4690) (UNSIGNED 4678 . 4686) (punctuation 4676 . 4677) (symbol 4669 . 4675) (TYPENAME 4660 . 4668) (punctuation 4658 . 4659) (symbol 4648 . 4658) (TYPENAME 4639 . 4647) (punctuation 4638 . 4639) (TEMPLATE 4630 . 4638) (punctuation 17624 . 17625) (punctuation 17623 . 17624) (punctuation 17622 . 17623) (punctuation 17620 . 17621) (punctuation 17618 . 17619) (symbol 17613 . 17618) (punctuation 17611 . 17612) (symbol 17605 . 17611) (punctuation 17603 . 17604) (symbol 17593 . 17603) (punctuation 17592 . 17593) (symbol 17583 . 17592) (punctuation 17582 . 17583) (symbol 17577 . 17582) (punctuation 17576 . 17577) (symbol 17572 . 17576) (TYPENAME 17563 . 17571) (INLINE 17556 . 17562) (punctuation 17553 . 17554) (symbol 17536 . 17553) (TYPENAME 17527 . 17535) (punctuation 17525 . 17526) (symbol 17520 . 17525) (TYPENAME 17511 . 17519) (punctuation 17509 . 17510) (symbol 17503 . 17509) (TYPENAME 17494 . 17502) (punctuation 17492 . 17493) (symbol 17482 . 17492) (TYPENAME 17473 . 17481) (punctuation 17472 . 17473) (TEMPLATE 17464 . 17472) (punctuation 17213 . 17214) (punctuation 17212 . 17213) (punctuation 17211 . 17212) (punctuation 17209 . 17210) (punctuation 17207 . 17208) (symbol 17202 . 17207) (punctuation 17200 . 17201) (symbol 17194 . 17200) (punctuation 17192 . 17193) (symbol 17182 . 17192) (punctuation 17181 . 17182) (symbol 17172 . 17181) (punctuation 17171 . 17172) (symbol 17166 . 17171) (punctuation 17165 . 17166) (symbol 17161 . 17165) (TYPENAME 17152 . 17160) (INLINE 17145 . 17151) (punctuation 17142 . 17143) (symbol 17125 . 17142) (TYPENAME 17116 . 17124) (punctuation 17114 . 17115) (symbol 17109 . 17114) (TYPENAME 17100 . 17108) (punctuation 17098 . 17099) (symbol 17092 . 17098) (TYPENAME 17083 . 17091) (punctuation 17081 . 17082) (symbol 17071 . 17081) (TYPENAME 17062 . 17070) (punctuation 17061 . 17062) (TEMPLATE 17053 . 17061) (punctuation 16799 . 16800) (punctuation 16798 . 16799) (punctuation 16797 . 16798) (punctuation 16795 . 16796) (punctuation 16793 . 16794) (symbol 16788 . 16793) (punctuation 16786 . 16787) (symbol 16780 . 16786) (punctuation 16778 . 16779) (symbol 16768 . 16778) (punctuation 16767 . 16768) (symbol 16758 . 16767) (punctuation 16757 . 16758) (symbol 16752 . 16757) (punctuation 16751 . 16752) (symbol 16747 . 16751) (TYPENAME 16738 . 16746) (INLINE 16731 . 16737) (punctuation 16728 . 16729) (symbol 16711 . 16728) (TYPENAME 16702 . 16710) (punctuation 16700 . 16701) (symbol 16695 . 16700) (TYPENAME 16686 . 16694) (punctuation 16684 . 16685) (symbol 16678 . 16684) (TYPENAME 16669 . 16677) (punctuation 16667 . 16668) (symbol 16657 . 16667) (TYPENAME 16648 . 16656) (punctuation 16647 . 16648) (TEMPLATE 16639 . 16647) (punctuation 14675 . 14676) (punctuation 14674 . 14675) (punctuation 14673 . 14674) (punctuation 14671 . 14672) (punctuation 14669 . 14670) (symbol 14664 . 14669) (punctuation 14662 . 14663) (symbol 14656 . 14662) (punctuation 14654 . 14655) (symbol 14644 . 14654) (punctuation 14643 . 14644) (symbol 14634 . 14643) (punctuation 14633 . 14634) (symbol 14628 . 14633) (punctuation 14627 . 14628) (symbol 14623 . 14627) (TYPENAME 14614 . 14622) (INLINE 14607 . 14613) (punctuation 14605 . 14606) (symbol 14600 . 14605) (TYPENAME 14591 . 14599) (punctuation 14589 . 14590) (symbol 14583 . 14589) (TYPENAME 14574 . 14582) (punctuation 14572 . 14573) (symbol 14562 . 14572) (TYPENAME 14553 . 14561) (punctuation 14552 . 14553) (TEMPLATE 14544 . 14552) (punctuation 14337 . 14338) (punctuation 14336 . 14337) (punctuation 14335 . 14336) (punctuation 14333 . 14334) (punctuation 14331 . 14332) (symbol 14326 . 14331) (punctuation 14324 . 14325) (symbol 14318 . 14324) (punctuation 14316 . 14317) (symbol 14306 . 14316) (punctuation 14305 . 14306) (symbol 14296 . 14305) (punctuation 14295 . 14296) (symbol 14290 . 14295) (punctuation 14289 . 14290) (symbol 14285 . 14289) (TYPENAME 14276 . 14284) (INLINE 14269 . 14275) (punctuation 14267 . 14268) (symbol 14262 . 14267) (TYPENAME 14253 . 14261) (punctuation 14251 . 14252) (symbol 14245 . 14251) (TYPENAME 14236 . 14244) (punctuation 14234 . 14235) (symbol 14224 . 14234) (TYPENAME 14215 . 14223) (punctuation 14214 . 14215) (TEMPLATE 14206 . 14214) (punctuation 12128 . 12129) (punctuation 12127 . 12128) (punctuation 12126 . 12127) (punctuation 12124 . 12125) (punctuation 12122 . 12123) (symbol 12117 . 12122) (punctuation 12115 . 12116) (symbol 12109 . 12115) (punctuation 12107 . 12108) (symbol 12097 . 12107) (punctuation 12096 . 12097) (symbol 12087 . 12096) (punctuation 12086 . 12087) (symbol 12081 . 12086) (punctuation 12080 . 12081) (symbol 12067 . 12080) (TYPENAME 12058 . 12066) (INLINE 12051 . 12057) (punctuation 12049 . 12050) (symbol 12044 . 12049) (TYPENAME 12035 . 12043) (punctuation 12033 . 12034) (symbol 12027 . 12033) (TYPENAME 12018 . 12026) (punctuation 12016 . 12017) (symbol 12006 . 12016) (TYPENAME 11997 . 12005) (punctuation 11996 . 11997) (TEMPLATE 11988 . 11996) (punctuation 11605 . 11606) (punctuation 11604 . 11605) (punctuation 11603 . 11604) (punctuation 11601 . 11602) (punctuation 11599 . 11600) (symbol 11594 . 11599) (punctuation 11592 . 11593) (symbol 11586 . 11592) (punctuation 11584 . 11585) (symbol 11574 . 11584) (punctuation 11573 . 11574) (symbol 11564 . 11573) (punctuation 11563 . 11564) (symbol 11558 . 11563) (punctuation 11557 . 11558) (symbol 11542 . 11557) (TYPENAME 11533 . 11541) (INLINE 11526 . 11532) (punctuation 11524 . 11525) (symbol 11519 . 11524) (TYPENAME 11510 . 11518) (punctuation 11508 . 11509) (symbol 11502 . 11508) (TYPENAME 11493 . 11501) (punctuation 11491 . 11492) (symbol 11481 . 11491) (TYPENAME 11472 . 11480) (punctuation 11471 . 11472) (TEMPLATE 11463 . 11471) (punctuation 11104 . 11105) (punctuation 11103 . 11104) (punctuation 11102 . 11103) (symbol 11098 . 11102) (punctuation 11097 . 11098) (punctuation 11096 . 11097) (punctuation 11095 . 11096) (punctuation 11093 . 11094) (punctuation 11091 . 11092) (symbol 11086 . 11091) (punctuation 11084 . 11085) (symbol 11078 . 11084) (punctuation 11076 . 11077) (symbol 11066 . 11076) (punctuation 11065 . 11066) (symbol 11056 . 11065) (punctuation 11055 . 11056) (symbol 11050 . 11055) (punctuation 11049 . 11050) (symbol 11041 . 11049) (TYPENAME 11032 . 11040) (punctuation 11031 . 11032) (symbol 11025 . 11031) (INLINE 11018 . 11024) (punctuation 11016 . 11017) (symbol 11011 . 11016) (TYPENAME 11002 . 11010) (punctuation 11000 . 11001) (symbol 10994 . 11000) (TYPENAME 10985 . 10993) (punctuation 10983 . 10984) (symbol 10973 . 10983) (TYPENAME 10964 . 10972) (punctuation 10963 . 10964) (TEMPLATE 10955 . 10963) (punctuation 8917 . 8918) (punctuation 8916 . 8917) (punctuation 8915 . 8916) (symbol 8910 . 8915) (punctuation 8909 . 8910) (symbol 8905 . 8909) (TYPENAME 8896 . 8904) (TYPEDEF 8888 . 8895) (punctuation 8860 . 8861) (punctuation 8859 . 8860) (punctuation 8858 . 8859) (symbol 8853 . 8858) (punctuation 8852 . 8853) (symbol 8836 . 8852) (TYPENAME 8827 . 8835) (TYPEDEF 8819 . 8826) (punctuation 8801 . 8802) (punctuation 8800 . 8801) (punctuation 8799 . 8800) (symbol 8794 . 8799) (punctuation 8793 . 8794) (symbol 8791 . 8793) (TYPENAME 8782 . 8790) (TYPEDEF 8774 . 8781) (punctuation 6325 . 6326) (INT 6322 . 6325) (UNSIGNED 6313 . 6321) (punctuation 6311 . 6312) (symbol 6305 . 6310) (TYPENAME 6296 . 6304) (punctuation 6294 . 6295) (INT 6291 . 6294) (UNSIGNED 6282 . 6290) (punctuation 6280 . 6281) (symbol 6276 . 6279) (TYPENAME 6267 . 6275) (punctuation 6266 . 6267) (TEMPLATE 6258 . 6266) (punctuation 5485 . 5486) (punctuation 5484 . 5485) (punctuation 5483 . 5484) (punctuation 5481 . 5482) (punctuation 5479 . 5480) (symbol 5474 . 5479) (punctuation 5472 . 5473) (symbol 5466 . 5472) (punctuation 5465 . 5466) (symbol 5455 . 5465) (punctuation 5454 . 5455) (symbol 5449 . 5454) (punctuation 5448 . 5449) (symbol 5440 . 5448) (TYPENAME 5431 . 5439) (TYPEDEF 5423 . 5430) (punctuation 5198 . 5199) (punctuation 5197 . 5198) (punctuation 5196 . 5197) (CONST 5191 . 5196) (punctuation 5189 . 5190) (punctuation 5187 . 5188) (symbol 5182 . 5187) (punctuation 5180 . 5181) (symbol 5174 . 5180) (punctuation 5173 . 5174) (symbol 5163 . 5173) (punctuation 5162 . 5163) (symbol 5157 . 5162) (punctuation 5156 . 5157) (symbol 5148 . 5156) (TYPENAME 5139 . 5147) (TYPEDEF 5131 . 5138) (punctuation 4716 . 4717) (symbol 4709 . 4716) (punctuation 4707 . 4708) (symbol 4701 . 4706) (TYPENAME 4692 . 4700) (punctuation 4690 . 4691) (INT 4687 . 4690) (UNSIGNED 4678 . 4686) (punctuation 4676 . 4677) (symbol 4669 . 4675) (TYPENAME 4660 . 4668) (punctuation 4658 . 4659) (symbol 4648 . 4658) (TYPENAME 4639 . 4647) (punctuation 4638 . 4639) (TEMPLATE 4630 . 4638) (punctuation 11605 . 11606) (punctuation 11604 . 11605) (punctuation 11603 . 11604) (punctuation 11601 . 11602) (punctuation 11599 . 11600) (symbol 11594 . 11599) (punctuation 11592 . 11593) (symbol 11586 . 11592) (punctuation 11584 . 11585) (symbol 11574 . 11584) (punctuation 11573 . 11574) (symbol 11564 . 11573) (punctuation 11563 . 11564) (symbol 11558 . 11563) (punctuation 11557 . 11558) (symbol 11542 . 11557) (TYPENAME 11533 . 11541) (INLINE 11526 . 11532) (punctuation 11524 . 11525) (symbol 11519 . 11524) (TYPENAME 11510 . 11518) (punctuation 11508 . 11509) (symbol 11502 . 11508) (TYPENAME 11493 . 11501) (punctuation 11491 . 11492) (symbol 11481 . 11491) (TYPENAME 11472 . 11480) (punctuation 11471 . 11472) (TEMPLATE 11463 . 11471) (punctuation 11104 . 11105) (punctuation 11103 . 11104) (punctuation 11102 . 11103) (symbol 11098 . 11102) (punctuation 11097 . 11098) (punctuation 11096 . 11097) (punctuation 11095 . 11096) (punctuation 11093 . 11094) (punctuation 11091 . 11092) (symbol 11086 . 11091) (punctuation 11084 . 11085) (symbol 11078 . 11084) (punctuation 11076 . 11077) (symbol 11066 . 11076) (punctuation 11065 . 11066) (symbol 11056 . 11065) (punctuation 11055 . 11056) (symbol 11050 . 11055) (punctuation 11049 . 11050) (symbol 11041 . 11049) (TYPENAME 11032 . 11040) (punctuation 11031 . 11032) (symbol 11025 . 11031) (INLINE 11018 . 11024) (punctuation 11016 . 11017) (symbol 11011 . 11016) (TYPENAME 11002 . 11010) (punctuation 11000 . 11001) (symbol 10994 . 11000) (TYPENAME 10985 . 10993) (punctuation 10983 . 10984) (symbol 10973 . 10983) (TYPENAME 10964 . 10972) (punctuation 10963 . 10964) (TEMPLATE 10955 . 10963) (punctuation 8917 . 8918) (punctuation 8916 . 8917) (punctuation 8915 . 8916) (symbol 8910 . 8915) (punctuation 8909 . 8910) (symbol 8905 . 8909) (TYPENAME 8896 . 8904) (TYPEDEF 8888 . 8895) (punctuation 8860 . 8861) (punctuation 8859 . 8860) (punctuation 8858 . 8859) (symbol 8853 . 8858) (punctuation 8852 . 8853) (symbol 8836 . 8852) (TYPENAME 8827 . 8835) (TYPEDEF 8819 . 8826) (punctuation 8801 . 8802) (punctuation 8800 . 8801) (punctuation 8799 . 8800) (symbol 8794 . 8799) (punctuation 8793 . 8794) (symbol 8791 . 8793) (TYPENAME 8782 . 8790) (TYPEDEF 8774 . 8781) (punctuation 6325 . 6326) (INT 6322 . 6325) (UNSIGNED 6313 . 6321) (punctuation 6311 . 6312) (symbol 6305 . 6310) (TYPENAME 6296 . 6304) (punctuation 6294 . 6295) (INT 6291 . 6294) (UNSIGNED 6282 . 6290) (punctuation 6280 . 6281) (symbol 6276 . 6279) (TYPENAME 6267 . 6275) (punctuation 6266 . 6267) (TEMPLATE 6258 . 6266) (punctuation 5485 . 5486) (punctuation 5484 . 5485) (punctuation 5483 . 5484) (punctuation 5481 . 5482) (punctuation 5479 . 5480) (symbol 5474 . 5479) (punctuation 5472 . 5473) (symbol 5466 . 5472) (punctuation 5465 . 5466) (symbol 5455 . 5465) (punctuation 5454 . 5455) (symbol 5449 . 5454) (punctuation 5448 . 5449) (symbol 5440 . 5448) (TYPENAME 5431 . 5439) (TYPEDEF 5423 . 5430) (punctuation 5198 . 5199) (punctuation 5197 . 5198) (punctuation 5196 . 5197) (CONST 5191 . 5196) (punctuation 5189 . 5190) (punctuation 5187 . 5188) (symbol 5182 . 5187) (punctuation 5180 . 5181) (symbol 5174 . 5180) (punctuation 5173 . 5174) (symbol 5163 . 5173) (punctuation 5162 . 5163) (symbol 5157 . 5162) (punctuation 5156 . 5157) (symbol 5148 . 5156) (TYPENAME 5139 . 5147) (TYPEDEF 5131 . 5138) (punctuation 4716 . 4717) (symbol 4709 . 4716) (punctuation 4707 . 4708) (symbol 4701 . 4706) (TYPENAME 4692 . 4700) (punctuation 4690 . 4691) (INT 4687 . 4690) (UNSIGNED 4678 . 4686) (punctuation 4676 . 4677) (symbol 4669 . 4675) (TYPENAME 4660 . 4668) (punctuation 4658 . 4659) (symbol 4648 . 4658) (TYPENAME 4639 . 4647) (punctuation 4638 . 4639) (TEMPLATE 4630 . 4638) (punctuation 14675 . 14676) (punctuation 14674 . 14675) (punctuation 14673 . 14674) (punctuation 14671 . 14672) (punctuation 14669 . 14670) (symbol 14664 . 14669) (punctuation 14662 . 14663) (symbol 14656 . 14662) (punctuation 14654 . 14655) (symbol 14644 . 14654) (punctuation 14643 . 14644) (symbol 14634 . 14643) (punctuation 14633 . 14634) (symbol 14628 . 14633) (punctuation 14627 . 14628) (symbol 14623 . 14627) (TYPENAME 14614 . 14622) (INLINE 14607 . 14613) (punctuation 14605 . 14606) (symbol 14600 . 14605) (TYPENAME 14591 . 14599) (punctuation 14589 . 14590) (symbol 14583 . 14589) (TYPENAME 14574 . 14582) (punctuation 14572 . 14573) (symbol 14562 . 14572) (TYPENAME 14553 . 14561) (punctuation 14552 . 14553) (TEMPLATE 14544 . 14552) (punctuation 14337 . 14338) (punctuation 14336 . 14337) (punctuation 14335 . 14336) (punctuation 14333 . 14334) (punctuation 14331 . 14332) (symbol 14326 . 14331) (punctuation 14324 . 14325) (symbol 14318 . 14324) (punctuation 14316 . 14317) (symbol 14306 . 14316) (punctuation 14305 . 14306) (symbol 14296 . 14305) (punctuation 14295 . 14296) (symbol 14290 . 14295) (punctuation 14289 . 14290) (symbol 14285 . 14289) (TYPENAME 14276 . 14284) (INLINE 14269 . 14275) (punctuation 14267 . 14268) (symbol 14262 . 14267) (TYPENAME 14253 . 14261) (punctuation 14251 . 14252) (symbol 14245 . 14251) (TYPENAME 14236 . 14244) (punctuation 14234 . 14235) (symbol 14224 . 14234) (TYPENAME 14215 . 14223) (punctuation 14214 . 14215) (TEMPLATE 14206 . 14214) (punctuation 12128 . 12129) (punctuation 12127 . 12128) (punctuation 12126 . 12127) (punctuation 12124 . 12125) (punctuation 12122 . 12123) (symbol 12117 . 12122) (punctuation 12115 . 12116) (symbol 12109 . 12115) (punctuation 12107 . 12108) (symbol 12097 . 12107) (punctuation 12096 . 12097) (symbol 12087 . 12096) (punctuation 12086 . 12087) (symbol 12081 . 12086) (punctuation 12080 . 12081) (symbol 12067 . 12080) (TYPENAME 12058 . 12066) (INLINE 12051 . 12057) (punctuation 12049 . 12050) (symbol 12044 . 12049) (TYPENAME 12035 . 12043) (punctuation 12033 . 12034) (symbol 12027 . 12033) (TYPENAME 12018 . 12026) (punctuation 12016 . 12017) (symbol 12006 . 12016) (TYPENAME 11997 . 12005) (punctuation 11996 . 11997) (TEMPLATE 11988 . 11996) (punctuation 11605 . 11606) (punctuation 11604 . 11605) (punctuation 11603 . 11604) (punctuation 11601 . 11602) (punctuation 11599 . 11600) (symbol 11594 . 11599) (punctuation 11592 . 11593) (symbol 11586 . 11592) (punctuation 11584 . 11585) (symbol 11574 . 11584) (punctuation 11573 . 11574) (symbol 11564 . 11573) (punctuation 11563 . 11564) (symbol 11558 . 11563) (punctuation 11557 . 11558) (symbol 11542 . 11557) (TYPENAME 11533 . 11541) (INLINE 11526 . 11532) (punctuation 11524 . 11525) (symbol 11519 . 11524) (TYPENAME 11510 . 11518) (punctuation 11508 . 11509) (symbol 11502 . 11508) (TYPENAME 11493 . 11501) (punctuation 11491 . 11492) (symbol 11481 . 11491) (TYPENAME 11472 . 11480) (punctuation 11471 . 11472) (TEMPLATE 11463 . 11471) (punctuation 11104 . 11105) (punctuation 11103 . 11104) (punctuation 11102 . 11103) (symbol 11098 . 11102) (punctuation 11097 . 11098) (punctuation 11096 . 11097) (punctuation 11095 . 11096) (punctuation 11093 . 11094) (punctuation 11091 . 11092) (symbol 11086 . 11091) (punctuation 11084 . 11085) (symbol 11078 . 11084) (punctuation 11076 . 11077) (symbol 11066 . 11076) (punctuation 11065 . 11066) (symbol 11056 . 11065) (punctuation 11055 . 11056) (symbol 11050 . 11055) (punctuation 11049 . 11050) (symbol 11041 . 11049) (TYPENAME 11032 . 11040) (punctuation 11031 . 11032) (symbol 11025 . 11031) (INLINE 11018 . 11024) (punctuation 11016 . 11017) (symbol 11011 . 11016) (TYPENAME 11002 . 11010) (punctuation 11000 . 11001) (symbol 10994 . 11000) (TYPENAME 10985 . 10993) (punctuation 10983 . 10984) (symbol 10973 . 10983) (TYPENAME 10964 . 10972) (punctuation 10963 . 10964) (TEMPLATE 10955 . 10963) (punctuation 8917 . 8918) (punctuation 8916 . 8917) (punctuation 8915 . 8916) (symbol 8910 . 8915) (punctuation 8909 . 8910) (symbol 8905 . 8909) (TYPENAME 8896 . 8904) (TYPEDEF 8888 . 8895) (punctuation 8860 . 8861) (punctuation 8859 . 8860) (punctuation 8858 . 8859) (symbol 8853 . 8858) (punctuation 8852 . 8853) (symbol 8836 . 8852) (TYPENAME 8827 . 8835) (TYPEDEF 8819 . 8826) (punctuation 8801 . 8802) (punctuation 8800 . 8801) (punctuation 8799 . 8800) (symbol 8794 . 8799) (punctuation 8793 . 8794) (symbol 8791 . 8793) (TYPENAME 8782 . 8790) (TYPEDEF 8774 . 8781) (punctuation 6325 . 6326) (INT 6322 . 6325) (UNSIGNED 6313 . 6321) (punctuation 6311 . 6312) (symbol 6305 . 6310) (TYPENAME 6296 . 6304) (punctuation 6294 . 6295) (INT 6291 . 6294) (UNSIGNED 6282 . 6290) (punctuation 6280 . 6281) (symbol 6276 . 6279) (TYPENAME 6267 . 6275) (punctuation 6266 . 6267) (TEMPLATE 6258 . 6266) (punctuation 5485 . 5486) (punctuation 5484 . 5485) (punctuation 5483 . 5484) (punctuation 5481 . 5482) (punctuation 5479 . 5480) (symbol 5474 . 5479) (punctuation 5472 . 5473) (symbol 5466 . 5472) (punctuation 5465 . 5466) (symbol 5455 . 5465) (punctuation 5454 . 5455) (symbol 5449 . 5454) (punctuation 5448 . 5449) (symbol 5440 . 5448) (TYPENAME 5431 . 5439) (TYPEDEF 5423 . 5430) (punctuation 5198 . 5199) (punctuation 5197 . 5198) (punctuation 5196 . 5197) (CONST 5191 . 5196) (punctuation 5189 . 5190) (punctuation 5187 . 5188) (symbol 5182 . 5187) (punctuation 5180 . 5181) (symbol 5174 . 5180) (punctuation 5173 . 5174) (symbol 5163 . 5173) (punctuation 5162 . 5163) (symbol 5157 . 5162) (punctuation 5156 . 5157) (symbol 5148 . 5156) (TYPENAME 5139 . 5147) (TYPEDEF 5131 . 5138) (punctuation 4716 . 4717) (symbol 4709 . 4716) (punctuation 4707 . 4708) (symbol 4701 . 4706) (TYPENAME 4692 . 4700) (punctuation 4690 . 4691) (INT 4687 . 4690) (UNSIGNED 4678 . 4686) (punctuation 4676 . 4677) (symbol 4669 . 4675) (TYPENAME 4660 . 4668) (punctuation 4658 . 4659) (symbol 4648 . 4658) (TYPENAME 4639 . 4647) (punctuation 4638 . 4639) (TEMPLATE 4630 . 4638) (punctuation 11605 . 11606) (punctuation 11604 . 11605) (punctuation 11603 . 11604) (punctuation 11601 . 11602) (punctuation 11599 . 11600) (symbol 11594 . 11599) (punctuation 11592 . 11593) (symbol 11586 . 11592) (punctuation 11584 . 11585) (symbol 11574 . 11584) (punctuation 11573 . 11574) (symbol 11564 . 11573) (punctuation 11563 . 11564) (symbol 11558 . 11563) (punctuation 11557 . 11558) (symbol 11542 . 11557) (TYPENAME 11533 . 11541) (INLINE 11526 . 11532) (punctuation 11524 . 11525) (symbol 11519 . 11524) (TYPENAME 11510 . 11518) (punctuation 11508 . 11509) (symbol 11502 . 11508) (TYPENAME 11493 . 11501) (punctuation 11491 . 11492) (symbol 11481 . 11491) (TYPENAME 11472 . 11480) (punctuation 11471 . 11472) (TEMPLATE 11463 . 11471) (punctuation 11104 . 11105) (punctuation 11103 . 11104) (punctuation 11102 . 11103) (symbol 11098 . 11102) (punctuation 11097 . 11098) (punctuation 11096 . 11097) (punctuation 11095 . 11096) (punctuation 11093 . 11094) (punctuation 11091 . 11092) (symbol 11086 . 11091) (punctuation 11084 . 11085) (symbol 11078 . 11084) (punctuation 11076 . 11077) (symbol 11066 . 11076) (punctuation 11065 . 11066) (symbol 11056 . 11065) (punctuation 11055 . 11056) (symbol 11050 . 11055) (punctuation 11049 . 11050) (symbol 11041 . 11049) (TYPENAME 11032 . 11040) (punctuation 11031 . 11032) (symbol 11025 . 11031) (INLINE 11018 . 11024) (punctuation 11016 . 11017) (symbol 11011 . 11016) (TYPENAME 11002 . 11010) (punctuation 11000 . 11001) (symbol 10994 . 11000) (TYPENAME 10985 . 10993) (punctuation 10983 . 10984) (symbol 10973 . 10983) (TYPENAME 10964 . 10972) (punctuation 10963 . 10964) (TEMPLATE 10955 . 10963) (punctuation 8917 . 8918) (punctuation 8916 . 8917) (punctuation 8915 . 8916) (symbol 8910 . 8915) (punctuation 8909 . 8910) (symbol 8905 . 8909) (TYPENAME 8896 . 8904) (TYPEDEF 8888 . 8895) (punctuation 8860 . 8861) (punctuation 8859 . 8860) (punctuation 8858 . 8859) (symbol 8853 . 8858) (punctuation 8852 . 8853) (symbol 8836 . 8852) (TYPENAME 8827 . 8835) (TYPEDEF 8819 . 8826) (punctuation 8801 . 8802) (punctuation 8800 . 8801) (punctuation 8799 . 8800) (symbol 8794 . 8799) (punctuation 8793 . 8794) (symbol 8791 . 8793) (TYPENAME 8782 . 8790) (TYPEDEF 8774 . 8781) (punctuation 6325 . 6326) (INT 6322 . 6325) (UNSIGNED 6313 . 6321) (punctuation 6311 . 6312) (symbol 6305 . 6310) (TYPENAME 6296 . 6304) (punctuation 6294 . 6295) (INT 6291 . 6294) (UNSIGNED 6282 . 6290) (punctuation 6280 . 6281) (symbol 6276 . 6279) (TYPENAME 6267 . 6275) (punctuation 6266 . 6267) (TEMPLATE 6258 . 6266) (punctuation 5485 . 5486) (punctuation 5484 . 5485) (punctuation 5483 . 5484) (punctuation 5481 . 5482) (punctuation 5479 . 5480) (symbol 5474 . 5479) (punctuation 5472 . 5473) (symbol 5466 . 5472) (punctuation 5465 . 5466) (symbol 5455 . 5465) (punctuation 5454 . 5455) (symbol 5449 . 5454) (punctuation 5448 . 5449) (symbol 5440 . 5448) (TYPENAME 5431 . 5439) (TYPEDEF 5423 . 5430) (punctuation 5198 . 5199) (punctuation 5197 . 5198) (punctuation 5196 . 5197) (CONST 5191 . 5196) (punctuation 5189 . 5190) (punctuation 5187 . 5188) (symbol 5182 . 5187) (punctuation 5180 . 5181) (symbol 5174 . 5180) (punctuation 5173 . 5174) (symbol 5163 . 5173) (punctuation 5162 . 5163) (symbol 5157 . 5162) (punctuation 5156 . 5157) (symbol 5148 . 5156) (TYPENAME 5139 . 5147) (TYPEDEF 5131 . 5138) (punctuation 4716 . 4717) (symbol 4709 . 4716) (punctuation 4707 . 4708) (symbol 4701 . 4706) (TYPENAME 4692 . 4700) (punctuation 4690 . 4691) (INT 4687 . 4690) (UNSIGNED 4678 . 4686) (punctuation 4676 . 4677) (symbol 4669 . 4675) (TYPENAME 4660 . 4668) (punctuation 4658 . 4659) (symbol 4648 . 4658) (TYPENAME 4639 . 4647) (punctuation 4638 . 4639) (TEMPLATE 4630 . 4638))
+    :lexical-table 
+        '(("SEQAN_CORE_INCLUDE_SEQAN_GRAPH_ALIGN_GRAPH_IMPL_ALIGN_H_")
+          )
+
+    )
+   )
+  :file "!home!dlee!Projects!wham!src!seqan!core!include!seqan!graph_align!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

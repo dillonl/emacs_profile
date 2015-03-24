@@ -1,0 +1,154 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "FastQ.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("FastQ.h" include nil nil [1 19])
+            ("iostream" include (:system-flag t) nil [21 40])
+            ("fstream" include (:system-flag t) nil [41 59])
+            ("FastQ" function
+               (:constructor-flag t
+                :parent "FastQ"
+                :arguments 
+                  ( ("file_name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [74 103]))                  
+                :type ("FastQ" type (:type "class") nil nil))
+                nil [61 166])
+            ("FastQ" function
+               (:destructor-flag t
+                :parent "setFileSizeFastQ"
+                :type "void")
+                nil [168 187])
+            ("setFileSize" function
+               (:parent "FastQ"
+                :type "void")
+                nil [189 360]))          
+    :file "FastQ.cpp"
+    :pointmax 361
+    :fsize 360
+    :lastmodtime '(21556 23348 677279 347000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "FastQ.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("FAST_Q_H" variable (:constant-flag t) nil [26 34])
+            ("string" include (:system-flag t) nil [36 53])
+            ("FastQ" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [70 77])
+                    ("FastQ" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("file_name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [86 115]))                          
+                        :type ("FastQ" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [80 116])
+                    ("FastQ" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [119 128])
+                    ("private" label nil (reparse-symbol classsubparts) [130 138])
+                    ("setFileSize" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [385 404])
+                    ("m_file_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [408 427])
+                    ("m_file_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [430 454]))                  
+                :type "class")
+                nil [55 458]))          
+    :file "FastQ.h"
+    :pointmax 490
+    :fsize 489
+    :lastmodtime '(21556 23876 980044 19000)
+    :unmatched-syntax '((punctuation 351 . 352) (DELETE 345 . 351) (punctuation 343 . 344) (semantic-list 322 . 342) (punctuation 321 . 322) (OPERATOR 313 . 321) (punctuation 311 . 312) (symbol 306 . 311) (punctuation 261 . 262) (DELETE 255 . 261) (punctuation 253 . 254) (semantic-list 232 . 252) (symbol 227 . 232) (punctuation 157 . 158) (DELETE 151 . 157) (punctuation 149 . 150) (semantic-list 146 . 148) (symbol 141 . 146) (punctuation 351 . 352) (DELETE 345 . 351) (punctuation 343 . 344) (semantic-list 322 . 342) (punctuation 321 . 322) (OPERATOR 313 . 321) (punctuation 311 . 312) (symbol 306 . 311) (punctuation 261 . 262) (DELETE 255 . 261) (punctuation 253 . 254) (semantic-list 232 . 252) (symbol 227 . 232) (punctuation 157 . 158) (DELETE 151 . 157) (punctuation 149 . 150) (semantic-list 146 . 148) (symbol 141 . 146) (punctuation 351 . 352) (DELETE 345 . 351) (punctuation 343 . 344) (semantic-list 322 . 342) (punctuation 321 . 322) (OPERATOR 313 . 321) (punctuation 311 . 312) (symbol 306 . 311) (punctuation 261 . 262) (DELETE 255 . 261) (punctuation 253 . 254) (semantic-list 232 . 252) (symbol 227 . 232) (punctuation 157 . 158) (DELETE 151 . 157) (punctuation 149 . 150) (semantic-list 146 . 148) (symbol 141 . 146))
+    :lexical-table 
+        '(("FAST_Q_H")
+          )
+
+    )
+   (semanticdb-table "FastQChunk.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("FAST_Q_CHUNK_H" variable (:constant-flag t) nil [32 46])
+            ("FastQChunk" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [67 74])
+                    ("FastQChunk" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("FastQChunk" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [76 89])
+                    ("FastQChunk" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [91 105])
+                    ("private" label nil (reparse-symbol classsubparts) [107 115]))                  
+                :type "class")
+                nil [48 234]))          
+    :file "FastQChunk.h"
+    :pointmax 272
+    :fsize 271
+    :lastmodtime '(21556 24062 870164 285000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("FAST_Q_CHUNK_H")
+          )
+
+    )
+   (semanticdb-table "FastQChunk.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("FastQChunk" include nil nil [1 22])
+            ("FastQChunk" function
+               (:constructor-flag t
+                :parent "FastQChunk"
+                :type ("FastQChunk" type (:type "class") nil nil))
+                nil [24 52])
+            ("FastQChunk" function
+               (:destructor-flag t
+                :parent "FastQChunk"
+                :type "void")
+                nil [54 83]))          
+    :file "FastQChunk.cpp"
+    :pointmax 84
+    :fsize 83
+    :lastmodtime '(21557 20186 421774 391000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "FastFileReader.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("FastQ.h" include nil nil [1 19])
+            ("string" include (:system-flag t) nil [21 38])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2152 2161])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2162 2174]))                  
+                :type "int")
+                nil [2143 2735]))          
+    :file "FastFileReader.cpp"
+    :pointmax 2736
+    :fsize 2735
+    :lastmodtime '(21556 25178 12895 619000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!dlee!Projects!FastQReader!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
