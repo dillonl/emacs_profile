@@ -133,8 +133,8 @@
                 nil [168 2061]))          
     :file "TestReferenceVariantGenerator.hpp"
     :pointmax 2116
-    :fsize 2148
-    :lastmodtime '(21744 13367 0 0)
+    :fsize 2022
+    :lastmodtime '(21777 34798 0 0)
     :unmatched-syntax 'nil
     :lexical-table 
         '(("GWIZ_TEST_TESTREFERENCEVARIANTGENERATOR_HPP")
@@ -181,25 +181,25 @@
                                        (:destructor-flag t
                                         :type "void")
                                         (reparse-symbol classsubparts) [500 528])
-                                    ("size" function (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [835 902])
-                                    ("private" label nil (reparse-symbol classsubparts) [906 914])
-                                    ("m_variant_index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [918 941])
+                                    ("size" function (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [906 973])
+                                    ("private" label nil (reparse-symbol classsubparts) [977 985])
+                                    ("m_variant_index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [989 1012])
                                     ("m_variant_ptr_list" variable (:type ("std::vector" type
                                          (:template-specifier 
                                             ( ("Variant::SharedPtr" type nil nil nil))                                            
                                           :type "class")
-                                          nil nil)) (reparse-symbol classsubparts) [945 998]))                                  
+                                          nil nil)) (reparse-symbol classsubparts) [1016 1069]))                                  
                                 :type "class")
-                                (reparse-symbol namespacesubparts) [228 1004]))                          
+                                (reparse-symbol namespacesubparts) [228 1075]))                          
                         :type "namespace")
-                        (reparse-symbol namespacesubparts) [155 1008]))                  
+                        (reparse-symbol namespacesubparts) [155 1079]))                  
                 :type "namespace")
-                nil [137 1010]))          
+                nil [137 1081]))          
     :file "TestVariantList.hpp"
-    :pointmax 1060
-    :fsize 1059
-    :lastmodtime '(21744 13367 0 0)
-    :unmatched-syntax '((semantic-list 594 . 830) (symbol 582 . 590) (semantic-list 552 . 581) (symbol 538 . 552) (BOOL 533 . 537))
+    :pointmax 1131
+    :fsize 1130
+    :lastmodtime '(21779 8032 0 0)
+    :unmatched-syntax '((semantic-list 864 . 901) (symbol 852 . 860) (semantic-list 849 . 851) (symbol 843 . 849) (VOID 838 . 842) (semantic-list 594 . 833) (symbol 582 . 590) (semantic-list 552 . 581) (symbol 538 . 552) (BOOL 533 . 537))
     :lexical-table 
         '(("GWIZ_TESTS_CLASSES_TESTVARIANTLIST_HPP")
           )
@@ -241,43 +241,52 @@
                                        (:destructor-flag t
                                         :type "void")
                                         (reparse-symbol classsubparts) [383 413])
+                                    ("setRegion" function
+                                       (:arguments 
+                                          ( ("referenceID" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [432 463]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [417 663])
                                     ("addAlignment" function
                                        (:arguments 
                                           ( ("pos" variable
                                                (:constant-flag t
                                                 :type ("position" type (:type "class") nil nil))
-                                                (reparse-symbol arg-sub-list) [632 651])
+                                                (reparse-symbol arg-sub-list) [882 901])
                                             ("seq" variable
                                                (:reference 1
                                                 :constant-flag t
                                                 :type ("std::string" type (:type "class") nil nil))
-                                                (reparse-symbol arg-sub-list) [652 675]))                                          
+                                                (reparse-symbol arg-sub-list) [902 925]))                                          
                                         :type "void")
-                                        (reparse-symbol classsubparts) [614 788])
+                                        (reparse-symbol classsubparts) [864 1038])
                                     ("getNextAlignment" function
                                        (:arguments 
                                           ( ("alignment" variable
                                                (:reference 1
                                                 :type ("IAlignment::SharedPtr" type (:type "class") nil nil))
-                                                (reparse-symbol arg-sub-list) [814 847]))                                          
+                                                (reparse-symbol arg-sub-list) [1064 1097]))                                          
                                         :type "bool")
-                                        (reparse-symbol classsubparts) [792 1014])
+                                        (reparse-symbol classsubparts) [1042 1264])
                                     ("m_alignments" variable (:type ("std::queue" type
                                          (:template-specifier 
                                             ( ("IAlignment::SharedPtr" type nil nil nil))                                            
                                           :type "class")
-                                          nil nil)) (reparse-symbol classsubparts) [1018 1067]))                                  
+                                          nil nil)) (reparse-symbol classsubparts) [1268 1317]))                                  
                                 :type "class")
-                                (reparse-symbol namespacesubparts) [224 1071]))                          
+                                (reparse-symbol namespacesubparts) [224 1321]))                          
                         :type "namespace")
-                        (reparse-symbol namespacesubparts) [203 1073]))                  
+                        (reparse-symbol namespacesubparts) [203 1323]))                  
                 :type "namespace")
-                nil [186 1075]))          
+                nil [186 1325]))          
     :file "TestAlignmentReader.hpp"
-    :pointmax 1124
-    :fsize 1170
-    :lastmodtime '(21750 2786 0 0)
-    :unmatched-syntax '((semantic-list 466 . 610) (symbol 455 . 463) (semantic-list 452 . 454) (symbol 432 . 452) (symbol 425 . 431) (VIRTUAL 417 . 424))
+    :pointmax 1374
+    :fsize 1373
+    :lastmodtime '(21778 14476 0 0)
+    :unmatched-syntax '((semantic-list 716 . 860) (symbol 705 . 713) (semantic-list 702 . 704) (symbol 682 . 702) (symbol 675 . 681) (VIRTUAL 667 . 674))
     :lexical-table 
         '(("GWIZ_TESTING_TESTALIGNMENTREADER_HPP")
           )

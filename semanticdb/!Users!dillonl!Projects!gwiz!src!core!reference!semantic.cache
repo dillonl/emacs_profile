@@ -59,7 +59,7 @@
     :file "FastaReference.h"
     :pointmax 723
     :fsize 722
-    :lastmodtime '(21714 6147 0 0)
+    :lastmodtime '(21744 13367 0 0)
     :unmatched-syntax '((semantic-list 451 . 481) (symbol 442 . 450) (semantic-list 439 . 441) (symbol 424 . 439) (symbol 417 . 423) (semantic-list 384 . 414) (symbol 375 . 383) (semantic-list 372 . 374) (symbol 361 . 372) (punctuation 359 . 360) (CHAR 355 . 359) (CONST 349 . 354))
     :lexical-table 
         '(("GWIZ_FASTA_REFERENCE_H")
@@ -119,16 +119,15 @@
                                 (reparse-symbol classsubparts) [408 445])
                             ("getRegion" function (:type ("Region::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [449 505])
                             ("protected" label nil (reparse-symbol classsubparts) [508 518])
-                            ("m_region" variable (:type ("Region::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [521 548])
-                            ("private" label nil (reparse-symbol classsubparts) [551 559]))                          
+                            ("m_region" variable (:type ("Region::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [521 548]))                          
                         :type "class")
-                        (reparse-symbol namespacesubparts) [209 658]))                  
+                        (reparse-symbol namespacesubparts) [209 553]))                  
                 :type "namespace")
-                nil [190 660]))          
+                nil [190 555]))          
     :file "IReference.h"
-    :pointmax 690
-    :fsize 689
-    :lastmodtime '(21731 32556 0 0)
+    :pointmax 585
+    :fsize 584
+    :lastmodtime '(21750 2786 0 0)
     :unmatched-syntax 'nil
     :lexical-table 
         '(("GWIZ_IREFERENCE_H")
@@ -167,7 +166,7 @@
     :file "FastaReference.cpp"
     :pointmax 706
     :fsize 1347
-    :lastmodtime '(21714 6147 0 0)
+    :lastmodtime '(21744 13367 0 0)
     :unmatched-syntax 'nil
     )
    (semanticdb-table "Reference.h"
@@ -211,7 +210,7 @@
     :file "Reference.h"
     :pointmax 302
     :fsize 301
-    :lastmodtime '(21714 6147 0 0)
+    :lastmodtime '(21744 13367 0 0)
     :unmatched-syntax 'nil
     :lexical-table 
         '(("GWIZ_REFERENCE_H")
@@ -241,7 +240,7 @@
     :file "Reference.cpp"
     :pointmax 156
     :fsize 133
-    :lastmodtime '(21714 6147 0 0)
+    :lastmodtime '(21744 13367 0 0)
     :unmatched-syntax 'nil
     )
    )

@@ -57,49 +57,56 @@
                                (:destructor-flag t
                                 :type "void")
                                 (reparse-symbol classsubparts) [1243 1267])
+                            ("GenerateGenericGraphTestData" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("referencePtr" variable
+                                       (:reference 1
+                                        :type ("gwiz::IReference::SharedPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1573 1615])
+                                    ("variantListPtr" variable
+                                       (:reference 1
+                                        :type ("gwiz::IVariantList::SharedPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1616 1662]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1532 1670])
                             ("Build31VariantsTestData" function
                                (:typemodifiers ("static")
                                 :arguments 
                                   ( ("referencePtr" variable
                                        (:reference 1
                                         :type ("gwiz::IReference::SharedPtr" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [1568 1610])
+                                        (reparse-symbol arg-sub-list) [1710 1752])
                                     ("variantListPtr" variable
                                        (:reference 1
                                         :type ("gwiz::IVariantList::SharedPtr" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [1611 1657])
+                                        (reparse-symbol arg-sub-list) [1753 1799])
                                     ("alignmentReaderPtr" variable
                                        (:reference 1
                                         :type ("gwiz::testing::TestAlignmentReader::SharedPtr" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [1658 1724]))                                  
+                                        (reparse-symbol arg-sub-list) [1800 1866]))                                  
                                 :type "void")
-                                (reparse-symbol classsubparts) [1532 17640]))                          
+                                (reparse-symbol classsubparts) [1674 17468]))                          
                         :type "class")
-                        (reparse-symbol namespacesubparts) [878 17645])
+                        (reparse-symbol namespacesubparts) [878 17473])
                     ("TEST" function
                        (:arguments 
-                          ( ("" variable (:type ("GSSWTests" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17657 17667])
-                            ("" variable (:type ("TestAlignmentReport" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17668 17688]))                          
+                          ( ("" variable (:type ("GSSWTests" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18109 18119])
+                            ("" variable (:type ("TestConstructChr20" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18120 18139]))                          
                         :type "int")
-                        (reparse-symbol namespacesubparts) [17652 18484])
+                        (reparse-symbol namespacesubparts) [18104 19393])
                     ("TEST" function
                        (:arguments 
-                          ( ("" variable (:type ("GSSWTests" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18496 18506])
-                            ("" variable (:type ("TestConstructChr20" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18507 18526]))                          
+                          ( ("" variable (:type ("GSSWTests" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19401 19411])
+                            ("" variable (:type ("TestConstructTestData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19412 19434]))                          
                         :type "int")
-                        (reparse-symbol namespacesubparts) [18491 20308])
-                    ("TEST" function
-                       (:arguments 
-                          ( ("" variable (:type ("GSSWTests" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20316 20326])
-                            ("" variable (:type ("TestConstructTestData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20327 20349]))                          
-                        :type "int")
-                        (reparse-symbol namespacesubparts) [20311 21468]))                  
+                        (reparse-symbol namespacesubparts) [19396 19838]))                  
                 :type "namespace")
-                nil [864 21471]))          
+                nil [864 19841]))          
     :file "GSSWGraphTests.hpp"
-    :pointmax 21514
-    :fsize 21511
-    :lastmodtime '(21777 34852 0 0)
+    :pointmax 19882
+    :fsize 19881
+    :lastmodtime '(21785 39424 0 0)
     :unmatched-syntax 'nil
     :lexical-table 
         '(("GWIZ_GSSW_GSSWGRAPH_TESTS_HPP")

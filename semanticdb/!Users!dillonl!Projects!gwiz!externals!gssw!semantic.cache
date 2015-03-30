@@ -127,120 +127,122 @@
                (:typedef ("_gssw_node" type (:type "struct") nil nil)
                 :superclasses "_gssw_node"
                 :type "typedef")
-                nil [2263 2570])
+                nil [2263 2687])
             ("_gssw_node" type
                (:members 
-                  ( ("data" variable
+                  ( ("ref_len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2292 2309])
+                    ("position" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2390 2407])
+                    ("data" variable
                        (:pointer 1
                         :type "void")
-                        (reparse-symbol classsubparts) [2295 2306])
-                    ("id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2311 2323])
+                        (reparse-symbol classsubparts) [2412 2423])
+                    ("id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2428 2440])
                     ("seq" variable
                        (:pointer 1
                         :type "char")
-                        (reparse-symbol classsubparts) [2328 2338])
+                        (reparse-symbol classsubparts) [2445 2455])
                     ("num" variable
                        (:pointer 1
                         :type ("int8_t" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [2355 2367])
-                    ("len" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2403 2415])
+                        (reparse-symbol classsubparts) [2472 2484])
+                    ("len" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2520 2532])
                     ("prev" variable
                        (:pointer 2
                         :type ("gssw_node" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [2442 2459])
-                    ("count_prev" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2464 2483])
+                        (reparse-symbol classsubparts) [2559 2576])
+                    ("count_prev" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2581 2600])
                     ("next" variable
                        (:pointer 2
                         :type ("gssw_node" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [2488 2505])
-                    ("count_next" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2510 2529])
+                        (reparse-symbol classsubparts) [2605 2622])
+                    ("count_next" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2627 2646])
                     ("alignment" variable
                        (:pointer 1
                         :type ("gssw_align" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [2534 2556]))                  
+                        (reparse-symbol classsubparts) [2651 2673]))                  
                 :type "struct")
-                nil [2263 2570])
+                nil [2263 2687])
             ("gssw_node_mapping" type
                (:typedef ("" type
                      (:members 
                         ( ("node" variable
                              (:pointer 1
                               :type ("gssw_node" type (:type "class") nil nil))
-                              (reparse-symbol classsubparts) [2593 2609])
-                          ("cigar" variable (:type ("gssw_cigar" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2614 2631])
-                          ("ref_begin" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2636 2654])
-                          ("ref_end" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2656 2672])
-                          ("read_begin" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2674 2693])
-                          ("read_end" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2695 2712]))                        
+                              (reparse-symbol classsubparts) [2710 2726])
+                          ("cigar" variable (:type ("gssw_cigar" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2731 2748])
+                          ("ref_begin" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2753 2771])
+                          ("ref_end" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2773 2789])
+                          ("read_begin" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2791 2810])
+                          ("read_end" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2812 2829]))                        
                       :type "struct")
                       nil nil)
                 :type "typedef")
-                nil [2572 2733])
+                nil [2689 2850])
             ("gssw_node_alignment_end" type
                (:typedef ("" type
                      (:members 
                         ( ("node" variable
                              (:pointer 1
                               :type ("gssw_node" type (:type "class") nil nil))
-                              (reparse-symbol classsubparts) [2756 2772])
-                          ("end" variable (:type ("gssw_alignment_end" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2777 2800]))                        
+                              (reparse-symbol classsubparts) [2873 2889])
+                          ("end" variable (:type ("gssw_alignment_end" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2894 2917]))                        
                       :type "struct")
                       nil nil)
                 :type "typedef")
-                nil [2735 2827])
+                nil [2852 2944])
             ("gssw_graph" type
                (:typedef ("" type
                      (:members 
-                        ( ("size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2850 2864])
+                        ( ("size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2967 2981])
                           ("max_node" variable
                              (:pointer 1
                               :type ("gssw_node" type (:type "class") nil nil))
-                              (reparse-symbol classsubparts) [2869 2889])
+                              (reparse-symbol classsubparts) [2986 3006])
                           ("nodes" variable
                              (:pointer 2
                               :type ("gssw_node" type (:type "class") nil nil))
-                              (reparse-symbol classsubparts) [2894 2912]))                        
+                              (reparse-symbol classsubparts) [3011 3029]))                        
                       :type "struct")
                       nil nil)
                 :type "typedef")
-                nil [2829 2926])
+                nil [2946 3043])
             ("gssw_node_cigar" type
                (:typedef ("" type
                      (:members 
                         ( ("node" variable
                              (:pointer 1
                               :type ("gssw_node" type (:type "class") nil nil))
-                              (reparse-symbol classsubparts) [2949 2965])
+                              (reparse-symbol classsubparts) [3066 3082])
                           ("cigar" variable
                              (:pointer 1
                               :type ("gssw_cigar" type (:type "class") nil nil))
-                              (reparse-symbol classsubparts) [2970 2988]))                        
+                              (reparse-symbol classsubparts) [3087 3105]))                        
                       :type "struct")
                       nil nil)
                 :type "typedef")
-                nil [2928 3007])
+                nil [3045 3124])
             ("gssw_graph_cigar" type
                (:typedef ("" type
                      (:members 
-                        ( ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3030 3046])
+                        ( ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3147 3163])
                           ("elements" variable
                              (:pointer 1
                               :type ("gssw_node_cigar" type (:type "class") nil nil))
-                              (reparse-symbol classsubparts) [3082 3108]))                        
+                              (reparse-symbol classsubparts) [3199 3225]))                        
                       :type "struct")
                       nil nil)
                 :type "typedef")
-                nil [3009 3151])
+                nil [3126 3268])
             ("gssw_graph_mapping" type
                (:typedef ("" type
                      (:members 
-                        ( ("position" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3174 3191])
-                          ("score" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3222 3236])
-                          ("cigar" variable (:type ("gssw_graph_cigar" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3241 3264]))                        
+                        ( ("position" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3291 3308])
+                          ("score" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3339 3353])
+                          ("cigar" variable (:type ("gssw_graph_cigar" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3358 3381]))                        
                       :type "struct")
                       nil nil)
                 :type "typedef")
-                nil [3153 3286])
+                nil [3270 3403])
             ("gssw_init" function
                (:typemodifiers ("extern" "\"C\"")
                 :type ("gssw_profile" type (:type "class") nil nil)
@@ -249,27 +251,27 @@
                        (:pointer 1
                         :constant-flag t
                         :type ("int8_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [4448 4467])
+                        (reparse-symbol arg-sub-list) [4565 4584])
                     ("readLen" variable
                        (:constant-flag t
                         :type ("int32_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [4468 4490])
+                        (reparse-symbol arg-sub-list) [4585 4607])
                     ("mat" variable
                        (:pointer 1
                         :constant-flag t
                         :type ("int8_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [4491 4509])
+                        (reparse-symbol arg-sub-list) [4608 4626])
                     ("n" variable
                        (:constant-flag t
                         :type ("int32_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [4510 4526])
+                        (reparse-symbol arg-sub-list) [4627 4643])
                     ("score_size" variable
                        (:constant-flag t
                         :type ("int8_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [4527 4551]))                  
+                        (reparse-symbol arg-sub-list) [4644 4668]))                  
                 :pointer 1
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [4423 4552])
+                (reparse-symbol extern-c-contents) [4540 4669])
             ("gssw_init_destroy" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "void"
@@ -277,17 +279,17 @@
                   ( ("p" variable
                        (:pointer 1
                         :type ("gssw_profile" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [4695 4711]))                  
+                        (reparse-symbol arg-sub-list) [4812 4828]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [4671 4712])
+                (reparse-symbol extern-c-contents) [4788 4829])
             ("gssw_align_create" function
                (:typemodifiers ("extern" "\"C\"")
                 :type ("gssw_align" type (:type "class") nil nil)
                 :arguments 
-                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4744 4749]))                  
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4861 4866]))                  
                 :pointer 1
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [4714 4750])
+                (reparse-symbol extern-c-contents) [4831 4867])
             ("gssw_ssw_align" function
                (:typemodifiers ("extern" "\"C\"")
                 :type ("gssw_align" type (:type "class") nil nil)
@@ -296,40 +298,40 @@
                        (:pointer 1
                         :constant-flag t
                         :type ("gssw_profile" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [7693 7718])
+                        (reparse-symbol arg-sub-list) [7810 7835])
                     ("ref" variable
                        (:pointer 1
                         :constant-flag t
                         :type ("int8_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [7747 7765])
-                    ("refLen" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7794 7809])
+                        (reparse-symbol arg-sub-list) [7864 7882])
+                    ("refLen" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7911 7926])
                     ("weight_gapO" variable
                        (:constant-flag t
                         :type ("uint8_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [7838 7864])
+                        (reparse-symbol arg-sub-list) [7955 7981])
                     ("weight_gapE" variable
                        (:constant-flag t
                         :type ("uint8_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [7893 7919])
+                        (reparse-symbol arg-sub-list) [8010 8036])
                     ("flag" variable
                        (:constant-flag t
                         :type ("uint8_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [7948 7967])
+                        (reparse-symbol arg-sub-list) [8065 8084])
                     ("filters" variable
                        (:constant-flag t
                         :type ("uint16_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [7996 8019])
+                        (reparse-symbol arg-sub-list) [8113 8136])
                     ("filterd" variable
                        (:constant-flag t
                         :type ("int32_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [8048 8070])
+                        (reparse-symbol arg-sub-list) [8165 8187])
                     ("maskLen" variable
                        (:constant-flag t
                         :type ("int32_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [8099 8121]))                  
+                        (reparse-symbol arg-sub-list) [8216 8238]))                  
                 :pointer 1
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [7665 8122])
+                (reparse-symbol extern-c-contents) [7782 8239])
             ("gssw_ssw_fill" function
                (:typemodifiers ("extern" "\"C\"")
                 :type ("gssw_align" type (:type "class") nil nil)
@@ -338,35 +340,35 @@
                        (:pointer 1
                         :constant-flag t
                         :type ("gssw_profile" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [11144 11169])
+                        (reparse-symbol arg-sub-list) [11261 11286])
                     ("ref" variable
                        (:pointer 1
                         :constant-flag t
                         :type ("int8_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [11197 11215])
+                        (reparse-symbol arg-sub-list) [11314 11332])
                     ("refLen" variable
                        (:constant-flag t
                         :type ("int32_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [11243 11264])
+                        (reparse-symbol arg-sub-list) [11360 11381])
                     ("weight_gapO" variable
                        (:constant-flag t
                         :type ("uint8_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [11292 11318])
+                        (reparse-symbol arg-sub-list) [11409 11435])
                     ("weight_gapE" variable
                        (:constant-flag t
                         :type ("uint8_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [11346 11372])
+                        (reparse-symbol arg-sub-list) [11463 11489])
                     ("maskLen" variable
                        (:constant-flag t
                         :type ("int32_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [11400 11422])
+                        (reparse-symbol arg-sub-list) [11517 11539])
                     ("seed" variable
                        (:pointer 1
                         :type ("gssw_seed" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [11450 11466]))                  
+                        (reparse-symbol arg-sub-list) [11567 11583]))                  
                 :pointer 1
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [11117 11467])
+                (reparse-symbol extern-c-contents) [11234 11584])
             ("gssw_align_destroy" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "void"
@@ -374,9 +376,9 @@
                   ( ("a" variable
                        (:pointer 1
                         :type ("gssw_align" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [11616 11630]))                  
+                        (reparse-symbol arg-sub-list) [11733 11747]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [11591 11631])
+                (reparse-symbol extern-c-contents) [11708 11748])
             ("gssw_align_clear_matrix_and_seed" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "void"
@@ -384,9 +386,9 @@
                   ( ("a" variable
                        (:pointer 1
                         :type ("gssw_align" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [11797 11811]))                  
+                        (reparse-symbol arg-sub-list) [11914 11928]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [11758 11812])
+                (reparse-symbol extern-c-contents) [11875 11929])
             ("gssw_print_score_matrix" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "void"
@@ -395,20 +397,20 @@
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [12032 12048])
-                    ("refLen" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12079 12094])
+                        (reparse-symbol arg-sub-list) [12149 12165])
+                    ("refLen" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12196 12211])
                     ("read" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [12125 12142])
-                    ("readLen" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12173 12189])
+                        (reparse-symbol arg-sub-list) [12242 12259])
+                    ("readLen" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12290 12306])
                     ("alignment" variable
                        (:pointer 1
                         :type ("gssw_align" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [12220 12242]))                  
+                        (reparse-symbol arg-sub-list) [12337 12359]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [12002 12243])
+                (reparse-symbol extern-c-contents) [12119 12360])
             ("gssw_graph_print" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "void"
@@ -416,9 +418,9 @@
                   ( ("graph" variable
                        (:pointer 1
                         :type ("gssw_graph" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [12267 12285]))                  
+                        (reparse-symbol arg-sub-list) [12384 12402]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [12245 12286])
+                (reparse-symbol extern-c-contents) [12362 12403])
             ("gssw_graph_print_stderr" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "void"
@@ -426,9 +428,9 @@
                   ( ("graph" variable
                        (:pointer 1
                         :type ("gssw_graph" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [12316 12334]))                  
+                        (reparse-symbol arg-sub-list) [12433 12451]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [12287 12335])
+                (reparse-symbol extern-c-contents) [12404 12452])
             ("gssw_alignment_trace_back_byte" function
                (:typemodifiers ("extern" "\"C\"")
                 :type ("gssw_cigar" type (:type "class") nil nil)
@@ -436,38 +438,38 @@
                   ( ("alignment" variable
                        (:pointer 1
                         :type ("gssw_align" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [12569 12591])
+                        (reparse-symbol arg-sub-list) [12686 12708])
                     ("score" variable
                        (:pointer 1
                         :type ("uint16_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [12636 12652])
+                        (reparse-symbol arg-sub-list) [12753 12769])
                     ("refEnd" variable
                        (:pointer 1
                         :type ("int32_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [12697 12713])
+                        (reparse-symbol arg-sub-list) [12814 12830])
                     ("readEnd" variable
                        (:pointer 1
                         :type ("int32_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [12758 12775])
+                        (reparse-symbol arg-sub-list) [12875 12892])
                     ("ref" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [12820 12836])
-                    ("refLen" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12881 12896])
+                        (reparse-symbol arg-sub-list) [12937 12953])
+                    ("refLen" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12998 13013])
                     ("read" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [12941 12958])
-                    ("readLen" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13003 13019])
-                    ("match" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13064 13078])
-                    ("mismatch" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13123 13140])
-                    ("gap_open" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13185 13202])
-                    ("gap_extension" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13247 13269]))                  
+                        (reparse-symbol arg-sub-list) [13058 13075])
+                    ("readLen" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13120 13136])
+                    ("match" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13181 13195])
+                    ("mismatch" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13240 13257])
+                    ("gap_open" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13302 13319])
+                    ("gap_extension" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13364 13386]))                  
                 :pointer 1
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [12525 13270])
+                (reparse-symbol extern-c-contents) [12642 13387])
             ("gssw_alignment_trace_back_word" function
                (:typemodifiers ("extern" "\"C\"")
                 :type ("gssw_cigar" type (:type "class") nil nil)
@@ -475,38 +477,38 @@
                   ( ("alignment" variable
                        (:pointer 1
                         :type ("gssw_align" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [13316 13338])
+                        (reparse-symbol arg-sub-list) [13433 13455])
                     ("score" variable
                        (:pointer 1
                         :type ("uint16_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [13383 13399])
+                        (reparse-symbol arg-sub-list) [13500 13516])
                     ("refEnd" variable
                        (:pointer 1
                         :type ("int32_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [13444 13460])
+                        (reparse-symbol arg-sub-list) [13561 13577])
                     ("readEnd" variable
                        (:pointer 1
                         :type ("int32_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [13505 13522])
+                        (reparse-symbol arg-sub-list) [13622 13639])
                     ("ref" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [13567 13583])
-                    ("refLen" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13628 13643])
+                        (reparse-symbol arg-sub-list) [13684 13700])
+                    ("refLen" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13745 13760])
                     ("read" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [13688 13705])
-                    ("readLen" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13750 13766])
-                    ("match" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13811 13825])
-                    ("mismatch" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13870 13887])
-                    ("gap_open" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13932 13949])
-                    ("gap_extension" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13994 14016]))                  
+                        (reparse-symbol arg-sub-list) [13805 13822])
+                    ("readLen" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13867 13883])
+                    ("match" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13928 13942])
+                    ("mismatch" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13987 14004])
+                    ("gap_open" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14049 14066])
+                    ("gap_extension" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14111 14133]))                  
                 :pointer 1
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [13272 14017])
+                (reparse-symbol extern-c-contents) [13389 14134])
             ("gssw_alignment_trace_back" function
                (:typemodifiers ("extern" "\"C\"")
                 :type ("gssw_cigar" type (:type "class") nil nil)
@@ -514,38 +516,38 @@
                   ( ("alignment" variable
                        (:pointer 1
                         :type ("gssw_align" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [14058 14080])
+                        (reparse-symbol arg-sub-list) [14175 14197])
                     ("score" variable
                        (:pointer 1
                         :type ("uint16_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [14120 14136])
+                        (reparse-symbol arg-sub-list) [14237 14253])
                     ("refEnd" variable
                        (:pointer 1
                         :type ("int32_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [14176 14192])
+                        (reparse-symbol arg-sub-list) [14293 14309])
                     ("readEnd" variable
                        (:pointer 1
                         :type ("int32_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [14232 14249])
+                        (reparse-symbol arg-sub-list) [14349 14366])
                     ("ref" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [14289 14305])
-                    ("refLen" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14345 14360])
+                        (reparse-symbol arg-sub-list) [14406 14422])
+                    ("refLen" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14462 14477])
                     ("read" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [14400 14417])
-                    ("readLen" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14457 14473])
-                    ("match" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14513 14527])
-                    ("mismatch" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14567 14584])
-                    ("gap_open" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14624 14641])
-                    ("gap_extension" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14681 14703]))                  
+                        (reparse-symbol arg-sub-list) [14517 14534])
+                    ("readLen" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14574 14590])
+                    ("match" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14630 14644])
+                    ("mismatch" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14684 14701])
+                    ("gap_open" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14741 14758])
+                    ("gap_extension" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14798 14820]))                  
                 :pointer 1
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [14019 14704])
+                (reparse-symbol extern-c-contents) [14136 14821])
             ("gssw_graph_trace_back" function
                (:typemodifiers ("extern" "\"C\"")
                 :type ("gssw_graph_mapping" type (:type "class") nil nil)
@@ -553,20 +555,20 @@
                   ( ("graph" variable
                        (:pointer 1
                         :type ("gssw_graph" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [14749 14767])
+                        (reparse-symbol arg-sub-list) [14866 14884])
                     ("read" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [14811 14828])
-                    ("readLen" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14872 14888])
-                    ("match" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14932 14946])
-                    ("mismatch" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14990 15007])
-                    ("gap_open" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15051 15068])
-                    ("gap_extension" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15112 15134]))                  
+                        (reparse-symbol arg-sub-list) [14928 14945])
+                    ("readLen" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14989 15005])
+                    ("match" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15049 15063])
+                    ("mismatch" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15107 15124])
+                    ("gap_open" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15168 15185])
+                    ("gap_extension" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15229 15251]))                  
                 :pointer 1
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [14706 15135])
+                (reparse-symbol extern-c-contents) [14823 15252])
             ("gssw_is_byte" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "int"
@@ -574,9 +576,9 @@
                   ( ("alignment" variable
                        (:pointer 1
                         :type ("gssw_align" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [15302 15324]))                  
+                        (reparse-symbol arg-sub-list) [15419 15441]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [15284 15325])
+                (reparse-symbol extern-c-contents) [15401 15442])
             ("gssw_profile_destroy" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "void"
@@ -584,9 +586,9 @@
                   ( ("prof" variable
                        (:pointer 1
                         :type ("gssw_profile" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [15697 15716]))                  
+                        (reparse-symbol arg-sub-list) [15814 15833]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [15671 15717])
+                (reparse-symbol extern-c-contents) [15788 15834])
             ("gssw_seed_destroy" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "void"
@@ -594,35 +596,35 @@
                   ( ("seed" variable
                        (:pointer 1
                         :type ("gssw_seed" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [15741 15757]))                  
+                        (reparse-symbol arg-sub-list) [15858 15874]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [15718 15758])
+                (reparse-symbol extern-c-contents) [15835 15875])
             ("gssw_create_seed_byte" function
                (:typemodifiers ("extern" "\"C\"")
                 :type ("gssw_seed" type (:type "class") nil nil)
                 :arguments 
-                  ( ("readLen" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15792 15808])
+                  ( ("readLen" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15909 15925])
                     ("prev" variable
                        (:pointer 2
                         :type ("gssw_node" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [15809 15826])
-                    ("count" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15827 15841]))                  
+                        (reparse-symbol arg-sub-list) [15926 15943])
+                    ("count" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15944 15958]))                  
                 :pointer 1
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [15759 15842])
+                (reparse-symbol extern-c-contents) [15876 15959])
             ("gssw_create_seed_word" function
                (:typemodifiers ("extern" "\"C\"")
                 :type ("gssw_seed" type (:type "class") nil nil)
                 :arguments 
-                  ( ("readLen" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15876 15892])
+                  ( ("readLen" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15993 16009])
                     ("prev" variable
                        (:pointer 2
                         :type ("gssw_node" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [15893 15910])
-                    ("count" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15911 15925]))                  
+                        (reparse-symbol arg-sub-list) [16010 16027])
+                    ("count" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16028 16042]))                  
                 :pointer 1
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [15843 15926])
+                (reparse-symbol extern-c-contents) [15960 16043])
             ("gssw_cigar_push_back" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "void"
@@ -630,11 +632,11 @@
                   ( ("c" variable
                        (:pointer 1
                         :type ("gssw_cigar" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [15954 15968])
-                    ("type" variable (:type "char") (reparse-symbol arg-sub-list) [15969 15979])
-                    ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15980 15996]))                  
+                        (reparse-symbol arg-sub-list) [16071 16085])
+                    ("type" variable (:type "char") (reparse-symbol arg-sub-list) [16086 16096])
+                    ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16097 16113]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [15928 15997])
+                (reparse-symbol extern-c-contents) [16045 16114])
             ("gssw_cigar_push_front" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "void"
@@ -642,11 +644,11 @@
                   ( ("c" variable
                        (:pointer 1
                         :type ("gssw_cigar" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16025 16039])
-                    ("type" variable (:type "char") (reparse-symbol arg-sub-list) [16040 16050])
-                    ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16051 16067]))                  
+                        (reparse-symbol arg-sub-list) [16142 16156])
+                    ("type" variable (:type "char") (reparse-symbol arg-sub-list) [16157 16167])
+                    ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16168 16184]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [15998 16068])
+                (reparse-symbol extern-c-contents) [16115 16185])
             ("gssw_reverse_cigar" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "void"
@@ -654,9 +656,9 @@
                   ( ("c" variable
                        (:pointer 1
                         :type ("gssw_cigar" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16093 16107]))                  
+                        (reparse-symbol arg-sub-list) [16210 16224]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [16069 16108])
+                (reparse-symbol extern-c-contents) [16186 16225])
             ("gssw_print_cigar" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "void"
@@ -664,9 +666,9 @@
                   ( ("c" variable
                        (:pointer 1
                         :type ("gssw_cigar" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16131 16145]))                  
+                        (reparse-symbol arg-sub-list) [16248 16262]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [16109 16146])
+                (reparse-symbol extern-c-contents) [16226 16263])
             ("gssw_cigar_destroy" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "void"
@@ -674,9 +676,9 @@
                   ( ("c" variable
                        (:pointer 1
                         :type ("gssw_cigar" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16171 16185]))                  
+                        (reparse-symbol arg-sub-list) [16288 16302]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [16147 16186])
+                (reparse-symbol extern-c-contents) [16264 16303])
             ("gssw_node_create" function
                (:typemodifiers ("extern" "\"C\"")
                 :type ("gssw_node" type (:type "class") nil nil)
@@ -684,29 +686,29 @@
                   ( ("data" variable
                        (:pointer 1
                         :type "void")
-                        (reparse-symbol arg-sub-list) [16216 16227])
+                        (reparse-symbol arg-sub-list) [16333 16344])
                     ("id" variable
                        (:constant-flag t
                         :type ("uint32_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16256 16274])
+                        (reparse-symbol arg-sub-list) [16373 16391])
                     ("seq" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [16303 16319])
+                        (reparse-symbol arg-sub-list) [16420 16436])
                     ("nt_table" variable
                        (:pointer 1
                         :constant-flag t
                         :type ("int8_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16348 16371])
+                        (reparse-symbol arg-sub-list) [16465 16488])
                     ("score_matrix" variable
                        (:pointer 1
                         :constant-flag t
                         :type ("int8_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16400 16427]))                  
+                        (reparse-symbol arg-sub-list) [16517 16544]))                  
                 :pointer 1
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [16188 16428])
+                (reparse-symbol extern-c-contents) [16305 16545])
             ("gssw_node_destroy" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "void"
@@ -714,9 +716,9 @@
                   ( ("n" variable
                        (:pointer 1
                         :type ("gssw_node" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16452 16465]))                  
+                        (reparse-symbol arg-sub-list) [16569 16582]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [16429 16466])
+                (reparse-symbol extern-c-contents) [16546 16583])
             ("gssw_node_add_prev" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "void"
@@ -724,13 +726,13 @@
                   ( ("n" variable
                        (:pointer 1
                         :type ("gssw_node" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16491 16504])
+                        (reparse-symbol arg-sub-list) [16608 16621])
                     ("m" variable
                        (:pointer 1
                         :type ("gssw_node" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16505 16518]))                  
+                        (reparse-symbol arg-sub-list) [16622 16635]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [16467 16519])
+                (reparse-symbol extern-c-contents) [16584 16636])
             ("gssw_node_add_next" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "void"
@@ -738,13 +740,13 @@
                   ( ("n" variable
                        (:pointer 1
                         :type ("gssw_node" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16544 16557])
+                        (reparse-symbol arg-sub-list) [16661 16674])
                     ("m" variable
                        (:pointer 1
                         :type ("gssw_node" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16558 16571]))                  
+                        (reparse-symbol arg-sub-list) [16675 16688]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [16520 16572])
+                (reparse-symbol extern-c-contents) [16637 16689])
             ("gssw_nodes_add_edge" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "void"
@@ -752,13 +754,13 @@
                   ( ("n" variable
                        (:pointer 1
                         :type ("gssw_node" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16598 16611])
+                        (reparse-symbol arg-sub-list) [16715 16728])
                     ("m" variable
                        (:pointer 1
                         :type ("gssw_node" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16612 16625]))                  
+                        (reparse-symbol arg-sub-list) [16729 16742]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [16573 16626])
+                (reparse-symbol extern-c-contents) [16690 16743])
             ("gssw_node_del_prev" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "void"
@@ -766,13 +768,13 @@
                   ( ("n" variable
                        (:pointer 1
                         :type ("gssw_node" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16651 16664])
+                        (reparse-symbol arg-sub-list) [16768 16781])
                     ("m" variable
                        (:pointer 1
                         :type ("gssw_node" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16665 16678]))                  
+                        (reparse-symbol arg-sub-list) [16782 16795]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [16627 16679])
+                (reparse-symbol extern-c-contents) [16744 16796])
             ("gssw_node_del_next" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "void"
@@ -780,13 +782,13 @@
                   ( ("n" variable
                        (:pointer 1
                         :type ("gssw_node" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16704 16717])
+                        (reparse-symbol arg-sub-list) [16821 16834])
                     ("m" variable
                        (:pointer 1
                         :type ("gssw_node" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16718 16731]))                  
+                        (reparse-symbol arg-sub-list) [16835 16848]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [16680 16732])
+                (reparse-symbol extern-c-contents) [16797 16849])
             ("gssw_nodes_del_edge" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "void"
@@ -794,13 +796,13 @@
                   ( ("n" variable
                        (:pointer 1
                         :type ("gssw_node" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16758 16771])
+                        (reparse-symbol arg-sub-list) [16875 16888])
                     ("m" variable
                        (:pointer 1
                         :type ("gssw_node" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16772 16785]))                  
+                        (reparse-symbol arg-sub-list) [16889 16902]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [16733 16786])
+                (reparse-symbol extern-c-contents) [16850 16903])
             ("gssw_node_replace_prev" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "void"
@@ -808,17 +810,17 @@
                   ( ("n" variable
                        (:pointer 1
                         :type ("gssw_node" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16815 16828])
+                        (reparse-symbol arg-sub-list) [16932 16945])
                     ("m" variable
                        (:pointer 1
                         :type ("gssw_node" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16829 16842])
+                        (reparse-symbol arg-sub-list) [16946 16959])
                     ("p" variable
                        (:pointer 1
                         :type ("gssw_node" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16843 16856]))                  
+                        (reparse-symbol arg-sub-list) [16960 16973]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [16787 16857])
+                (reparse-symbol extern-c-contents) [16904 16974])
             ("gssw_node_replace_next" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "void"
@@ -826,17 +828,17 @@
                   ( ("n" variable
                        (:pointer 1
                         :type ("gssw_node" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16886 16899])
+                        (reparse-symbol arg-sub-list) [17003 17016])
                     ("m" variable
                        (:pointer 1
                         :type ("gssw_node" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16900 16913])
+                        (reparse-symbol arg-sub-list) [17017 17030])
                     ("p" variable
                        (:pointer 1
                         :type ("gssw_node" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16914 16927]))                  
+                        (reparse-symbol arg-sub-list) [17031 17044]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [16858 16928])
+                (reparse-symbol extern-c-contents) [16975 17045])
             ("gssw_node_fill" function
                (:typemodifiers ("extern" "\"C\"")
                 :type ("gssw_node" type (:type "class") nil nil)
@@ -844,32 +846,32 @@
                   ( ("node" variable
                        (:pointer 1
                         :type ("gssw_node" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16958 16974])
+                        (reparse-symbol arg-sub-list) [17075 17091])
                     ("prof" variable
                        (:pointer 1
                         :constant-flag t
                         :type ("gssw_profile" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16991 17016])
+                        (reparse-symbol arg-sub-list) [17108 17133])
                     ("weight_gapO" variable
                        (:constant-flag t
                         :type ("uint8_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [17033 17059])
+                        (reparse-symbol arg-sub-list) [17150 17176])
                     ("weight_gapE" variable
                        (:constant-flag t
                         :type ("uint8_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [17076 17102])
+                        (reparse-symbol arg-sub-list) [17193 17219])
                     ("maskLen" variable
                        (:constant-flag t
                         :type ("int32_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [17119 17141])
+                        (reparse-symbol arg-sub-list) [17236 17258])
                     ("seed" variable
                        (:pointer 1
                         :constant-flag t
                         :type ("gssw_seed" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [17158 17180]))                  
+                        (reparse-symbol arg-sub-list) [17275 17297]))                  
                 :pointer 1
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [16931 17181])
+                (reparse-symbol extern-c-contents) [17048 17298])
             ("gssw_graph_fill" function
                (:typemodifiers ("extern" "\"C\"")
                 :type ("gssw_graph" type (:type "class") nil nil)
@@ -877,49 +879,49 @@
                   ( ("graph" variable
                        (:pointer 1
                         :type ("gssw_graph" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [17212 17230])
+                        (reparse-symbol arg-sub-list) [17329 17347])
                     ("read_seq" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [17248 17269])
+                        (reparse-symbol arg-sub-list) [17365 17386])
                     ("nt_table" variable
                        (:pointer 1
                         :constant-flag t
                         :type ("int8_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [17287 17310])
+                        (reparse-symbol arg-sub-list) [17404 17427])
                     ("score_matrix" variable
                        (:pointer 1
                         :constant-flag t
                         :type ("int8_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [17328 17355])
+                        (reparse-symbol arg-sub-list) [17445 17472])
                     ("weight_gapO" variable
                        (:constant-flag t
                         :type ("uint8_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [17373 17399])
+                        (reparse-symbol arg-sub-list) [17490 17516])
                     ("weight_gapE" variable
                        (:constant-flag t
                         :type ("uint8_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [17417 17443])
+                        (reparse-symbol arg-sub-list) [17534 17560])
                     ("maskLen" variable
                        (:constant-flag t
                         :type ("int32_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [17461 17483])
+                        (reparse-symbol arg-sub-list) [17578 17600])
                     ("score_size" variable
                        (:constant-flag t
                         :type ("int8_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [17501 17525]))                  
+                        (reparse-symbol arg-sub-list) [17618 17642]))                  
                 :pointer 1
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [17183 17526])
+                (reparse-symbol extern-c-contents) [17300 17643])
             ("gssw_graph_create" function
                (:typemodifiers ("extern" "\"C\"")
                 :type ("gssw_graph" type (:type "class") nil nil)
                 :arguments 
-                  ( ("size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17558 17572]))                  
+                  ( ("size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17675 17689]))                  
                 :pointer 1
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [17528 17573])
+                (reparse-symbol extern-c-contents) [17645 17690])
             ("gssw_graph_add_node" function
                (:typemodifiers ("extern" "\"C\"")
                 :type ("int32_t" type (:type "class") nil nil)
@@ -927,13 +929,13 @@
                   ( ("graph" variable
                        (:pointer 1
                         :type ("gssw_graph" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [17602 17620])
+                        (reparse-symbol arg-sub-list) [17719 17737])
                     ("node" variable
                        (:pointer 1
                         :type ("gssw_node" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [17649 17665]))                  
+                        (reparse-symbol arg-sub-list) [17766 17782]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [17574 17666])
+                (reparse-symbol extern-c-contents) [17691 17783])
             ("gssw_graph_clear" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "void"
@@ -941,9 +943,9 @@
                   ( ("graph" variable
                        (:pointer 1
                         :type ("gssw_graph" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [17689 17707]))                  
+                        (reparse-symbol arg-sub-list) [17806 17824]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [17667 17708])
+                (reparse-symbol extern-c-contents) [17784 17825])
             ("gssw_graph_destroy" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "void"
@@ -951,9 +953,9 @@
                   ( ("graph" variable
                        (:pointer 1
                         :type ("gssw_graph" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [17733 17751]))                  
+                        (reparse-symbol arg-sub-list) [17850 17868]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [17709 17752])
+                (reparse-symbol extern-c-contents) [17826 17869])
             ("gssw_graph_print_score_matrices" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "void"
@@ -961,23 +963,23 @@
                   ( ("graph" variable
                        (:pointer 1
                         :type ("gssw_graph" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [17790 17808])
+                        (reparse-symbol arg-sub-list) [17907 17925])
                     ("read" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [17846 17863])
-                    ("readLen" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17901 17917]))                  
+                        (reparse-symbol arg-sub-list) [17963 17980])
+                    ("readLen" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18018 18034]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [17753 17918])
+                (reparse-symbol extern-c-contents) [17870 18035])
             ("gssw_graph_mapping_create" function
                (:typemodifiers ("extern" "\"C\"")
                 :type ("gssw_graph_mapping" type (:type "class") nil nil)
                 :arguments 
-                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [17966 17971]))                  
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18083 18088]))                  
                 :pointer 1
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [17920 17972])
+                (reparse-symbol extern-c-contents) [18037 18089])
             ("gssw_graph_mapping_destroy" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "void"
@@ -985,17 +987,17 @@
                   ( ("m" variable
                        (:pointer 1
                         :type ("gssw_graph_mapping" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [18005 18027]))                  
+                        (reparse-symbol arg-sub-list) [18122 18144]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [17973 18028])
+                (reparse-symbol extern-c-contents) [18090 18145])
             ("gssw_graph_cigar_create" function
                (:typemodifiers ("extern" "\"C\"")
                 :type ("gssw_graph_cigar" type (:type "class") nil nil)
                 :arguments 
-                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18071 18076]))                  
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18188 18193]))                  
                 :pointer 1
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [18029 18077])
+                (reparse-symbol extern-c-contents) [18146 18194])
             ("gssw_graph_cigar_destroy" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "void"
@@ -1003,9 +1005,9 @@
                   ( ("g" variable
                        (:pointer 1
                         :type ("gssw_graph_cigar" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [18108 18128]))                  
+                        (reparse-symbol arg-sub-list) [18225 18245]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [18078 18129])
+                (reparse-symbol extern-c-contents) [18195 18246])
             ("gssw_print_graph_cigar" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "void"
@@ -1013,9 +1015,9 @@
                   ( ("g" variable
                        (:pointer 1
                         :type ("gssw_graph_cigar" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [18158 18178]))                  
+                        (reparse-symbol arg-sub-list) [18275 18295]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [18130 18179])
+                (reparse-symbol extern-c-contents) [18247 18296])
             ("gssw_print_graph_mapping" function
                (:typemodifiers ("extern" "\"C\"")
                 :type "void"
@@ -1023,26 +1025,26 @@
                   ( ("gm" variable
                        (:pointer 1
                         :type ("gssw_graph_mapping" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [18210 18233]))                  
+                        (reparse-symbol arg-sub-list) [18327 18350]))                  
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [18180 18234])
+                (reparse-symbol extern-c-contents) [18297 18351])
             ("gssw_create_score_matrix" function
                (:typemodifiers ("extern" "\"C\"")
                 :type ("int8_t" type (:type "class") nil nil)
                 :arguments 
-                  ( ("match" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18412 18426])
-                    ("mismatch" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18427 18444]))                  
+                  ( ("match" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18529 18543])
+                    ("mismatch" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18544 18561]))                  
                 :pointer 1
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [18379 18445])
+                (reparse-symbol extern-c-contents) [18496 18562])
             ("gssw_create_nt_table" function
                (:typemodifiers ("extern" "\"C\"")
                 :type ("int8_t" type (:type "class") nil nil)
                 :arguments 
-                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18475 18480]))                  
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18592 18597]))                  
                 :pointer 1
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [18446 18481])
+                (reparse-symbol extern-c-contents) [18563 18598])
             ("gssw_create_num" function
                (:typemodifiers ("extern" "\"C\"")
                 :type ("int8_t" type (:type "class") nil nil)
@@ -1051,23 +1053,23 @@
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [18506 18522])
+                        (reparse-symbol arg-sub-list) [18623 18639])
                     ("len" variable
                        (:constant-flag t
                         :type ("int32_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [18547 18565])
+                        (reparse-symbol arg-sub-list) [18664 18682])
                     ("nt_table" variable
                        (:pointer 1
                         :constant-flag t
                         :type ("int8_t" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [18590 18613]))                  
+                        (reparse-symbol arg-sub-list) [18707 18730]))                  
                 :pointer 1
                 :prototype-flag t)
-                (reparse-symbol extern-c-contents) [18482 18614]))          
+                (reparse-symbol extern-c-contents) [18599 18731]))          
     :file "gssw.h"
-    :pointmax 18680
-    :fsize 18679
-    :lastmodtime '(21744 13419 0 0)
+    :pointmax 18797
+    :fsize 18796
+    :lastmodtime '(21779 25490 0 0)
     :unmatched-syntax 'nil
     :lexical-table 
         '(("SSW_H")
