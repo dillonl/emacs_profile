@@ -2,3 +2,5 @@ semanticdb/*
 auto-save-list/*
 projectile.cache
 projectile-bookmarks.eld
+.emacs.desktop
+.emacs.desktop.lock
