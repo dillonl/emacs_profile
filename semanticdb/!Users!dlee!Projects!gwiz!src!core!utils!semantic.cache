@@ -1,0 +1,79 @@
+;; Object utils/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "utils/"
+  :tables (list 
+   (semanticdb-table "ThreadPool.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("GWIZ_THREADPOOL_HPP" variable (:constant-flag t) nil [37 56])
+            ("vector" include (:system-flag t) nil [58 75])
+            ("queue" include (:system-flag t) nil [76 92])
+            ("memory" include (:system-flag t) nil [93 110])
+            ("thread" include (:system-flag t) nil [111 128])
+            ("mutex" include (:system-flag t) nil [129 145])
+            ("condition_variable" include (:system-flag t) nil [146 175])
+            ("future" include (:system-flag t) nil [176 193])
+            ("functional" include (:system-flag t) nil [194 215])
+            ("stdexcept" include (:system-flag t) nil [216 236])
+            ("boost/bind.hpp" include (:system-flag t) nil [237 262])
+            ("gwiz" type
+               (:members 
+                  ( ("ThreadPool" type
+                       (:superclasses 
+                          ( ("boost::noncopyable" type
+                               (:protection "private"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [339 346])
+                            ("Instance" function
+                               (:pointer 1
+                                :typemodifiers ("static")
+                                :type ("ThreadPool" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [349 552])
+                            ("joinAll" function (:type "void") (reparse-symbol classsubparts) [556 601])
+                            ("start" function (:type "void") (reparse-symbol classsubparts) [605 758])
+                            ("stop" function (:type "void") (reparse-symbol classsubparts) [762 984])
+                            ("private" label nil (reparse-symbol classsubparts) [1681 1689])
+                            ("ThreadPool" function
+                               (:constructor-flag t
+                                :type ("ThreadPool" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1693 1746])
+                            ("ThreadPool" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [1750 1782])
+                            ("init" function (:type "void") (reparse-symbol classsubparts) [1786 2422])
+                            ("s_threadpool" variable
+                               (:pointer 1
+                                :typemodifiers ("static")
+                                :type ("ThreadPool" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2426 2458])
+                            ("m_workers" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("std::thread" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2461 2498])
+                            ("m_tasks" variable (:type "int") (reparse-symbol classsubparts) [2539 2547])
+                            ("m_tasks_mutex" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2551 2576])
+                            ("m_condition" variable (:type ("std::condition_variable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2579 2615])
+                            ("m_stopped" variable (:type "bool") (reparse-symbol classsubparts) [2618 2633]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [286 2640]))                  
+                :type "namespace")
+                nil [264 2643]))          
+    :file "ThreadPool.hpp"
+    :pointmax 2674
+    :fsize 2673
+    :lastmodtime '(21757 50639 0 0)
+    :unmatched-syntax '((punctuation 2537 . 2538) (punctuation 2535 . 2536) (semantic-list 2532 . 2534) (VOID 2528 . 2532) (punctuation 2526 . 2527) (symbol 2518 . 2526) (punctuation 2517 . 2518) (punctuation 2516 . 2517) (symbol 2513 . 2516) (punctuation 2511 . 2512) (symbol 2506 . 2511) (punctuation 2505 . 2506) (punctuation 2504 . 2505) (symbol 2501 . 2504) (semantic-list 1126 . 1678) (punctuation 1122 . 1123) (symbol 1118 . 1122) (punctuation 1117 . 1118) (punctuation 1116 . 1117) (punctuation 1115 . 1116) (semantic-list 1106 . 1115) (symbol 1105 . 1106) (punctuation 1104 . 1105) (symbol 1095 . 1104) (punctuation 1094 . 1095) (punctuation 1093 . 1094) (symbol 1090 . 1093) (TYPENAME 1081 . 1089) (punctuation 1080 . 1081) (symbol 1074 . 1080) (punctuation 1073 . 1074) (punctuation 1072 . 1073) (symbol 1069 . 1072) (punctuation 1067 . 1068) (punctuation 1066 . 1067) (semantic-list 1035 . 1062) (symbol 1028 . 1035) (punctuation 1055 . 1056) (punctuation 1054 . 1055) (punctuation 1053 . 1054) (punctuation 1052 . 1053) (punctuation 1038 . 1039) (symbol 1023 . 1027) (punctuation 1055 . 1056) (punctuation 1054 . 1055) (punctuation 1053 . 1054) (punctuation 1052 . 1053) (punctuation 1038 . 1039) (punctuation 1019 . 1020) (symbol 1015 . 1019) (punctuation 1013 . 1014) (punctuation 1012 . 1013) (punctuation 1011 . 1012) (CLASS 1006 . 1011) (punctuation 1004 . 1005) (symbol 1003 . 1004) (CLASS 997 . 1002) (punctuation 996 . 997) (TEMPLATE 988 . 996))
+    :lexical-table 
+        '(("GWIZ_THREADPOOL_HPP")
+          )
+
+    )
+   )
+  :file "!Users!dlee!Projects!gwiz!src!core!utils!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

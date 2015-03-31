@@ -1,0 +1,81 @@
+;; Object genotyper/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "genotyper/"
+  :tables (list 
+   (semanticdb-table "IGenotyper.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GWIZ_GENOTYPER_H" variable (:constant-flag t) nil [34 50])
+            ("IGenotyperVariant.h" include nil nil [52 82])
+            ("mutex" include (:system-flag t) nil [84 100])
+            ("memory" include (:system-flag t) nil [101 118])
+            ("iostream" include (:system-flag t) nil [119 138])
+            ("fstream" include (:system-flag t) nil [139 157])
+            ("boost/noncopyable.hpp" include (:system-flag t) nil [159 191])
+            ("gwiz" type
+               (:members 
+                  ( ("IGenotyper" type
+                       (:superclasses 
+                          ( ("boost::noncopyable" type
+                               (:protection "private"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [261 268])
+                            ("Instance" function
+                               (:pointer 1
+                                :typemodifiers ("static")
+                                :type ("IGenotyper" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [271 443])
+                            ("generateVariant" function
+                               (:arguments 
+                                  ( ("pos" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [492 505]))                                  
+                                :type ("IGenotyperVariant::SharedPtr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [447 738])
+                            ("printVariants" function (:type "void") (reparse-symbol classsubparts) [742 1994])
+                            ("protected" label nil (reparse-symbol classsubparts) [1997 2007])
+                            ("m_genotyper_variant" variable (:type ("std::list" type
+                                 (:template-specifier 
+                                    ( ("IGenotyperVariant::SharedPtr" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2010 2072])
+                            ("m_variant_mutex" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2075 2102])
+                            ("private" label nil (reparse-symbol classsubparts) [2105 2113])
+                            ("IGenotyper" function
+                               (:constructor-flag t
+                                :type ("IGenotyper" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2119 2139])
+                            ("IGenotyper" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2143 2172])
+                            ("s_genotyper" variable
+                               (:pointer 1
+                                :typemodifiers ("static")
+                                :type ("IGenotyper" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2176 2207]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [211 2211]))                  
+                :type "namespace")
+                nil [193 2213]))          
+    :file "IGenotyper.h"
+    :pointmax 2241
+    :fsize 2240
+    :lastmodtime '(21767 13478 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GWIZ_GENOTYPER_H")
+          )
+
+    )
+   (semanticdb-table "IGenotyperVariant.h"
+    :file "IGenotyperVariant.h"
+    :fsize 766
+    :lastmodtime '(21759 15489 0 0)
+    )
+   )
+  :file "!Users!dlee!Projects!gwiz!src!core!genotyper!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,131 @@
+;; Object alignments/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "alignments/"
+  :tables (list 
+   (semanticdb-table "BamAlignmentReaderPreload.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BamAlignmentReaderPreload.h" include nil nil [1 39])
+            ("gwiz" type
+               (:members 
+                  ( ("BamAlignmentReaderPreload" function
+                       (:constructor-flag t
+                        :parent "BamAlignmentReaderPreload"
+                        :arguments 
+                          ( ("alignmentsPtr" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("std::vector" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [112 184]))                          
+                        :type ("BamAlignmentReaderPreload" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [59 342])
+                    ("BamAlignmentReaderPreload" function
+                       (:destructor-flag t
+                        :parent "BamAlignmentReaderPreload"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [345 406])
+                    ("getAverageReadLength" function
+                       (:parent "BamAlignmentReaderPreload"
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [409 607])
+                    ("setAverageBamReadLength" function
+                       (:parent "BamAlignmentReaderPreload"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [610 893])
+                    ("setRegion" function
+                       (:parent "BamAlignmentReaderPreload"
+                        :arguments 
+                          ( ("region" variable (:type ("Region::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [938 963]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [896 1208])
+                    ("getNextAlignment" function
+                       (:parent "BamAlignmentReaderPreload"
+                        :arguments 
+                          ( ("alignmentPtr" variable
+                               (:reference 1
+                                :type ("IAlignment::SharedPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1260 1296]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1211 1701])
+                    ("setIndexClosestToPosition" function
+                       (:parent "BamAlignmentReaderPreload"
+                        :arguments 
+                          ( ("pos" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1832 1845])
+                            ("index" variable
+                               (:reference 1
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1846 1860])
+                            ("subtractLength" variable (:type "bool") (reparse-symbol arg-sub-list) [1861 1881]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1774 2474]))                  
+                :type "namespace")
+                nil [41 2476]))          
+    :file "BamAlignmentReaderPreload.cpp"
+    :pointmax 2477
+    :fsize 2476
+    :lastmodtime '(21777 45348 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "BamAlignmentReaderPreloadManager.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BamAlignmentReaderPreloadManager.h" include nil nil [1 46])
+            ("gwiz" type
+               (:members 
+                  ( ("BamAlignmentReaderPreloadManager" function
+                       (:constructor-flag t
+                        :parent "BamAlignmentReaderPreloadManager"
+                        :arguments 
+                          ( ("bamPath" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [139 160]))                          
+                        :type ("BamAlignmentReaderPreloadManager" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [66 364])
+                    ("BamAlignmentReaderPreloadManager" function
+                       (:constructor-flag t
+                        :parent "BamAlignmentReaderPreloadManager"
+                        :arguments 
+                          ( ("bamPath" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [440 461])
+                            ("region" variable (:type ("Region::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [462 487]))                          
+                        :type ("BamAlignmentReaderPreloadManager" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [367 631])
+                    ("BamAlignmentReaderPreloadManager" function
+                       (:destructor-flag t
+                        :parent "BamAlignmentReaderPreloadManager"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [634 709])
+                    ("generateAlignmentReader" function
+                       (:parent "BamAlignmentReaderPreloadManager"
+                        :type ("IAlignmentReader::SharedPtr" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [712 885])
+                    ("processBam" function
+                       (:parent "BamAlignmentReaderPreloadManager"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [888 1749]))                  
+                :type "namespace")
+                nil [48 1751]))          
+    :file "BamAlignmentReaderPreloadManager.cpp"
+    :pointmax 1752
+    :fsize 1751
+    :lastmodtime '(21777 56411 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "BamAlignmentReaderPreloadManager.h"
+    :file "BamAlignmentReaderPreloadManager.h"
+    :fsize 1006
+    :lastmodtime '(21752 54989 0 0)
+    )
+   (semanticdb-table "BamAlignmentReaderPreload.h"
+    :file "BamAlignmentReaderPreload.h"
+    :fsize 990
+    :lastmodtime '(21752 58283 0 0)
+    )
+   )
+  :file "!Users!dlee!Projects!gwiz!src!core!alignments!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

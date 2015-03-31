@@ -1,0 +1,639 @@
+;; Object graph/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "graph/"
+  :tables (list 
+   (semanticdb-table "GSSWGraph.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("GSSWGraph.h" include nil nil [1 23])
+            ("vg/graph/ReferenceNode.h" include nil nil [24 59])
+            ("vg/graph/SNPNode.h" include nil nil [60 89])
+            ("vg/graph/IVariantNode.h" include nil nil [90 124])
+            ("core/genotyper/IGenotyper.h" include nil nil [125 163])
+            ("AlignmentReporter.h" include nil nil [164 194])
+            ("mutex" include (:system-flag t) nil [196 212])
+            ("iostream" include (:system-flag t) nil [213 232])
+            ("fstream" include (:system-flag t) nil [233 251])
+            ("map" include (:system-flag t) nil [252 266])
+            ("algorithm" include (:system-flag t) nil [267 287])
+            ("gwiz" type
+               (:members 
+                  ( ("gssw" type
+                       (:members 
+                          ( ("GSSWGraph::PrintStuff" variable (:type "bool") (reparse-symbol namespacesubparts) [324 359])
+                            ("GSSWGraph" function
+                               (:constructor-flag t
+                                :parent "GSSWGraph"
+                                :arguments 
+                                  ( ("referencePtr" variable (:type ("IReference::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [383 418])
+                                    ("variantListPtr" variable (:type ("IVariantList::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [419 458])
+                                    ("alignmentReader" variable (:type ("IAlignmentReader::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [459 503]))                                  
+                                :type ("GSSWGraph" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [362 816])
+                            ("GSSWGraph" function
+                               (:destructor-flag t
+                                :parent "GSSWGraph"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [819 936])
+                            ("constructGraph" function
+                               (:parent "GSSWGraph"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [939 3162])
+                            ("addReference" function
+                               (:pointer 1
+                                :parent "GSSWGraph"
+                                :arguments 
+                                  ( ("altAndRefVertices" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("gssw_node" type (:pointer 1) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [3200 3244])
+                                    ("referenceNodePtr" variable
+                                       (:pointer 1
+                                        :type ("gssw_node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3245 3273])
+                                    ("genotyperVariantPtr" variable (:type ("IGenotyperVariant::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3274 3323]))                                  
+                                :type ("gssw_node" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3165 3562])
+                            ("addAlternateNode" function
+                               (:pointer 1
+                                :parent "GSSWGraph"
+                                :arguments 
+                                  ( ("variantNodePtr" variable (:type ("INode::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3604 3636])
+                                    ("genotyperVariantPtr" variable (:type ("IGenotyperVariant::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3637 3686])
+                                    ("variantReferenceSize" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3687 3717]))                                  
+                                :type ("gssw_node" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3565 4277])
+                            ("addAlternateVertices" function
+                               (:parent "GSSWGraph"
+                                :arguments 
+                                  ( ("altAndRefVertices" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("gssw_node" type (:pointer 1) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [4338 4382])
+                                    ("variantPtr" variable (:type ("Variant::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4383 4413])
+                                    ("variantReferenceSize" variable
+                                       (:reference 1
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4414 4443])
+                                    ("genotyperVariantPtr" variable (:type ("IGenotyperVariant::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4444 4493]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("gssw_node" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [4280 6154])
+                            ("traceBackAlignment" function
+                               (:parent "GSSWGraph"
+                                :arguments 
+                                  ( ("alignmentPtr" variable (:type ("IAlignment::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6225 6260]))                                  
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("gssw_graph_mapping" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [6157 6825])
+                            ("recordAlignmentVariants" function
+                               (:parent "GSSWGraph"
+                                :arguments 
+                                  ( ("graphMapping" variable (:type ("std::shared_ptr" type
+                                         (:template-specifier 
+                                            ( ("gssw_graph_mapping" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [6868 6919])
+                                    ("alignmentPtr" variable (:type ("IAlignment::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6920 6955]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [6828 7238])
+                            ("graphConstructed" function
+                               (:parent "GSSWGraph"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [11739 12169]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [306 12171]))                  
+                :type "namespace")
+                nil [289 12173]))          
+    :file "GSSWGraph.cpp"
+    :pointmax 12174
+    :fsize 12173
+    :lastmodtime '(21786 50533 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "GSSWGraph.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GWIZ_GSSW_GSSWGRAPH_H" variable (:constant-flag t) nil [39 60])
+            ("tuple" include (:system-flag t) nil [62 78])
+            ("deque" include (:system-flag t) nil [79 95])
+            ("map" include (:system-flag t) nil [96 110])
+            ("gssw/gssw.h" include nil nil [112 134])
+            ("core/graph/IGraph.h" include nil nil [136 166])
+            ("core/reference/IReference.h" include nil nil [167 205])
+            ("core/variants/IVariantList.h" include nil nil [206 245])
+            ("core/genotyper/IGenotyperVariant.h" include nil nil [246 291])
+            ("core/genotyper/GenotyperAllele.hpp" include nil nil [292 337])
+            ("core/alignments/IAlignmentReader.h" include nil nil [339 384])
+            ("gwiz" type
+               (:members 
+                  ( ("gssw" type
+                       (:members 
+                          ( ("GSSWGraph" type
+                               (:superclasses 
+                                  ( ("IGraph" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [458 465])
+                                    ("PrintStuff" variable
+                                       (:typemodifiers ("static")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [468 491])
+                                    ("SharedPtr" type
+                                       (:typedef ("std::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("GSSWGraph" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :superclasses "std::shared_ptr"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [494 541])
+                                    ("GSSWGraphPtr" type
+                                       (:typedef ("std::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("gssw_graph" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :superclasses "std::shared_ptr"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [544 595])
+                                    ("GSSWGraph" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("referencePtr" variable (:type ("gwiz::IReference::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [609 650])
+                                            ("variantListPtr" variable (:type ("gwiz::IVariantList::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [651 696])
+                                            ("alignmentReader" variable (:type ("IAlignmentReader::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [697 741]))                                          
+                                        :type ("GSSWGraph" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [599 742])
+                                    ("GSSWGraph" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [745 766])
+                                    ("override" variable (:type "int") (reparse-symbol classsubparts) [800 809])
+                                    ("protected" label nil (reparse-symbol classsubparts) [812 822])
+                                    ("addAlternateVertices" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("altAndRefVertices" variable (:type ("std::vector" type
+                                                 (:template-specifier 
+                                                    ( ("gssw_node" type (:pointer 1) nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [872 916])
+                                            ("variantPtr" variable (:type ("Variant::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [917 947])
+                                            ("variantReferenceSize" variable
+                                               (:reference 1
+                                                :type ("size_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [948 977])
+                                            ("genotyperVariantPtr" variable (:type ("IGenotyperVariant::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [978 1027]))                                          
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("gssw_node" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [825 1028])
+                                    ("addReference" function
+                                       (:prototype-flag t
+                                        :pointer 1
+                                        :arguments 
+                                          ( ("altAndRefVertices" variable (:type ("std::vector" type
+                                                 (:template-specifier 
+                                                    ( ("gssw_node" type (:pointer 1) nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [1056 1100])
+                                            ("referenceNode" variable
+                                               (:pointer 1
+                                                :type ("gssw_node" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1101 1126])
+                                            ("genotyperPtr" variable (:type ("IGenotyperVariant::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1127 1169]))                                          
+                                        :type ("gssw_node" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1032 1170])
+                                    ("addAlternateNode" function
+                                       (:prototype-flag t
+                                        :pointer 1
+                                        :arguments 
+                                          ( ("variantNodePtr" variable (:type ("INode::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1201 1233])
+                                            ("genotyperVariantPtr" variable (:type ("IGenotyperVariant::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1234 1283])
+                                            ("variantReferenceSize" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1284 1314]))                                          
+                                        :type ("gssw_node" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1173 1315])
+                                    ("m_gssw_contigs" variable (:type ("std::deque" type
+                                         (:template-specifier 
+                                            ( ("GSSWGraphPtr" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [1319 1361])
+                                    ("m_alignment_reader" variable (:type ("IAlignmentReader::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1364 1411])
+                                    ("m_match" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1414 1430])
+                                    ("m_mismatch" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1433 1452])
+                                    ("m_gap_open" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1455 1474])
+                                    ("m_gap_extension" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1477 1501])
+                                    ("m_nt_table" variable
+                                       (:pointer 1
+                                        :type ("int8_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1504 1523])
+                                    ("m_mat" variable
+                                       (:pointer 1
+                                        :type ("int8_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1526 1540])
+                                    ("m_graph_ptr" variable
+                                       (:pointer 1
+                                        :type ("gssw_graph" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1543 1567])
+                                    ("m_next_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1570 1593])
+                                    ("m_graph_start_position" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1596 1628])
+                                    ("m_genotyper_map" variable (:type ("std::map" type
+                                         (:template-specifier 
+                                            ( ("uint32_t" type nil nil nil)
+                                              ("GenotyperAllele::SharedPtr" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [1631 1696])
+                                    ("m_variant_counter" variable (:type ("std::map" type
+                                         (:template-specifier 
+                                            ( ("uint32_t" type nil nil nil)
+                                              ("std::tuple" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [1699 1818])
+                                    ("m_genotype_variants" variable (:type ("std::list" type
+                                         (:template-specifier 
+                                            ( ("IGenotyperVariant" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [1827 1878])
+                                    ("private" label nil (reparse-symbol classsubparts) [1881 1889])
+                                    ("graphConstructed" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1892 1916])
+                                    ("traceBackAlignment" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("alignmentPtr" variable (:type ("IAlignment::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1976 2011]))                                          
+                                        :type ("std::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("gssw_graph_mapping" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [1919 2012])
+                                    ("recordAlignmentVariants" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("graphMapping" variable (:type ("std::shared_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("gssw_graph_mapping" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [2044 2095])
+                                            ("alignmentPtr" variable (:type ("IAlignment::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2096 2131]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2015 2132])
+                                    ("gssw_node_create_alt" function
+                                       (:pointer 1
+                                        :arguments 
+                                          ( ("position" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2174 2192])
+                                            ("referenceLength" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2209 2234])
+                                            ("data" variable (:type ("GenotyperAllele::Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2251 2278])
+                                            ("seq" variable
+                                               (:pointer 1
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [2295 2305])
+                                            ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2322 2333])
+                                            ("nt_table" variable
+                                               (:pointer 1
+                                                :type ("int8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2350 2367])
+                                            ("score_matrix" variable
+                                               (:pointer 1
+                                                :type ("int8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2384 2405]))                                          
+                                        :type ("gssw_node" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2136 2843]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [422 2848]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [403 2851]))                  
+                :type "namespace")
+                nil [386 2853]))          
+    :file "GSSWGraph.h"
+    :pointmax 2780
+    :fsize 2885
+    :lastmodtime '(21779 11257 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GWIZ_GSSW_GSSWGRAPH_H")
+          )
+
+    )
+   (semanticdb-table "AlignmentReporter.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GWIZ_GSSW_ALIGNMENTREPORTER_H" variable (:constant-flag t) nil [47 76])
+            ("AlignmentReport.h" include nil nil [78 106])
+            ("boost/noncopyable.hpp" include (:system-flag t) nil [108 140])
+            ("memory" include (:system-flag t) nil [141 158])
+            ("mutex" include (:system-flag t) nil [159 175])
+            ("gwiz" type
+               (:members 
+                  ( ("gssw" type
+                       (:members 
+                          ( ("AlignmentReporter" type
+                               (:superclasses 
+                                  ( ("boost::noncopyable" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [261 268])
+                                    ("Instance" function
+                                       (:prototype-flag t
+                                        :pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("AlignmentReporter" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [271 308])
+                                    ("printAlignmentReportsToStream" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("out" variable
+                                               (:reference 1
+                                                :type ("std::ostream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [347 365]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [312 366])
+                                    ("addAlignmentReport" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("alignmentReportPtr" variable (:type ("AlignmentReport::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [393 439]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [369 440])
+                                    ("private" label nil (reparse-symbol classsubparts) [443 451])
+                                    ("AlignmentReporter" function
+                                       (:constructor-flag t
+                                        :type ("AlignmentReporter" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [454 476])
+                                    ("AlignmentReporter" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [479 502])
+                                    ("s_instance" variable
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("AlignmentReporter" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [506 543])
+                                    ("m_alignment_reports_mutex" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [547 584])
+                                    ("m_alignment_reports" variable (:type ("std::list" type
+                                         (:template-specifier 
+                                            ( ("AlignmentReport::SharedPtr" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [587 647]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [212 651]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [194 653]))                  
+                :type "namespace")
+                nil [177 655]))          
+    :file "AlignmentReporter.h"
+    :pointmax 696
+    :fsize 695
+    :lastmodtime '(21777 45348 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GWIZ_GSSW_ALIGNMENTREPORTER_H")
+          )
+
+    )
+   (semanticdb-table "GraphManager.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("core/variants/VariantList.h" include nil nil [1 39])
+            ("core/utils/ThreadPool.hpp" include nil nil [40 76])
+            ("GraphManager.h" include nil nil [77 102])
+            ("AlignmentReporter.h" include nil nil [103 133])
+            ("core/genotyper/IGenotyper.h" include nil nil [134 172])
+            ("core/alignments/BamAlignmentReader.h" include nil nil [174 221])
+            ("queue" include (:system-flag t) nil [223 239])
+            ("boost/bind.hpp" include (:system-flag t) nil [242 267])
+            ("gwiz" type
+               (:members 
+                  ( ("gssw" type
+                       (:members 
+                          ( ("GraphManager" function
+                               (:constructor-flag t
+                                :parent "GraphManager"
+                                :arguments 
+                                  ( ("referencePtr" variable (:type ("IReference::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [332 367])
+                                    ("variantListPtr" variable (:type ("IVariantList::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [368 407])
+                                    ("alignmentReaderManager" variable (:type ("IAlignmentReaderManager::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [408 466])
+                                    ("padding" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [467 482]))                                  
+                                :type ("GraphManager" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [305 636])
+                            ("buildGraphs" function
+                               (:parent "GraphManager"
+                                :arguments 
+                                  ( ("overlap" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [670 685])
+                                    ("graphSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [686 703]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [639 1173])
+                            ("buildGraph" function
+                               (:parent "GraphManager"
+                                :arguments 
+                                  ( ("startPosition" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3579 3602])
+                                    ("endPosition" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3603 3624])
+                                    ("variantListPtr" variable (:type ("IVariantList::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3625 3664]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3549 4276]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [286 4278]))                  
+                :type "namespace")
+                nil [269 4280]))          
+    :file "GraphManager.cpp"
+    :pointmax 4281
+    :fsize 4280
+    :lastmodtime '(21786 51477 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "GraphManager.h"
+    :file "GraphManager.h"
+    :fsize 1077
+    :lastmodtime '(21786 50535 0 0)
+    )
+   (semanticdb-table "AlignmentReporter.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("AlignmentReporter.h" include nil nil [1 31])
+            ("gwiz" type
+               (:members 
+                  ( ("gssw" type
+                       (:members 
+                          ( ("AlignmentReporter::s_instance" variable
+                               (:pointer 1
+                                :type ("AlignmentReporter" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [69 128])
+                            ("Instance" function
+                               (:pointer 1
+                                :parent "AlignmentReporter"
+                                :type ("AlignmentReporter" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [132 285])
+                            ("printAlignmentReportsToStream" function
+                               (:parent "AlignmentReporter"
+                                :arguments 
+                                  ( ("out" variable
+                                       (:reference 1
+                                        :type ("std::ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [342 360]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [288 762])
+                            ("addAlignmentReport" function
+                               (:parent "AlignmentReporter"
+                                :arguments 
+                                  ( ("alignmentReportPtr" variable (:type ("AlignmentReport::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [808 854]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [765 1023]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [51 1026]))                  
+                :type "namespace")
+                nil [34 1028]))          
+    :file "AlignmentReporter.cpp"
+    :pointmax 1029
+    :fsize 1028
+    :lastmodtime '(21777 45348 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "AlignmentReport.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("AlignmentReport.h" include nil nil [1 29])
+            ("core/genotyper/GenotyperAllele.hpp" include nil nil [30 75])
+            ("map" include (:system-flag t) nil [77 91])
+            ("gwiz" type
+               (:members 
+                  ( ("gssw" type
+                       (:members 
+                          ( ("AlignmentReport" function
+                               (:constructor-flag t
+                                :parent "AlignmentReport"
+                                :arguments 
+                                  ( ("referencePtr" variable (:type ("IReference::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [161 196])
+                                    ("variantListPtr" variable (:type ("IVariantList::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [197 236])
+                                    ("alignmentPtr" variable (:type ("IAlignment::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [237 272])
+                                    ("graphMappingPtr" variable (:type ("std::shared_ptr" type
+                                         (:template-specifier 
+                                            ( ("gssw_graph_mapping" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [273 327])
+                                    ("graphStartPosition" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [328 356]))                                  
+                                :type ("AlignmentReport" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [128 553])
+                            ("AlignmentReport" function
+                               (:destructor-flag t
+                                :parent "AlignmentReport"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [556 597])
+                            ("toString" function
+                               (:parent "AlignmentReport"
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [600 4546]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [110 4548]))                  
+                :type "namespace")
+                nil [93 4550]))          
+    :file "AlignmentReport.cpp"
+    :pointmax 4551
+    :fsize 4550
+    :lastmodtime '(21780 14810 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "AlignmentReport.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GWIZ_GSSW_ALIGNMENTREPORT_H" variable (:constant-flag t) nil [45 72])
+            ("core/reference/IReference.h" include nil nil [74 112])
+            ("core/variants/IVariantList.h" include nil nil [113 152])
+            ("core/alignments/IAlignment.h" include nil nil [153 192])
+            ("gssw/gssw.h" include nil nil [193 215])
+            ("boost/noncopyable.hpp" include (:system-flag t) nil [217 249])
+            ("memory" include (:system-flag t) nil [250 267])
+            ("gwiz" type
+               (:members 
+                  ( ("gssw" type
+                       (:members 
+                          ( ("AlignmentReport" type
+                               (:superclasses 
+                                  ( ("boost::noncopyable" type
+                                       (:protection "private"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [359 366])
+                                    ("SharedPtr" type
+                                       (:typedef ("std::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("AlignmentReport" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :superclasses "std::shared_ptr"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [369 422])
+                                    ("AlignmentReport" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("referencePtr" variable (:type ("IReference::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [442 477])
+                                            ("variantListPtr" variable (:type ("IVariantList::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [478 517])
+                                            ("alignmentPtr" variable (:type ("IAlignment::SharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [518 553])
+                                            ("graphMappingPtr" variable (:type ("std::shared_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("gssw_graph_mapping" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [554 608])
+                                            ("graphStartPosition" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [609 637]))                                          
+                                        :type ("AlignmentReport" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [426 638])
+                                    ("AlignmentReport" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [641 660])
+                                    ("toString" function
+                                       (:prototype-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [664 687])
+                                    ("private" label nil (reparse-symbol classsubparts) [690 698])
+                                    ("m_reference_ptr" variable (:type ("IReference::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [821 859])
+                                    ("m_variant_list_ptr" variable (:type ("IVariantList::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [862 905])
+                                    ("m_alignment_ptr" variable (:type ("IAlignment::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [908 946])
+                                    ("m_graph_mapping_ptr" variable (:type ("std::shared_ptr" type
+                                         (:template-specifier 
+                                            ( ("gssw_graph_mapping" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [949 1007])
+                                    ("m_graph_start_position" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1010 1042]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [304 1046]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [286 1048]))                  
+                :type "namespace")
+                nil [269 1050]))          
+    :file "AlignmentReport.h"
+    :pointmax 1089
+    :fsize 968
+    :lastmodtime '(21777 60262 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GWIZ_GSSW_ALIGNMENTREPORT_H")
+          )
+
+    )
+   )
+  :file "!Users!dlee!Projects!gwiz!plugins!gssw!graph!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
