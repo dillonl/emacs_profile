@@ -171,6 +171,7 @@
 (desktop-save-mode 1)
 (tool-bar-mode -1)
 (global-hl-line-mode +1)
+(show-paren-mode 1)
 
 (require 'nyan-mode)
 (nyan-mode)
