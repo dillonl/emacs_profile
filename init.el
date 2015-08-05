@@ -176,5 +176,6 @@
 (require 'nyan-mode)
 (nyan-mode)
 
+(load-file "~/.emacs.d/avy.el")
 (load-file "~/.emacs.d/custom-functions.el")
 (load-file "~/.emacs.d/keyboard-bindings.el")
