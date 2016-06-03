@@ -3,7 +3,9 @@
 (define-key dillon-keys-minor-mode-map (kbd "M-/") 'toggle-comment-on-line)
 
 ;(define-key global-map (kbd "C-c C-SPC") 'ace-jump-mode)
+(define-key global-map (kbd "C-j") 'ace-jump-char-mode)
 (define-key global-map (kbd "C-j") 'avy-goto-char)
+
 (define-key dillon-keys-minor-mode-map (kbd "C-o") 'other-window)
 (define-key dillon-keys-minor-mode-map (kbd "C-M-o") 'prev-window)
 

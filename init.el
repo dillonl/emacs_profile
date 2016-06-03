@@ -169,13 +169,14 @@
 (setq-default tab-width 4 indent-tabs-mode t)
 (define-key c-mode-base-map (kbd "RET") 'newline-and-indent)
 
-(desktop-save-mode 1)
+;(desktop-save-mode 1)
 (tool-bar-mode -1)
 (global-hl-line-mode +1)
 (show-paren-mode 1)
+(menu-bar-mode -1)
 
-(require 'nyan-mode)
-(nyan-mode)
+;(require 'nyan-mode)
+;(nyan-mode)
 
 (load-file "~/.emacs.d/avy.el")
 (load-file "~/.emacs.d/custom-functions.el")
