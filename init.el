@@ -44,14 +44,14 @@
 
 ;; this variables must be set before load helm-gtags
 ;; you can change to any prefix key of your choice
-(setq helm-gtags-prefix-key "\C-cg")
+;; (setq helm-gtags-prefix-key "\C-cg")
 
 (add-to-list 'load-path "~/.emacs.d/custom")
 
 (require 'setup-helm)
-(require 'setup-helm-gtags)
+;; (require 'setup-helm-gtags)
 ;; (require 'setup-ggtags)
-(require 'setup-cedet)
+;; (require 'setup-cedet)
 (require 'setup-editing)
 
 (windmove-default-keybindings)
@@ -59,21 +59,21 @@
 ;; function-args
 (require 'function-args)
 (fa-config-default)
-(define-key c-mode-map  [(tab)] 'moo-complete)
-(define-key c++-mode-map  [(tab)] 'moo-complete)
+;; (define-key c-mode-map  [(tab)] 'moo-complete)
+;; (define-key c++-mode-map  [(tab)] 'moo-complete)
 
 ;; company
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
-(delete 'company-semantic company-backends)
-(define-key c-mode-map  [(control tab)] 'company-complete)
-(define-key c++-mode-map  [(control tab)] 'company-complete)
+;;(delete 'company-semantic company-backends)
+;; (define-key c-mode-map  [(control tab)] 'company-complete)
+;; (define-key c++-mode-map  [(control tab)] 'company-complete)
 
 ;; company-c-headers
-(add-to-list 'company-backends 'company-c-headers)
+;; (add-to-list 'company-backends 'company-c-headers)
 
 ;; hs-minor-mode for folding source code
-(add-hook 'c-mode-common-hook 'hs-minor-mode)
+;; (add-hook 'c-mode-common-hook 'hs-minor-mode)
 
 ;; Available C style:
 ;; “gnu”: The default style for GNU projects
@@ -136,9 +136,9 @@
 (yas-global-mode 1)
 
 ;; Package: projejctile
-(require 'projectile)
-(projectile-global-mode)
-(setq projectile-enable-caching t)
+;; (require 'projectile)
+;;; (projectile-global-mode)
+;; (setq projectile-enable-caching t)
 
 ;; Package zygospore
 (global-set-key (kbd "C-x 1") 'zygospore-toggle-delete-other-windows)
@@ -167,7 +167,7 @@
 
 (setq-default c-basic-offset 4 c-default-style "linux")
 (setq-default tab-width 4 indent-tabs-mode t)
-(define-key c-mode-base-map (kbd "RET") 'newline-and-indent)
+;; (define-key c-mode-base-map (kbd "RET") 'newline-and-indent)
 
 ;(desktop-save-mode 1)
 (tool-bar-mode -1)
