@@ -181,3 +181,5 @@
 (load-file "~/.emacs.d/avy.el")
 (load-file "~/.emacs.d/custom-functions.el")
 (load-file "~/.emacs.d/keyboard-bindings.el")
+(add-to-list 'load-path "~/.emacs.d/elpa/julia-emacs/")
+(require 'julia-mode)
